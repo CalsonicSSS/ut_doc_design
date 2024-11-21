@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { Search } from 'lucide-react'; // Import the search icon
 import { X } from 'lucide-react';
 
