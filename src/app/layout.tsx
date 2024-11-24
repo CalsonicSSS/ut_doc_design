@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Open_Sans, Roboto, Karla } from 'next/font/google';
 
+// this is to import the fonts
+// setup the font configuration for the project
+// create css variables for the fonts
 const openSans = Open_Sans({
   weight: ['300', '400', '500', '600', '700', '800'], // Add all weights
   subsets: ['latin'],

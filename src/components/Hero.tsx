@@ -6,12 +6,12 @@ const Hero = () => {
       <div className='ps-52 flex items-center justify-between'>
         <div>
           <div className='mb-[50px]'>
-            <p className='font-roboto font-bold text-[20px] tracking-[1px] text-[#001D6C] '>THE UNITE TOOLKIT</p>
-            <h1 className='font-open-sans font-bold text-[42px]'>Core Components Guidebook</h1>
+            <p className='font-roboto font-bold text-xl tracking-[1px] text-navy2 '>THE UNITE TOOLKIT</p>
+            <h1 className='font-open-sans font-bold text-5xl text-base-color'>Core Components Guidebook</h1>
           </div>
-          <p className='font-roboto text-[18px] mb-[60px]'>Supporting youth mental health transitions in care</p>
+          <p className='font-roboto text-lg mb-[60px] text-base-color'>Supporting youth mental health transitions in care</p>
           <div className='flex gap-4'>
-            <button className='bg-navy rounded-3xl text-white px-8 py-2 hover:bg-navy/90 font-roboto text-[18px] tracking-[0.5px]'>Go to Doc</button>
+            <button className='bg-navy rounded-3xl text-white px-8 py-2 hover:bg-navy/90 font-roboto text-lg tracking-[0.5px]'>Go to Doc</button>
             <button className='border-2 border-navy rounded-3xl text-navy px-8 py-2  hover:bg-navy/10 font-roboto font-semibold tracking-[0.5px]'>PDF Preview</button>
           </div>
         </div>
