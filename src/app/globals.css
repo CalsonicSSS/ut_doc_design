@@ -2,6 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .nav-item {
+    @apply text-nav-item text-size-base;
+  }
+
+  .section-title {
+    @apply text-navy-2 text-xl font-bold font-roboto;
+  }
+
+  .main-title {
+    @apply text-color-base-1 text-5xl font-bold font-open-sans;
+  }
+
+  .base-text-content {
+    @apply font-open-sans text-lg font-normal text-color-base-1 tracking-[0px];
+  }
+
+  .button-fill {
+    @apply flex items-center bg-navy-1 rounded-3xl text-white px-8 py-2 hover:bg-navy-1/90 font-roboto font-semibold text-xl tracking-[0.5px];
+  }
+
+  .button-outline {
+    @apply border-2 border-navy-1 rounded-3xl text-navy-1 px-8 py-2 hover:bg-navy-1/10 font-roboto font-semibold text-xl tracking-[0.5px];
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
