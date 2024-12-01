@@ -16,8 +16,8 @@ export default function ResourceFlow(): ReactNode {
         <div className='w-full lg:w-[663px] lg:ms-[8%] mt-8 lg:mt-0 px-4 sm:px-8 lg:px-0'>
           <p className='main-title mb-8 lg:mb-12 text-3xl sm:text-4xl lg:text-5xl text-center lg:text-left'>Using this Resource</p>
           <p className='base-text-content mb-8 text-base lg:text-lg text-center lg:text-left'>
-            Core components are divided into six categories, or "elements", intended to support thinking of the transition process from beginning to end. Each core component
-            includes a brief description of the component as well as other resources to support your understanding where relevant. <br />
+            Core components are divided into six categories, or &ldquo;elements&rdquo;, intended to support thinking of the transition process from beginning to end. Each core
+            component includes a brief description of the component as well as other resources to support your understanding where relevant. <br />
             This might include:
           </p>
           <div>
