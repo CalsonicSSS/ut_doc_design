@@ -57,7 +57,7 @@ export default function ChooseContent(): ReactNode {
           {/* Grid container for all items */}
           <div className='grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-x-8 lg:gap-x-32'>
             {contentItems.map((item, index) => (
-              <button key={index} className='flex items-start group'>
+              <button key={index} className='flex items-center group'>
                 <p className='text-[#C9CBC7] text-4xl sm:text-6xl lg:text-special font-bold mr-3 sm:mr-5 group-hover:text-[#43CDC1] leading-none mt-1'>{item.number}</p>
                 <div>
                   <p className='font-bold text-sm text-[#454545] mb-2 text-start'>{item.title}</p>
