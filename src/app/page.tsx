@@ -14,9 +14,7 @@ export default function Home() {
       <About />
       <ResourceFlow />
       <ChooseContent />
-      {/* <Testimonials /> */}
       <Footer />
-      {/* Additional sections will go here */}
     </main>
   );
 }
