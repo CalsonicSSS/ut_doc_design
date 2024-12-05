@@ -131,7 +131,7 @@ export default function DocumentationPage() {
         </button>
 
         {item.subItems && expandedSections.includes(item.id) && (
-          <div className='ms-6 relative'>
+          <div className='ms-7 relative'>
             {/* Vertical line connecting parent to children */}
             <div className='absolute left-[42px] w-[2px] top-[10px] h-[70px] bg-gray-300' />
             {renderSectionItems(item.subItems, indentationLevel + 1)}
@@ -143,7 +143,7 @@ export default function DocumentationPage() {
 
   const renderSidebarBySection = () => {
     return sideBarStructure.map((section) => (
-      <div key={section.id} className='mb-6 ms-20'>
+      <div key={section.id} className='mb-6 lg:ms-20 '>
         <button onClick={() => toggleExpanded(section.id)} className='flex items-center w-full py-2 px-4 doc-sidebar-nav-section'>
           <span className='mr-2'>{expandedSections.includes(section.id) ? <ChevronDown size={16} /> : <ChevronRight size={16} />}</span>
           {section.sectionLabel}
@@ -166,7 +166,7 @@ export default function DocumentationPage() {
         className={`
         fixed lg:static
         top-0 left-0
-        h-full lg:w-[30%] w-[75%]
+        h-full lg:w-[30%] md:w-[50%] sm:w-[65%]
         bg-white
         overflow-y-auto overflow-x-hidden
         transition-transform duration-300
