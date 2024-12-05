@@ -26,6 +26,30 @@
   .button-outline {
     @apply border-2 border-navy-1 rounded-3xl text-navy-1 px-8 py-2 hover:bg-navy-1/10 font-roboto font-semibold text-xl tracking-[0.5px];
   }
+
+  .doc-sidebar-nav-section {
+    @apply font-urbanist font-semibold text-[15px] text-[#A6A6A6];
+  }
+
+  .doc-sidebar-nav-item {
+    @apply font-urbanist font-semibold text-[14px] text-[#454545] hover:text-[#63B1E5] leading-[16px];
+  }
+
+  .doc-sidebar-nav-sub-item {
+    @apply font-urbanist font-medium text-[12px] text-[#454545] hover:text-[#63B1E5] leading-[12px];
+  }
+
+  .doc-content-title {
+    @apply font-urbanist font-bold text-[32px] leading-[36px] text-[#454545];
+  }
+
+  .doc-content-sub-title {
+    @apply font-urbanist font-medium text-[23px] leading-[36px] text-[#454545];
+  }
+
+  .doc-content-text {
+    @apply font-urbanist text-[16px] font-normal text-[#454545] leading-[28px];
+  }
 }
 
 * {

@@ -29,6 +29,7 @@ const config: Config = {
         'open-sans': ['var(--font-open-sans)', 'sans-serif'],
         roboto: ['var(--font-roboto)', 'sans-serif'],
         karla: ['var(--font-karla)', 'sans-serif'],
+        urbanist: ['var(--font-urbanist)', 'sans-serif'],
       },
       fontSize: {
         xs: '12px', // Extra small
