@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Open_Sans, Roboto, Karla, Urbanist } from 'next/font/google';
-import Header from '@/components/layout/Header';
 
 // Import the next.js own fonts and setup font configuration
 // next/font module provides built-in performance and optimization features

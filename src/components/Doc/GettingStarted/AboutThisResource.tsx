@@ -95,7 +95,7 @@ export default function AboutThisResource() {
         <p className='mb-6'>This manuscript will be open access and linked through our website upon publication.</p>
         <p className='font-bold'>Remaining quotes from clinicians, administrators, youth, and caregivers are attributed to the following study:</p>
         <div className='flex items-center ps-3'>
-          <Dot /> Cleverley K, McCann E, O'Brien D, Davies J, Bennett K, Brennenstuhl S, Courey L, Henderson J, Jeffs L, Miller
+          <Dot /> Cleverley K, McCann E, O&apos;Brien D, Davies J, Bennett K, Brennenstuhl S, Courey L, Henderson J, Jeffs L, Miller
         </div>
         <p className='ps-6'>J, Pignatiello T, Rong J, Rowland E, Stevens K, & Szatmari P. (2021).</p>
         <div className='flex items-center ps-3'>
