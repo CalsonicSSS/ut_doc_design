@@ -113,16 +113,16 @@ export default function DocumentationPage() {
     return items.map((item) => (
       <div key={item.id} className='relative'>
         <button
+          className={`flex items-center py-2 mt-1 px-4  text-start
+                    ${item.subItems ? 'ms-6' : 'ms-12'}
+                    ${activeNavItem === item.id || activeParents.includes(item.id) ? 'text-[#63B1E5]' : 'text-[#454545]'}
+                    ${indentationLevel === 1 ? 'doc-sidebar-nav-item' : 'doc-sidebar-nav-sub-item'}`}
           onClick={() => {
             if (item.subItems) {
               toggleExpanded(item.id);
             }
             handleNavItemClick(item);
           }}
-          className={`flex items-center py-2 mt-1 px-4 
-            ${item.subItems ? 'ms-6' : 'ms-12'}
-            ${activeNavItem === item.id || activeParents.includes(item.id) ? 'text-[#63B1E5]' : 'text-[#454545]'}
-            ${indentationLevel === 1 ? 'doc-sidebar-nav-item' : 'doc-sidebar-nav-sub-item'}`}
         >
           {item.subItems && <span className='mr-2'>{expandedSections.includes(item.id) ? <ChevronDown size={16} /> : <ChevronRight size={16} />}</span>}
           {/* Add dot for nested items */}
