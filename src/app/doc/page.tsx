@@ -166,7 +166,7 @@ export default function DocumentationPage() {
         className={`
         fixed lg:static
         top-0 left-0
-        h-full lg:w-[30%] w-full
+        h-full lg:w-[30%] w-[75%]
         bg-white
         overflow-y-auto overflow-x-hidden
         transition-transform duration-300
