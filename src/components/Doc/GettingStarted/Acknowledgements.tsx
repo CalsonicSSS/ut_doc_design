@@ -8,22 +8,22 @@ export default function Acknowledgements() {
       <p className='font-bold'>The following people contributed to the development of this resource:</p>
       <DotList
         contentList={[
-          <p>
+          <p key={1}>
             Kristin Cleverley <span className='text-[#7FD5D1]'>1,2</span>
           </p>,
-          <p>
+          <p key={2}>
             Julia Davies <span className='text-[#7FD5D1]'>1</span>
           </p>,
-          <p>
+          <p key={3}>
             Emma McCann1 Celeste Agard <span className='text-[#7FD5D1]'>1</span>
           </p>,
-          <p>
+          <p key={4}>
             Savina Edward <span className='text-[#7FD5D1]'>1</span>
           </p>,
-          <p>
+          <p key={5}>
             Shabeeha Firthouse <span className='text-[#7FD5D1]'>1</span>
           </p>,
-          <p>
+          <p key={6}>
             Soha Salman <span className='text-[#7FD5D1]'>1</span>
           </p>,
         ]}

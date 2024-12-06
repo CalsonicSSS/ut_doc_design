@@ -55,7 +55,7 @@ export default function AboutThisResource() {
         <DotList
           contentList={[
             'Cleverley K et al. (2023) Understanding the scope and impact of the youth mental health transition navigator role:',
-            <span>perspectives of navigators and clinicians. [manuscript in preparation].</span>,
+            <span key={1}>perspectives of navigators and clinicians. [manuscript in preparation].</span>,
           ]}
           ms={[0, 12]}
         />

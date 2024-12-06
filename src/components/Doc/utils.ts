@@ -1,6 +1,6 @@
 import { NavItem, NavSection } from './Sidebar';
 
-export const findParentIds = (sections: NavSection[], targetId: string, parentIds: string[] = []): string[] => {
+export const findParentIds = (sections: NavSection[], targetId: string): string[] => {
   // Helper function to search through items
   const searchItems = (items: NavItem[], targetId: string, parentIds: string[] = []): string[] => {
     for (const item of items) {

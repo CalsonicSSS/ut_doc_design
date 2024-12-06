@@ -162,19 +162,19 @@ export default function Element1() {
         <DotList
           contentList={[
             'Youth making the transition between services',
-            <p>
+            <p key={1}>
               <span className='font-bold'>Child and Adolescent Mental Health Services</span> staff
             </p>,
-            <p>
+            <p key={2}>
               Community or <span className='font-bold'>Adult Mental Health Services</span> staff
             </p>,
-            <p>
+            <p key={3}>
               <span className='font-bold'>Peer support workers</span> (if applicable)
             </p>,
-            <p>
+            <p key={4}>
               <span className='font-bold'>Transition Navigators</span> (if applicable)
             </p>,
-            <p>
+            <p key={5}>
               <span className='font-bold'>Family members/Caregivers,</span> (if applicable)
             </p>,
           ]}
