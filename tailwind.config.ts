@@ -6,6 +6,7 @@ import type { Config } from 'tailwindcss';
 // you must use Tailwind's predefined category names such as colors, fontFamily, fontSize, etc before adding your custom styles under either extend or override
 // under each category, you can then add your custom styles through key-value pairs using your own naming
 const config: Config = {
+  darkMode: ['class'],
   content: ['./src/pages/**/*.{js,ts,jsx,tsx,mdx}', './src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     screens: {
@@ -16,15 +17,53 @@ const config: Config = {
     },
     extend: {
       colors: {
+        'navy-0': '#63B1E5',
         'navy-1': '#07308C',
         'navy-2': '#001D6C',
         'navy-3': '#00204E',
         'nav-item': '#4F4F4E',
         'color-base-1': '#21272A',
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
+        card: {
+          DEFAULT: 'hsl(var(--card))',
+          foreground: 'hsl(var(--card-foreground))',
+        },
+        popover: {
+          DEFAULT: 'hsl(var(--popover))',
+          foreground: 'hsl(var(--popover-foreground))',
+        },
+        primary: {
+          DEFAULT: 'hsl(var(--primary))',
+          foreground: 'hsl(var(--primary-foreground))',
+        },
+        secondary: {
+          DEFAULT: 'hsl(var(--secondary))',
+          foreground: 'hsl(var(--secondary-foreground))',
+        },
+        muted: {
+          DEFAULT: 'hsl(var(--muted))',
+          foreground: 'hsl(var(--muted-foreground))',
+        },
+        accent: {
+          DEFAULT: 'hsl(var(--accent))',
+          foreground: 'hsl(var(--accent-foreground))',
+        },
+        destructive: {
+          DEFAULT: 'hsl(var(--destructive))',
+          foreground: 'hsl(var(--destructive-foreground))',
+        },
+        border: 'hsl(var(--border))',
+        input: 'hsl(var(--input))',
+        ring: 'hsl(var(--ring))',
+        chart: {
+          '1': 'hsl(var(--chart-1))',
+          '2': 'hsl(var(--chart-2))',
+          '3': 'hsl(var(--chart-3))',
+          '4': 'hsl(var(--chart-4))',
+          '5': 'hsl(var(--chart-5))',
+        },
       },
-      // Add the font family using the css variables we created in the layout.tsx
-      // reference font css variables because they've been properly declared and made available through the body class.
-      // without the body class, the font css variables won't be available to the tailwindcss
       fontFamily: {
         'open-sans': ['var(--font-open-sans)', 'sans-serif'],
         roboto: ['var(--font-roboto)', 'sans-serif'],
@@ -32,11 +71,11 @@ const config: Config = {
         urbanist: ['var(--font-urbanist)', 'sans-serif'],
       },
       fontSize: {
-        xs: '12px', // Extra small
-        sm: '14px', // Small
-        'size-base': '16px', // Base (default size)
-        lg: '18px', // Large
-        xl: '20px', // Extra large
+        xs: '12px',
+        sm: '14px',
+        'size-base': '16px',
+        lg: '18px',
+        xl: '20px',
         '2xl': '24px',
         '3xl': '30px',
         '4xl': '36px',
@@ -44,11 +83,16 @@ const config: Config = {
         special: '96px',
       },
       opacity: {
-        43: '0.43', // Add 43% opacity
+        '43': '0.43',
+      },
+      borderRadius: {
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)',
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-animate')],
 };
 
 export default config;

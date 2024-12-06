@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Introduction() {
   return (
-    <section id='introduction' data-section className='py-12 doc-content-text border-b-[1px]'>
+    <section id='introduction' data-section className='py-14 doc-content-text border-b-[1px]'>
       <h1 className='doc-content-title mb-8'>Introduction</h1>
       <p className='mb-6'>
         The Cleverley Lab partners with youth and caregivers to co-design research that will improve mental health service access, transitions, and continuity of care.{' '}

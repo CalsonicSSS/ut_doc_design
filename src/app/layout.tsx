@@ -33,7 +33,7 @@ const karla = Karla({
 });
 
 const urbanist = Urbanist({
-  weight: ['300', '400', '500', '100', '700', '900'], // Add all weights
+  weight: ['300', '400', '500', '600', '700', '900'], // Add all weights
   subsets: ['latin'],
   style: ['normal', 'italic'], // Add italic if needed
   display: 'swap',
