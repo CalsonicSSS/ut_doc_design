@@ -132,7 +132,7 @@ export default function DocumentationSidebar({ setIsMobileMenuOpen }: { setIsMob
           }
         });
       },
-      { threshold: 0.75 }
+      { threshold: [0.5] }
     );
 
     const sections = document.querySelectorAll('[data-section]');
