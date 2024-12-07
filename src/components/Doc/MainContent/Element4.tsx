@@ -111,10 +111,10 @@ export default function Element4() {
           title='NOTES FROM A NAVIGATOR'
           quote={
             <span>
-              Honestly I think it depends on… [the youth&apos;s service] catchment area. It's based on their postal code, and a lot of places may have better services, but they
-              don't accept someone with that postal code area, so you have to look at what's available within their region. <br /> <br /> And then just appropriateness [of
-              potential services]. What's their identity? What would they benefit from... what kind of counsellor is going to be the most beneficial for them, and finding those
-              appropriate resources for them is important.
+              Honestly I think it depends on… [the youth&apos;s service] catchment area. It&apos;s based on their postal code, and a lot of places may have better services, but
+              they don&apos;t accept someone with that postal code area, so you have to look at what&apos;s available within their region. <br /> <br /> And then just
+              appropriateness [of potential services]. What&apos;s their identity? What would they benefit from... what kind of counsellor is going to be the most beneficial for
+              them, and finding those appropriate resources for them is important.
               <br /> <br /> And then looking at wait times, this might be appropriate, but it&apos;s a one-and-a-half year wait, so what&apos;s something in the meantime that we
               can get you connected to, that is maybe a shorter wait, and then in the future you get connected to this resource.
             </span>
