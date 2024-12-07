@@ -16,7 +16,7 @@ export default function ResourcesBulletContent({ titleAndContents }: { titleAndC
         <LogOut size={15} strokeWidth={1} />
       </button>
       {titleAndContents.map((titleAndContent, index) => (
-        <div key={index} className={`doc-content-text flex items-start mb-${index !== titleAndContents.length - 1 && 3}`}>
+        <div key={index} className={`doc-content-text flex items-start mb-${index !== titleAndContents.length - 1 && 4}`}>
           <div className='text-[#FFB652] font-bold text-xs px-3 rounded-full bg-[#FFF8EE] mr-5'>{index + 1}</div>
           <div>
             <p className='lead-[32px] tracking-[0.14px]'>{titleAndContent.title}</p>

@@ -1,104 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { ChevronDown, ChevronRight } from 'lucide-react';
-import { findParentIds } from './utils';
-
-export interface NavItem {
-  id: string;
-  label: string;
-  subItems?: NavItem[];
-  parentId?: string; // Added to track parent relationship
-}
-
-export interface NavSection {
-  id: string;
-  sectionLabel: string;
-  sectionItems: NavItem[];
-}
-
-export const sideBarStructure: NavSection[] = [
-  {
-    id: 'getting-started',
-    sectionLabel: 'GETTING STARTED',
-    sectionItems: [
-      { id: 'introduction', label: 'Introduction' },
-      { id: 'acknowledgements', label: 'Acknowledgements' },
-      { id: 'suggested-citation', label: 'Suggested Citation' },
-      {
-        id: 'about-this-resource',
-        label: 'About this Resource',
-        subItems: [
-          {
-            id: 'purpose-of-this-resource',
-            label: 'Purpose of this Resource',
-            parentId: 'about-this-resource',
-          },
-          {
-            id: 'using-this-resource',
-            label: 'Using this Resource',
-            parentId: 'about-this-resource',
-          },
-          {
-            id: 'development-of-this-resource',
-            label: 'Development of this Resource',
-            parentId: 'about-this-resource',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 'main-content',
-    sectionLabel: 'Main Content',
-    sectionItems: [
-      {
-        id: 'e1',
-        label: 'Element 1 Organization Transition Policy',
-        subItems: [
-          {
-            id: 'e1.1',
-            label: '1.1 Integrated Youth Mental Health Transition...',
-            parentId: 'e1',
-          },
-          {
-            id: 'e1.2',
-            label: '1.2 Organization- specific transition policy',
-            parentId: 'e1',
-          },
-          {
-            id: 'e1.3',
-            label: '1.3 Create a developmentally appropriate ...',
-            parentId: 'e1',
-          },
-          {
-            id: 'e1.4',
-            label: '1.4 Ensure staff have appropriate knowledge',
-            parentId: 'e1',
-          },
-          {
-            id: 'e1.5',
-            label: '1.5 Determine responsibilities for each role',
-            parentId: 'e1',
-          },
-
-          {
-            id: 'e1.6',
-            label: '1.6 Partner with the youth during all stages',
-            parentId: 'e1',
-          },
-          {
-            id: 'e1.7',
-            label: '1.7 Evaluate the organization’s transition protocol',
-            parentId: 'e1',
-          },
-        ],
-      },
-    ],
-  },
-];
+import { findParentIds } from '../utils';
+import { NavItem, sideBarStructure } from './SideBarStructure';
 
 export default function DocumentationSidebar({ setIsMobileMenuOpen }: { setIsMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>> }) {
   const [activeParents, setActiveParents] = useState<string[]>([]);
-  const [expandedSections, setExpandedSections] = useState<string[]>(['getting-started']);
+  const [expandedSections, setExpandedSections] = useState<string[]>(['getting-started', 'main-content']);
   const toggleExpanded = (id: string) => {
     setExpandedSections((prevIds) => (prevIds.includes(id) ? prevIds.filter((i) => i !== id) : [...prevIds, id]));
   };

@@ -70,7 +70,7 @@ export default function Element1() {
           ]}
         />
         <Quote
-          mt={8}
+          mt={14}
           position='justify-center'
           author='Clinician'
           quote='[A transition policy] should be built centrally with input from family members/caregivers and shared with service providers to guide principles of transition care and to ensure standardizing of processes.
@@ -210,7 +210,7 @@ export default function Element1() {
           ]}
         />
         <Quote
-          mt={8}
+          mt={14}
           position='justify-end'
           author='Clinician'
           quote="Speaking from experience, a roadmap and game book as a parent would have been incredibly valuable... I needed to adjust and adapt as my daughter progressed through the recovery lifecycle of her condition. I also needed to learn new skills in order to effectively communicate, respond to 'crisis' situations and problem solve. It would have been valuable to learn this right from the start"

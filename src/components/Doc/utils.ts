@@ -1,4 +1,4 @@
-import { NavItem, NavSection } from './Sidebar';
+import { NavItem, NavSection } from './SideBar/Sidebar';
 
 export const findParentIds = (sections: NavSection[], targetId: string): string[] => {
   // Helper function to search through items
