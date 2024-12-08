@@ -39,7 +39,7 @@ export default function AboutThisResource() {
         <DotList contentList={['Example Programs', 'Interactive Trainings', 'Academic Publications', 'Example Guidelines or Policies', 'Measurement Tools']} ms={[0, 0, 0, 0, 0]} />
       </section>
 
-      <section id='development-of-this-resource' data-section className='py-10'>
+      <section id='development-of-this-resource' data-section className='pt-10'>
         <h1 className='doc-content-sub-title mb-8'>Development of this Resource</h1>
         <p className='mb-6'>This resource has been developed through extensive community collaborations, research partnerships, and literature review. </p>
         <p className='mb-6'>

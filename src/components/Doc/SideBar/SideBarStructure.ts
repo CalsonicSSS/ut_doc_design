@@ -205,4 +205,27 @@ export const sideBarStructure: NavSection[] = [
       },
     ],
   },
+  {
+    id: 'others',
+    sectionLabel: 'Others',
+    sectionItems: [
+      { id: 'resources-lists', label: 'Resources Lists' },
+      {
+        id: 'appendices',
+        label: 'Appendices',
+        subItems: [
+          {
+            id: 'glossary-of-terms',
+            label: 'Glossary of Terms',
+            parentId: 'appendices',
+          },
+          {
+            id: 'reference',
+            label: 'Reference',
+            parentId: 'appendices',
+          },
+        ],
+      },
+    ],
+  },
 ];

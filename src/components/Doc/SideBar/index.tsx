@@ -5,7 +5,7 @@ import { NavItem, sideBarStructure } from './SideBarStructure';
 
 export default function DocumentationSidebar({ setIsMobileMenuOpen }: { setIsMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>> }) {
   const [activeParents, setActiveParents] = useState<string[]>([]);
-  const [expandedSections, setExpandedSections] = useState<string[]>(['getting-started', 'main-content']);
+  const [expandedSections, setExpandedSections] = useState<string[]>(['getting-started', 'main-content', 'others']);
   const toggleExpanded = (id: string) => {
     setExpandedSections((prevIds) => (prevIds.includes(id) ? prevIds.filter((i) => i !== id) : [...prevIds, id]));
   };
