@@ -3,8 +3,8 @@ import GlossaryTermList from '../GlossaryTermList';
 
 export default function Appendices() {
   return (
-    <section id='resources-lists' data-section className='py-14 doc-content-text border-b-[1px]'>
-      <section id='glossary-of-terms' data-section className='pb-10 border-b-[1px]'>
+    <section id='appendices' data-section className='pb-14 doc-content-text border-b-[1px]'>
+      <section id='glossary-of-terms' data-section className='pt-14 pb-10 border-b-[1px]'>
         <h1 className='doc-content-title'>Glossary of Terms</h1>
         <h1 className='doc-content-sub-title mt-10 mb-8'>A</h1>
         <GlossaryTermList
