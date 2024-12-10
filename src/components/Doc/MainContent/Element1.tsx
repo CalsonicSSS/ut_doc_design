@@ -2,7 +2,7 @@ import React from 'react';
 import HighlightTextButton from '../HighlightTextButton';
 import DotList from '../DotList';
 import Quote from '../Quote';
-import ResourcesBulletContent from '../ResourcesBulletContent';
+import ResourcesBulletContent, { ResourcesContentLinks } from '../ResourcesBulletContent';
 
 export default function Element1() {
   return (
@@ -11,8 +11,8 @@ export default function Element1() {
       <section id='e1.1' data-section className='py-10 border-b-[1px]'>
         <h1 className='doc-content-sub-title mb-8'>1.1 Develop an integrated care pathway that describes the steps that make up the transition process.</h1>
         <div className='flex my-8'>
-          <HighlightTextButton>Integrated care pathway</HighlightTextButton>
-          <HighlightTextButton>Transition process</HighlightTextButton>
+          <HighlightTextButton clickToId={'resources-lists'}>Integrated care pathway</HighlightTextButton>
+          <HighlightTextButton clickToId={'resources-lists'}>Transition process</HighlightTextButton>
         </div>
         <p className='mb-6'>
           Integrated care pathways are an important aspect of ensuring <span className='font-bold'>continuity of care</span> for youth navigating a transition in their mental
@@ -28,14 +28,29 @@ export default function Element1() {
           care.
         </p>
 
-        <ResourcesBulletContent
-          titleAndContents={[
-            { title: 'To learn more about transition pathways:', contents: ["Nice, transitions from children's to adults 'services pathway"] },
+        <ResourcesContentLinks
+          resourceClickToId={'resources-lists'}
+          titleAndLinkContents={[
+            {
+              title: 'To learn more about transition pathways:',
+              contentAndLinks: [
+                {
+                  content: "Nice, transitions from children's to adults 'services pathway",
+                  link: 'https://www.nice.org.uk/guidance/health-and-social-care-delivery/service-transition',
+                },
+              ],
+            },
             {
               title: 'To learn more about integrated care pathways:',
-              contents: [
-                'Key attributes of integrated community-based youth service hubs for mental health: a scoping review',
-                'Knowledge Institute on Child and Youth Mental Health and Addictions Care Pathways',
+              contentAndLinks: [
+                {
+                  content: 'Key attributes of integrated community-based youth service hubs for mental health: a scoping review',
+                  link: 'https://ijmhs.biomedcentral.com/articles/10.1186/s13033-019-0306-7',
+                },
+                {
+                  content: 'Knowledge Institute on Child and Youth Mental Health and Addictions Care Pathways',
+                  link: 'https://www.cymha.ca/en/projects/care-pathways.aspx',
+                },
               ],
             },
           ]}
