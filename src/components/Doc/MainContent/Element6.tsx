@@ -11,7 +11,7 @@ export default function Element6() {
           6.1 The person most responsible for the transition, contacts the youth(and fafamily members/caregivers, if appropriate) 3 to 6 months aftfterlast child and adolescent
           mental health service visit, or sooner ifnecessary, to confirm transfer to adult mental health services.
         </h1>
-        <HighlightTextButton>Most responsible person</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-M'>Most responsible person</HighlightTextButton>
         <p className='mt-8 mb-6'>
           Long-term follow-up with youth and family members/caregivers to ensure a smooth and successful transfer to adult services has occurred is an important part of the care
           <span className='font-bold'>transition process</span> . This follow up point can also be an important evaluation metric for your program or institution, and can elucidate

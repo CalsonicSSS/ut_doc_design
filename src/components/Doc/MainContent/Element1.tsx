@@ -2,7 +2,7 @@ import React from 'react';
 import HighlightTextButton from '../HighlightTextButton';
 import DotList from '../DotList';
 import Quote from '../Quote';
-import ResourcesBulletContent, { ResourcesContentLinks } from '../ResourcesBulletContent';
+import { ResourcesContentLinks } from '../ResourcesBulletContent';
 
 export default function Element1() {
   return (
@@ -11,8 +11,8 @@ export default function Element1() {
       <section id='e1.1' data-section className='py-10 border-b-[1px]'>
         <h1 className='doc-content-sub-title mb-8'>1.1 Develop an integrated care pathway that describes the steps that make up the transition process.</h1>
         <div className='flex my-8'>
-          <HighlightTextButton clickToId={'resources-lists'}>Integrated care pathway</HighlightTextButton>
-          <HighlightTextButton clickToId={'resources-lists'}>Transition process</HighlightTextButton>
+          <HighlightTextButton clickToId={'gt-I'}>Integrated care pathway</HighlightTextButton>
+          <HighlightTextButton clickToId={'gt-T'}>Transition process</HighlightTextButton>
         </div>
         <p className='mb-6'>
           Integrated care pathways are an important aspect of ensuring <span className='font-bold'>continuity of care</span> for youth navigating a transition in their mental
@@ -30,25 +30,25 @@ export default function Element1() {
 
         <ResourcesContentLinks
           resourceClickToId={'resources-lists'}
-          titleAndLinkContents={[
+          titlesAndLinks={[
             {
               title: 'To learn more about transition pathways:',
-              contentAndLinks: [
+              links: [
                 {
-                  content: "Nice, transitions from children's to adults 'services pathway",
+                  linkText: "Nice, transitions from children's to adults 'services pathway",
                   link: 'https://www.nice.org.uk/guidance/health-and-social-care-delivery/service-transition',
                 },
               ],
             },
             {
               title: 'To learn more about integrated care pathways:',
-              contentAndLinks: [
+              links: [
                 {
-                  content: 'Key attributes of integrated community-based youth service hubs for mental health: a scoping review',
+                  linkText: 'Key attributes of integrated community-based youth service hubs for mental health: a scoping review',
                   link: 'https://ijmhs.biomedcentral.com/articles/10.1186/s13033-019-0306-7',
                 },
                 {
-                  content: 'Knowledge Institute on Child and Youth Mental Health and Addictions Care Pathways',
+                  linkText: 'Knowledge Institute on Child and Youth Mental Health and Addictions Care Pathways',
                   link: 'https://www.cymha.ca/en/projects/care-pathways.aspx',
                 },
               ],
@@ -61,7 +61,7 @@ export default function Element1() {
           1.2 Develop an organization-specific transition policy with youth (with input from family members/caregivers) that describes the organization&apos;s approach to mental
           health care transitions, and make it publicly available.
         </h1>
-        <HighlightTextButton>Family members/caregivers</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-F'>Family members/caregivers</HighlightTextButton>
         <p className='mt-8 mb-6'>
           An organization-specific transition policy serves to outline all major decisions and actions, and all activities that take place during the{' '}
           <span className='font-bold'>transition process </span> including roles and responsibilities of all individuals involved in the transition. A policy is set by the
@@ -75,12 +75,26 @@ export default function Element1() {
           accessing care, and gain additional knowledge or understanding about their condition and any interventions they may receive{' '}
           <span className='text-navy-0 underline'>(Lau, 2019).</span> This will also allow for informed, empowered decision making within care processes.
         </p>
-        <ResourcesBulletContent
-          titleAndContents={[
-            { title: 'For examples of transition policies', contents: ['GotTransition, Sample TRansition and Care Policies/Guides'] },
+        <ResourcesContentLinks
+          resourceClickToId={'resources-lists'}
+          titlesAndLinks={[
+            {
+              title: 'For examples of transition policies',
+              links: [
+                {
+                  linkText: 'GotTransition, Sample TRansition and Care Policies/Guides',
+                  link: 'https://www.gottransition.org/6ce/?leaving-ImplGuide-policy-examples',
+                },
+              ],
+            },
             {
               title: 'To learn more about integrated care pathways:',
-              contents: ['Alberta Health Services: Care Transitions Policy'],
+              links: [
+                {
+                  linkText: 'Alberta Health Services: Care Transitions Policy',
+                  link: 'https://www.gottransition.org/6ce/?leaving-ImplGuide-policy-examples',
+                },
+              ],
             },
           ]}
         />
@@ -98,8 +112,8 @@ export default function Element1() {
           mental health services, that outlines standards for communication and information sharing.
         </h1>
         <div className='flex my-8'>
-          <HighlightTextButton>Youth- centered protocol</HighlightTextButton>
-          <HighlightTextButton>Developmentally appropriate protocol</HighlightTextButton>
+          <HighlightTextButton clickToId='gt-Y'>Youth- centered protocol</HighlightTextButton>
+          <HighlightTextButton clickToId='gt-D'>Developmentally appropriate protocol</HighlightTextButton>
         </div>
         <p className='mb-6'>
           A <span className='font-bold'>transition protocol</span> is individualized to the needs of specific programs, intervention, or patients. It is a written plan that
@@ -116,12 +130,26 @@ export default function Element1() {
           outlining the expectations and roles of each partner. Protocols can also change and adapt over time to best reflect the needs, resources, and roles of all partners and
           the youth population they serve.
         </p>
-        <ResourcesBulletContent
-          titleAndContents={[
-            { title: 'Agreement protocols between child and adult agencies', contents: ['KFL&A, Youth Transitioning Protocol'] },
+        <ResourcesContentLinks
+          resourceClickToId={'resources-lists'}
+          titlesAndLinks={[
+            {
+              title: 'Agreement protocols between child and adult agencies',
+              links: [
+                {
+                  linkText: 'KFL&A, Youth Transitioning Protocol',
+                  link: '',
+                },
+              ],
+            },
             {
               title: 'Resource to support positive mental health servies',
-              contents: ['Youth Mental Health Transition Protocol Agreement between Ministry for', 'Children and Family Development and Ministry of Health and Health Authorities'],
+              links: [
+                {
+                  linkText: 'Youth Mental Health Transition Protocol Agreement between Ministry for Children and Family Development and Ministry of Health and Health Authorities',
+                  link: 'https://www2.gov.bc.ca/assets/gov/health/managing-your-health/mental-health-substance-use/child-teen-mental-health/y2a_protocol.pdf',
+                },
+              ],
             },
           ]}
         />
@@ -144,21 +172,43 @@ export default function Element1() {
           organization. may be considered. In cases where staff are less involved in the transition process, a regularly updated and centrally available list of transition
           resources may be beneficial. Regardless of the specific learning approach, all staff should regularly review the organizational policy.
         </p>
-        <ResourcesBulletContent
-          titleAndContents={[
+
+        <ResourcesContentLinks
+          resourceClickToId='resources-lists'
+          titlesAndLinks={[
             {
               title: 'Evidence based guidelines for interprofessional teams for effective transitions',
-              contents: ['Registered Nurses Association of Ontario (RNAO), Transitions in Care and Services Clinical Best Practice Guideline'],
+              links: [
+                {
+                  linkText: 'Registered Nurses Association of Ontario (RNAO), Transitions in Care and Services Clinical Best Practice Guideline',
+                  link: 'https://rnao.ca/bpg/guidelines/transitions-in-care',
+                },
+              ],
             },
             {
               title: 'Educational tools to foster skills for effective transitions',
-              contents: ['Florida Health and Transition Services', 'New York State Institute for Health Transition Training, Transition Skills Resources'],
+              links: [
+                {
+                  linkText: 'Florida Health and Transition Services',
+                  link: 'https://www.floridahats.org',
+                },
+                {
+                  linkText: 'New York State Institute for Health Transition Training, Transition Skills Resources',
+                  link: 'https://healthytransitionsny.org/skills/',
+                },
+              ],
             },
             {
               title: 'Resources to support professionals with preparing youth to complete an effective transition',
-              contents: [
-                'Florida Keys Area Health Education Center Inc., Health Care Transition Training Program, ',
-                'Florida Health and Transition Servrvices, Florida Youth 2 Adult Transition (FLY2AT) Course',
+              links: [
+                {
+                  linkText: 'Florida Keys Area Health Education Center Inc., Health Care Transition Training Program',
+                  link: 'https://pediatrics.med.jax.ufl.edu/jaxhats/docs/floridahats_hct4hcp_brochure1.pdf',
+                },
+                {
+                  linkText: 'Florida Health and Transition Services, Florida Youth 2 Adult Transition (FLY2AT) Course',
+                  link: 'https://www.floridahats.org/fly2at-course-for-professionals/',
+                },
               ],
             },
           ]}
@@ -205,25 +255,41 @@ export default function Element1() {
           ms={[0, 0, 0]}
         />
         <p className='my-8'>The above considerations may be written into the organizational policy discussed in component 1.2</p>
-        <ResourcesBulletContent
-          titleAndContents={[
+
+        <ResourcesContentLinks
+          resourceClickToId='resources-lists'
+          titlesAndLinks={[
             {
               title: 'Rating tool to assess caregivers  involvement and improve interactions with healthcare providers',
-              contents: ['The Family Caregiver Activation in Transitions Tool (FCAT)'],
+              links: [
+                {
+                  linkText: 'The Family Caregiver Activation in Transitions Tool (FCAT)',
+                  link: '',
+                },
+              ],
             },
             {
-              title: 'Roles and tasks for transition',
-              contents: ['Alberta Health Services, Enhancing Concurrent Capability Toolkit Transitions in Care Quick Reference Sheet'],
+              title: 'Roles and tasks for transition ',
+              links: [
+                {
+                  linkText: 'Alberta Health Services, Enhancing Concurrent Capability Toolkit Transitions in Care Quick Reference Sheet',
+                  link: 'https://www.albertahealthservices.ca/assets/info/amh/if-amh-ecc-what-are-the-roles-in-transitions-of-care.pdf',
+                },
+              ],
             },
             {
               title: 'Resource for transition support worker',
-              contents: [
-                'Facilitating Effective Transitions from Hospital to Community for Children and Adolescent Mental',
-                'Health Services: Overview of the Transition Support Worker Role and Function',
+              links: [
+                {
+                  linkText:
+                    'Facilitating Effective Transitions from Hospital to Community for Children and Adolescent Mental Health Services: Overview of the Transition Support Worker Role and Function',
+                  link: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6254258/',
+                },
               ],
             },
           ]}
         />
+
         <Quote
           mt={14}
           position='justify-end'
@@ -244,22 +310,37 @@ export default function Element1() {
           experiences leading up to or during the transition process. This can help to ensure the transition pathways and policies that are developed are more transparent,
           credible, and responsive.
         </p>
-        <ResourcesBulletContent
-          titleAndContents={[
+        <ResourcesContentLinks
+          resourceClickToId='resources-lists'
+          titlesAndLinks={[
             {
               title: 'To learn more about youth engagement best practices',
-              contents: ['Knowledge Institute, Youth Engagement Standards'],
+              links: [
+                {
+                  linkText: 'Knowledge Institute, Youth Engagement Standards',
+                  link: 'https://www.cymha.ca/Modules/ResourceHub/?id=64172b4d-af0d-432a-8d66-880ba2292486',
+                },
+              ],
             },
             {
               title: 'For tools to support the integration and evaluation of youth and family voice',
-              contents: ['The Public and Patient Engagement Evaluation Tool (PPEET) Participant Questionnaire', 'The Core Components of Effefective Youth Transitions (CCEYT)'],
+              links: [
+                {
+                  linkText: 'The Public and Patient Engagement Evaluation Tool (PPEET) Participant Questionnaire',
+                  link: '',
+                },
+                {
+                  linkText: 'The Core Components of Effective Youth Transitions (CCEYT)',
+                  link: '',
+                },
+              ],
             },
           ]}
         />
       </section>
       <section id='e1.7' data-section className='pt-10'>
         <h1 className='doc-content-sub-title mb-8'>{'1.7 Establish a plan to evaluate the organization’s transition protocol.'}</h1>
-        <HighlightTextButton>Transition protocol</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-T'>Transition protocol</HighlightTextButton>
         <p className='mb-6 mt-8'>
           It is important to identify key indicators for evaluation early in the process of implementing your organization&apos;s transition protocol (see workbook evaluation
           section for a discussion of different indicator types). This will allow you to understand how your transition protocol is impacting or improving transitions in your
@@ -276,15 +357,35 @@ export default function Element1() {
           methods will most accurately capture their satisfaction with or outcomes from your transition interventions. For example, your organization may have a patient advisory
           council whose expertise you can draw upon, or you may develop the opportunity to conduct focus groups with caregivers
         </p>
-        <ResourcesBulletContent
-          titleAndContents={[
+
+        <ResourcesContentLinks
+          resourceClickToId='resources-lists'
+          titlesAndLinks={[
             {
               title: 'For guidance to develop evaluation strategies',
-              contents: ['Health Quality Ontario Measurement Guide', 'NEAT study protocol'],
+              links: [
+                {
+                  linkText: 'Health Quality Ontario Measurement Guide',
+                  link: 'https://www.hqontario.ca/Portals/0/documents/evidence/quality-standards/measurement-guide-en.pdf',
+                },
+                {
+                  linkText: 'NEAT study protocol',
+                  link: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8245465/',
+                },
+              ],
             },
             {
               title: 'For example of evaluation measures',
-              contents: ['Core Components of Effective Youth Transitions (CCEYT)', 'Navigation Satisfaction Tool (NAVAVSAT)'],
+              links: [
+                {
+                  linkText: 'Core Components of Effective Youth Transitions (CCEYT)',
+                  link: '',
+                },
+                {
+                  linkText: 'Navigation Satisfaction Tool (NAVAVSAT)',
+                  link: '',
+                },
+              ],
             },
           ]}
         />

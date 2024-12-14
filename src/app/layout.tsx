@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Open_Sans, Roboto, Karla, Urbanist } from 'next/font/google';
+import ScrollHandler from '@/components/Doc/SrollHandler';
 
 // Import the next.js own fonts and setup font configuration
 // next/font module provides built-in performance and optimization features
@@ -61,7 +62,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       {/* this class "__variable_open_sans" and its variables can cascade down from where they're defined */}
       {/* Any child element can access variables defined on a parent (The body tag is the parent of all visible elements) */}
       {/* When these variables are on the body tag, they become available to all elements in your application. This is why Tailwind can then use them in its configuration: */}
-      <body className={`${karla.variable} ${openSans.variable} ${roboto.variable} ${urbanist.variable} antialiased`}>{children}</body>
+      <body className={`${karla.variable} ${openSans.variable} ${roboto.variable} ${urbanist.variable} antialiased`}>
+        <ScrollHandler />
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import HighlightTextButton from '../HighlightTextButton';
-import ResourcesBulletContent from '../ResourcesBulletContent';
+import { ResourcesContentLinks } from '../ResourcesBulletContent';
 import Quote from '../Quote';
 
 export default function Element2() {
@@ -11,8 +11,8 @@ export default function Element2() {
         <h1 className='doc-content-sub-title mb-8'>
           2.1 Establish organization-specific criteria and process for identifying youth who will be transitioning out of child and adolescent mental health services.
         </h1>
-        <HighlightTextButton>Integrated care pathway</HighlightTextButton>
-        <HighlightTextButton>Transition process</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-I'>Integrated care pathway</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-T'>Transition process</HighlightTextButton>
         <p className='mt-8 mb-6'>
           When preparing youth to transition out of child and adolescent mental <span className='font-bold'>health services</span> , there are several factors that need to be
           considered. For many organizations, this transition out of child mental health services is an age-dependent criteria, for example, when a child turns eighteen years old.
@@ -25,20 +25,31 @@ export default function Element2() {
           transition plan should also be established during the initiation of the transition process. See Component 3.3 formore information on developing{' '}
           <span className='font-bold'>a transition plan</span>
         </p>
-        <ResourcesBulletContent
-          titleAndContents={[
+        <ResourcesContentLinks
+          resourceClickToId='resources-lists'
+          titlesAndLinks={[
             {
               title: 'To learn more about holistic transitions and avoiding unforseen circumstances',
-              contents: ['Complex Care for Kids Ontario Youth Transition to Adult Care Toolkit- Caregiver and Youth Checklist & Transition Resource '],
+              links: [
+                {
+                  linkText: 'Complex Care for Kids Ontario Youth Transition to Adult Care Toolkit- Caregiver and Youth Checklist & Transition Resource ',
+                  link: 'https://www.pcmch.on.ca/wp-content/uploads/2022/05/CCKO-Youth-Transition-Caregiver_Youth-Checklist_-Final_Feb222022-Fillable.pdf',
+                },
+              ],
             },
             {
               title: 'To learn more about integrated care pathways:',
-              contents: [
-                'The Ministries of Community & Social Services and Children and Youth Services, Provincial Transition Planning Framework for Young People With Developmental Disabilities ',
+              links: [
+                {
+                  linkText:
+                    'The Ministries of Community & Social Services and Children and Youth Services, Provincial Transition Planning Framework for Young People With Developmental Disabilities',
+                  link: 'https://coordinatedaccess.ca/wp-content/uploads/2015/07/Transition-Planning-Framework-Final-English.pdf',
+                },
               ],
             },
           ]}
         />
+
         <Quote
           mt={14}
           position='justify-center'
@@ -63,15 +74,26 @@ export default function Element2() {
           Transition flow sheets or logbooks can be developed and managed on shared drives (i.e., OneDrive)and/or on electronic platforms (i.e., REDCap) so they can be easily
           accessed by transition navigators and/or the clinician most responsible for transitions.
         </p>
-        <ResourcesBulletContent
-          titleAndContents={[
+        <ResourcesContentLinks
+          resourceClickToId='resources-lists'
+          titlesAndLinks={[
             {
               title: 'For a database to track transition stages',
-              contents: ['NEAT Study Clinical Tracking Database'],
+              links: [
+                {
+                  linkText: 'NEAT Study Clinical Tracking Database',
+                  link: '',
+                },
+              ],
             },
             {
               title: 'For an overview of the transition process',
-              contents: ['GotTransition, Sample Individual Transition Flow Sheet'],
+              links: [
+                {
+                  linkText: 'GotTransition, Sample Individual Transition Flow Sheet',
+                  link: 'https://gottransition.org/6ce/?leaving-flow-sheet',
+                },
+              ],
             },
           ]}
         />

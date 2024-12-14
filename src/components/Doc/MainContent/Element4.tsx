@@ -1,7 +1,8 @@
 import React from 'react';
-import ResourcesBulletContent from '../ResourcesBulletContent';
+import { ResourcesContentLinks } from '../ResourcesBulletContent';
 import Quote from '../Quote';
 import HighlightTextButton from '../HighlightTextButton';
+import Link from 'next/link';
 
 export default function Element4() {
   return (
@@ -11,8 +12,8 @@ export default function Element4() {
         <h1 className='doc-content-sub-title mb-8'>
           {' 4.1 Identify the most responsible person to coordinate the transition process, act as the main contact, and ensure continuity in the youth’s care.'}
         </h1>
-        <HighlightTextButton>Most responsible person</HighlightTextButton>
-        <HighlightTextButton>Continuity of care</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-M'>Most responsible person</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-C'>Continuity of care</HighlightTextButton>
         <p className='mt-8 mb-6'>
           A designated &apos;most responsible clinician&apos; who is the primary contact person throughout the transition, ensures{' '}
           <span className='font-bold'>continuity of care</span> , and acts as the coordinator of the transition in care. This person may or may not be the same individual as the
@@ -29,14 +30,25 @@ export default function Element4() {
           and throughout the referral or access process to adult or other appropriate services. They may also provide psychoeducation and some short-term bridging therapeutic
           support while the youth is between services.
         </p>
-        <ResourcesBulletContent
-          titleAndContents={[
+        <ResourcesContentLinks
+          resourceClickToId='resources-lists'
+          titlesAndLinks={[
             {
               title: 'For more information about the transition navigator role, and examples of its implementation:',
-              contents: [
-                'Facilitating Effective Transitions from Hospital to Community for Children and Adolescent Mental Health Services: Overview of the Transition Support Worker Role and Function',
-                'The Sunnybrook Family Navigation  Project',
-                'Michael Garron Transitional Youth Program',
+              links: [
+                {
+                  linkText:
+                    'Facilitating Effective Transitions from Hospital to Community for Children and Adolescent Mental Health Services: Overview of the Transition Support Worker Role and Function',
+                  link: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6254258/',
+                },
+                {
+                  linkText: 'The Sunnybrook Family Navigation  Project',
+                  link: 'https://sunnybrook.ca/content/?page=family-navigation-project-what-we-do',
+                },
+                {
+                  linkText: 'Michael Garron Transitional Youth Program',
+                  link: 'https://www.tehn.ca/programs-services/mental-health-addiction/transitional-youth-program',
+                },
               ],
             },
           ]}
@@ -80,7 +92,7 @@ export default function Element4() {
           4.3 Collaborate with youth (and family members/caregivers, if invited by youth) to identify adult services that are an appropriate fit, and confirm the adult mental
           health service eligibility criteria.
         </h1>
-        <HighlightTextButton>Eligibility criteria</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-E'>Eligibility criteria</HighlightTextButton>
         <p className='mt-8 mb-6'>
           Work with the young person to identify adult services based on program alignment with clinical needs, what they prioritize the youth prioritizes for service needs, and
           what their treatment goals are. Engaging young people in the transition process can help ensure that their needs and preferences are considered, and can increase levels
@@ -100,11 +112,14 @@ export default function Element4() {
           can help expediate contact and confirmation of eligibility.
         </p>
         <div className='flex items-start mb-8'>
-          <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5'>1</p>
+          <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5 mt-1'>1</p>
           <div>
-            <p className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5]'>Niagara Region Adult and Youth Mental Health Services</p>
+            <Link className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block' href={''} target='_blank' rel='noopener noreferrer'>
+              Niagara Region Adult and Youth Mental Health Services
+            </Link>
           </div>
         </div>
+
         <Quote
           mt={14}
           position='justify-center'
@@ -125,7 +140,7 @@ export default function Element4() {
         <h1 className='doc-content-sub-title mb-8'>
           4.4 Identify the most responsible person to coordinate the transition process, act as the main contact, and ensure continuity in the youth&apos;s care.
         </h1>
-        <HighlightTextButton>Optimal timing of transfer</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-O'>Optimal timing of transfer</HighlightTextButton>
         <p className='mt-8 mb-6'>
           It is important to connect with youth well in advance to identify and prepare for a transfer in care. Optimal timing means the individuals clinical needs are taken into
           account, in particular if may be that transitioning to a specialized service (i.e. early intervention in psychosis service) at a time earlier or later than age 18.
@@ -174,8 +189,8 @@ export default function Element4() {
           4.6 At least 6-months prior to transfer of care child and adolescent mental health services clinician initiate transition planning with the adult mental health services
           provider, which may include joint working meetings or a period of parallel care; include youth (and their family members/caregivers, if appropriate) in meetings.
         </h1>
-        <HighlightTextButton>Parallel care</HighlightTextButton>
-        <HighlightTextButton>Joint working meetings</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-P'>Parallel care</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-J'>Joint working meetings</HighlightTextButton>
         <p className='mt-8 mb-6'>
           A period of joint or parallel care can ease the <span className='font-bold'>transition process</span> for service providers and the youth and their family members. The
           success of the individual&apos;s transition planning process may be dependent on the infrastructure created as part of the organizational policy on transitions. Well
@@ -202,7 +217,7 @@ export default function Element4() {
           4.7 With youth&apos;s consent, communicate processes with primary care provider (i.e. family physician, nurse practitioner, or pharmacist) to ensure they have consistent
           up-to-date medication and treatment information.
         </h1>
-        <HighlightTextButton>Primary care provider</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-P'>Primary care provider</HighlightTextButton>
         <p className='mt-8 mb-6'>
           Youth facing mental health challenges are often treated within a primary care setting. Active engagement of a primary care provider is closely linked to improved health
           outcomes as youth transition in adult mental health services <span className='text-navy-0'>(Toulany et al., 2022)</span>. This continued involvement in care contributes
@@ -211,12 +226,24 @@ export default function Element4() {
           management early to facilitate better communication and handover as well as identifying any missing information that is important to care.
         </p>
         <div className='flex items-start mb-8'>
-          <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5'>1</p>
+          <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5 mt-1'>1</p>
           <div>
-            <p className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5]'>
+            <Link
+              className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
+              href={'https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2740785'}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               Association of Primary Care Continuity With Outcomes Following Transition to Adult Care for Adolescents With Severe Mental Illness
-            </p>
-            <p className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5]'>CAMH Mental Health and Primary Care Policy Framework </p>
+            </Link>
+            <Link
+              href={'https://www.camh.ca/-/media/files/pdfs---public-policy-submissions/primarycarepolicyframework_march2016-pdf.pdf'}
+              className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              CAMH Mental Health and Primary Care Policy Framework{' '}
+            </Link>
           </div>
         </div>
         <Quote
@@ -231,10 +258,12 @@ export default function Element4() {
           4.8 Provide youth (and their family members/caregivers, if appropriate) with up-to-date contact information for developmentally appropriate self-care management
           resources, community supports, and community mental health resources.
         </h1>
-        <HighlightTextButton>Developmentally appropriate care</HighlightTextButton>
-        <HighlightTextButton>Self-management</HighlightTextButton>
-        <HighlightTextButton>Self-care</HighlightTextButton>
-        <HighlightTextButton>Community mental health/community supports</HighlightTextButton>
+        <div className='grid grid-cols-3 gap-4'>
+          <HighlightTextButton clickToId='gt-D'>Developmentally appropriate care</HighlightTextButton>
+          <HighlightTextButton clickToId='gt-S'>Self-management</HighlightTextButton>
+          <HighlightTextButton clickToId='gt-S'>Self-care</HighlightTextButton>
+          <HighlightTextButton clickToId='gt-C'>Community mental health/community supports</HighlightTextButton>
+        </div>
 
         <p className='mt-8 mb-6'>
           Ensure the young person (and <span className='font-bold'>family members/caregivers</span>, where appropriate) are aware of community mental health services around
@@ -251,17 +280,33 @@ export default function Element4() {
           will ensure they have resources available in the event that youth do not transition to adult mental health services, withdraw from adult mental health services, or only
           desire episodic contact with adult mental health services.
         </p>
-        <ResourcesBulletContent
-          titleAndContents={[
+        <ResourcesContentLinks
+          resourceClickToId='resources-lists'
+          titlesAndLinks={[
             {
               title:
                 'Integrated Youth Service networks across Canada aim to offer centralized access to equitable, youth and family centered, in-person and virtual, mental and physical health care and support for transition-aged youth and their families. They can typically be accessed on a walk-in or call-in basis and may be able to provide interim support to youth who are between services',
-              contents: [
-                '1.Youth Wellness Hubs Ontario',
-                '2.Foundry (British Columbia) ',
-                '3.Kickstand (Alberta)',
-                '4.Aire Ouverte (Quebec)',
-                '5.Access Open Minds (partnership with Esakoni First Nation, Nova Scotia)',
+              links: [
+                {
+                  linkText: '1.Youth Wellness Hubs Ontario ',
+                  link: 'https://youthhubs.ca/',
+                },
+                {
+                  linkText: '2.Foundry (British Columbia)',
+                  link: 'https://foundrybc.ca/',
+                },
+                {
+                  linkText: '3.Kickstand (Alberta)',
+                  link: 'https://www.quebec.ca/sante/trouver-une-ressource/aire-ouverte',
+                },
+                {
+                  linkText: '4.Aire Ouverte (Quebec)',
+                  link: 'https://www.quebec.ca/sante/trouver-une-ressource/aire-ouverte',
+                },
+                {
+                  linkText: '5.Access Open Minds (partnership with Esakoni First Nation, Nova Scotia)',
+                  link: 'https://accessopenminds.ca/our_site/eskasoni-first-nation-ns-2/',
+                },
               ],
             },
           ]}
@@ -281,21 +326,31 @@ export default function Element4() {
       </section>
       <section id='e4.9' data-section className='pt-10'>
         <h1 className='doc-content-sub-title mb-8'>4.9 If desired by youth, facilitate connections to peer support during the transition process.</h1>
-        <HighlightTextButton>Peer support</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-P'>Peer support</HighlightTextButton>
         <p className='mt-8 mb-6'>
           The transition experience can often be a point of fear or anxiety for youth due to the uncertainty of the process and not knowing what to expect. During this time, youth
           can benefit from connecting with a trained peer support worker who has the skills and shared lived experience to offer emotional support to the youth. Peer support
           workers can offer helpful coping strategies and conduct support meetings to assist youth with challenges they may be facing during their transition process.
         </p>
         <div className='flex items-start'>
-          <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5'>1</p>
+          <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5 mt-1'>1</p>
           <div>
-            <p className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5]'>
+            <Link
+              href={'https://peersupportcanada.ca/wp-content/uploads/2019/06/MHCC_Peer_Support_Guidelines_2016-ENG.pdf'}
+              className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               Mental Health Commission of Canada, Guidelines for the Practice and Training of Peer Support{' '}
-            </p>
-            <p className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5]'>
+            </Link>
+            <Link
+              href={'https://www.cymha.ca/en/projects/youth-peer-support.aspx'}
+              className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               Knowledge Institute on Child and Youth Mental Health and Addictions, Peer Support Introduction
-            </p>
+            </Link>
           </div>
         </div>
       </section>

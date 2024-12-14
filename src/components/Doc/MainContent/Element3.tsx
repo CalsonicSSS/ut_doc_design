@@ -1,7 +1,8 @@
 import React from 'react';
-import ResourcesBulletContent from '../ResourcesBulletContent';
+import { ResourcesContentLinks } from '../ResourcesBulletContent';
 import Quote from '../Quote';
 import HighlightTextButton from '../HighlightTextButton';
+import Link from 'next/link';
 
 export default function Element3() {
   return (
@@ -26,10 +27,22 @@ export default function Element3() {
         <div className='flex items-start mb-8'>
           <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5'>1</p>
           <div>
-            <p className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5]'>The Transition Readiness Assessment Questionnaire (TRAQ 6.0)</p>
-            <p className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5]'>
+            <Link
+              className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
+              href={'https://www.etsu.edu/com/pediatrics/traq/'}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              The Transition Readiness Assessment Questionnaire (TRAQ 6.0)
+            </Link>
+            <Link
+              className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
+              href={'https://onlinelibrary.wiley.com/doi/10.1111/cch.13035'}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
               Validation of the Transition Readiness Assessment Questionnaire (TRAQ) 5.0 for use among youth in mental health services
-            </p>
+            </Link>
           </div>
         </div>
         <Quote
@@ -43,7 +56,7 @@ export default function Element3() {
         <h1 className='doc-content-sub-title mb-8'>
           3.2 Provide youth (and their family members/caregivers, if appropriate) information about what to expect from adult mental health services.
         </h1>
-        <HighlightTextButton>Family members/caregivers</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-F'>Family members/caregivers</HighlightTextButton>
         <p className='mt-8 mb-6'>
           Youth transitioning from child to adult mental health services are in a crucial period of life where they are experiencing many developmental milestones as well as new
           life experiences <span className='text-navy-0'>(Borah et al., 2021)</span> . The combination of these changes may further complicate healthcare transitions.
@@ -65,11 +78,21 @@ export default function Element3() {
           planning process and ensuring information about the process be clearly communicated as a priority of transitions in care{' '}
           <span className='text-navy-0'>(Cleverley et al, 2020)</span>
         </p>
-        <ResourcesBulletContent
-          titleAndContents={[
+        <ResourcesContentLinks
+          resourceClickToId='resources-lists'
+          titlesAndLinks={[
             {
               title: 'For more information on adult mental health systems',
-              contents: ['CMHA, Transitioning from Youth to Adult Mental Health Services', 'EMPOWER'],
+              links: [
+                {
+                  linkText: 'CMHA, Transitioning from Youth to Adult Mental Health Services',
+                  link: 'https://ontario.cmha.ca/documents/transitioning-from-youth-to-adult-mental-health-services/',
+                },
+                {
+                  linkText: 'EMPOWER',
+                  link: 'https://empower.ca/en/static/ontario-mental-health-navigation-tool',
+                },
+              ],
             },
           ]}
         />
@@ -79,7 +102,7 @@ export default function Element3() {
           3.3 Develop individualized transition plan in collaboration with youth (and their family members/caregivers, if appropriate) a minimum of 6-months before planned
           transition, or as early as possible.{' '}
         </h1>
-        <HighlightTextButton>Transition plan</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-T'>Transition plan</HighlightTextButton>
         <p className='mt-8 mb-6'>
           The transition plan, which is a living document that outlines the plan of care throughout the <span className='font-bold'>transition process</span> , should be co-created
           with youth and their identified care team. This document includes goals for transition and planned interventions which will be informed by ongoing transition{' '}
@@ -90,15 +113,26 @@ export default function Element3() {
           team member responsible for each task should be clearly identified in this document and the plan should be shared with the full care team. This document should be sent to
           the receiving clinical team along with all the other relevant care documentation at the time of care transfer.
         </p>
-        <ResourcesBulletContent
-          titleAndContents={[
+        <ResourcesContentLinks
+          resourceClickToId='resources-lists'
+          titlesAndLinks={[
             {
               title: 'To learn more about transition template:',
-              contents: ['Got Transition, Transition Care Plan Template'],
+              links: [
+                {
+                  linkText: 'Got Transition, Transition Care Plan Template',
+                  link: 'https://www.gottransition.org/6ce/?leaving-plan-care',
+                },
+              ],
             },
             {
               title: 'To learn more about service transition plan:',
-              contents: ['Mindyourmind, Service Transition Plan'],
+              links: [
+                {
+                  linkText: 'Mindyourmind, Service Transition Plan',
+                  link: 'https://mindyourmind.ca/games-tools/personal-growth/service-transition-plan/',
+                },
+              ],
             },
           ]}
         />

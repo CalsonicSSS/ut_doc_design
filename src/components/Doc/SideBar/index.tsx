@@ -1,6 +1,8 @@
+'use client';
+
 import React, { useEffect, useState } from 'react';
 import { ChevronDown, ChevronRight } from 'lucide-react';
-import { findParentIds } from '../utils';
+import { findParentIds, ScrollManager } from '../utils';
 import { NavItem, sideBarStructure } from './SideBarStructure';
 
 export default function DocumentationSidebar({ setIsMobileMenuOpen }: { setIsMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>> }) {
@@ -82,11 +84,9 @@ export default function DocumentationSidebar({ setIsMobileMenuOpen }: { setIsMob
   const handleNavItemClick = (item: NavItem) => {
     setActiveNavItem(item.id);
 
-    // Find and set all parent IDs
     const parents = findParentIds(sideBarStructure, item.id);
     if (parents.length > 0) {
       setActiveParents(parents);
-      // Ensure all parent sections are expanded
       setExpandedSections((prev) => {
         const newExpanded = [...prev];
         parents.forEach((parentId) => {
@@ -102,11 +102,7 @@ export default function DocumentationSidebar({ setIsMobileMenuOpen }: { setIsMob
 
     if (!item.subItems) {
       setIsMobileMenuOpen(false);
-      // Smooth scroll to the section
-      const element = document.getElementById(item.id);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+      ScrollManager.scrollToElement(item.id);
     }
   };
 
