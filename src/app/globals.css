@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+/* When you define classes under @layer components, you're creating reusable class names that compile to the specified Tailwind utilities. */
+/* Reducing repetition of styles through a component classname +  Making your component JSX cleaner and more readable with component styles */
+/* you have to use @apply to compose / integrate Tailwind utility classes into your custom class names, otherwise you have to use raw css */
+/* @layer tells Tailwind WHERE to inject your custom styles in its CSS cascade under TAILWIND SYSTEM */
+/* There are three layer levels: base, components, and utilities: The order of specificity is: base → components → utilities */
+/* This means utilities will always override component classes! (This ordering is intentional in Tailwind's design) */
 @layer components {
   .nav-item {
     @apply text-nav-item text-size-base;
@@ -24,7 +30,7 @@
   }
 
   .button-outline {
-    @apply border-2 border-navy-1 rounded-3xl text-navy-1 px-8 py-2 hover:bg-navy-1/10 font-roboto font-semibold text-xl tracking-[0.5px];
+    @apply flex items-center border-2 border-navy-1 rounded-3xl text-navy-1 px-8 py-2 hover:bg-navy-1/10 font-roboto font-semibold text-xl tracking-[0.5px];
   }
 
   .doc-sidebar-nav-section {

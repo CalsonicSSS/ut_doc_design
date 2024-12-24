@@ -47,9 +47,8 @@ export default function AboutThisResource() {
           clinicians, youth, and family members and caregivers from across Canada.
         </p>
         <p className='mb-6'>
-          Quotes and “Notes from a Navigator” in this guidebook are sourced from research studies conducted by our research team, including a{' '}
-          <span className='underline'>pan-Canadian Delphi study that developed core components</span> and{' '}
-          <span className='underline'>the Navigator Evaluation Advancing Transitions (NEAT) Study.</span>
+          Quotes and “Notes from a Navigator” in this guidebook are sourced from research studies conducted by our research team, including a pan-Canadian Delphi study that
+          developed core components and the Navigator Evaluation Advancing Transitions (NEAT) Study.
         </p>
         <p className='font-bold'>All “Notes from a Navigator” quotes are attributed to a manuscript in preparation and should not be copied/reproduced:</p>
         <DotList

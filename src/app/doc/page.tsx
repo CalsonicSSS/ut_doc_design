@@ -15,6 +15,7 @@ import Element5 from '@/components/Doc/MainContent/Element5';
 import Element6 from '@/components/Doc/MainContent/Element6';
 import ResourcesLists from '@/components/Doc/others/ResourcesLists';
 import Appendices from '@/components/Doc/others/Appendices';
+import Link from 'next/link';
 
 export default function DocumentationPage() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -28,7 +29,13 @@ export default function DocumentationPage() {
       {/* the placement of this sheet does not matter as it is the overlay, it will not change the current structure*/}
       {/* both open and onOpenChange are needed here. The onOpenChange enables close sheet (by X or area outside the sheet)*/}
       <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
-        <SheetContent side={'left'}>
+        <SheetContent side={'left'} className=' overflow-y-auto'>
+          <div className='mb-6'>
+            <Link className='doc-sidebar-nav-section text-lg ms-10' href={'/'}>
+              Home
+            </Link>
+          </div>
+
           <SideBar setIsMobileMenuOpen={setIsMobileMenuOpen} />
         </SheetContent>
       </Sheet>
@@ -45,6 +52,13 @@ export default function DocumentationPage() {
     overflow-y-auto
         ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}  `}
       >
+        <div className='mb-6'>
+          {' '}
+          <Link className='doc-sidebar-nav-section text-lg lg:ms-24' href={'/'}>
+            Home
+          </Link>
+        </div>
+
         <SideBar setIsMobileMenuOpen={setIsMobileMenuOpen} />
       </div>
 

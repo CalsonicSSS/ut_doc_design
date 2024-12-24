@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { ReactNode } from 'react';
 
 export default function ChooseContent(): ReactNode {
@@ -7,36 +8,42 @@ export default function ChooseContent(): ReactNode {
       title: 'Organizational Transition Policy',
       description: 'Develop a transition policy and provide staff training on facilitating transitions.',
       width: '224px',
+      href: '/doc#e1',
     },
     {
       number: '02',
       title: 'Transition tracking and monitoring',
       description: 'Establish a protocol for tracking and monitoring transition steps.',
       width: '224px',
+      href: '/doc#e2',
     },
     {
       number: '03',
       title: 'Transition readiness',
       description: "Identify youth's transition-related needs and goals then co-create a transition plan with youth.",
       width: '250px',
+      href: '/doc#e3',
     },
     {
       number: '04',
       title: 'Transition planning',
       description: 'Implement the transition plan, including identifying and collaborating with the adult MH services.',
       width: '230px',
+      href: '/doc#e4',
     },
     {
       number: '05',
       title: 'Transfer of care',
       description: 'Prepare a transfer package and hold a transfer meeting between child and adult MH services.',
       width: '230px',
+      href: '/doc#e5',
     },
     {
       number: '06',
       title: 'Transfer completion',
       description: 'Follow up with youth post-transition to ensure they have connected with adult services.',
       width: '230px',
+      href: '/doc#e6',
     },
   ];
 
@@ -57,13 +64,13 @@ export default function ChooseContent(): ReactNode {
           {/* Grid container for all items */}
           <div className='grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-x-8 lg:gap-x-32'>
             {contentItems.map((item, index) => (
-              <button key={index} className='flex items-center group'>
+              <Link href={item.href} key={index} className='flex items-center group'>
                 <p className='text-[#C9CBC7] text-4xl sm:text-6xl lg:text-special font-bold mr-3 sm:mr-5 group-hover:text-[#43CDC1] leading-none mt-1'>{item.number}</p>
                 <div>
                   <p className='font-bold text-sm text-[#454545] mb-2 text-start'>{item.title}</p>
                   <p className='text-xs text-[#454545] font-light text-start w-full sm:w-[224px] lg:w-[230px]'>{item.description}</p>
                 </div>
-              </button>
+              </Link>
             ))}
           </div>
         </div>

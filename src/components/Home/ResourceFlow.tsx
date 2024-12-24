@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React, { ReactNode } from 'react';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 export default function ResourceFlow(): ReactNode {
   return (
@@ -52,10 +53,10 @@ export default function ResourceFlow(): ReactNode {
 
           {/* Button container */}
           <div className='w-full flex justify-center lg:justify-start'>
-            <button className='button-fill pr-4 mt-14 w-full sm:w-auto'>
+            <Link href='/doc#resources-lists' className='button-fill pr-4 mt-14 w-full sm:w-auto'>
               Resource lists
               <ArrowRight size={20} className='ms-3' />
-            </button>
+            </Link>
           </div>
         </div>
 

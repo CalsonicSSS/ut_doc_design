@@ -13,7 +13,7 @@ export default function Element6() {
         </h1>
         <HighlightTextButton clickToId='gt-M'>Most responsible person</HighlightTextButton>
         <p className='mt-8 mb-6'>
-          Long-term follow-up with youth and family members/caregivers to ensure a smooth and successful transfer to adult services has occurred is an important part of the care
+          Long-term follow-up with youth and family members/caregivers to ensure a smooth and successful transfer to adult services has occurred is an important part of the care{' '}
           <span className='font-bold'>transition process</span> . This follow up point can also be an important evaluation metric for your program or institution, and can elucidate
           processes that might require change. It is important to implement accessible, youth-friendly follow-up methods which young people would be more likely to engage with
           (i.e., texting)

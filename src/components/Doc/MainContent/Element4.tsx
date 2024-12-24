@@ -3,6 +3,8 @@ import { ResourcesContentLinks } from '../ResourcesBulletContent';
 import Quote from '../Quote';
 import HighlightTextButton from '../HighlightTextButton';
 import Link from 'next/link';
+import { ScrollManager } from '../utils';
+import { LogOut } from 'lucide-react';
 
 export default function Element4() {
   return (
@@ -24,11 +26,11 @@ export default function Element4() {
         </p>
         <p className='mb-8'>
           A transition navigator is a registered health professional who has expertise in transition coordination and case management who provides short term support (often 1-6
-          months) during the transition period <span className='text-navy-0'>(Cleverley et al., 2018)</span> . They work with youth (family member/caregivers, if appropriate) and
-          members of the clinical team to identify needs post-discharge as well as goals for transfer of care. They have a strong understanding of community programs and resources
-          and are able to work with youth to identify and connect with appropriate services, and continue to provide support and are a point of contact for the youth post-discharge
-          and throughout the referral or access process to adult or other appropriate services. They may also provide psychoeducation and some short-term bridging therapeutic
-          support while the youth is between services.
+          months) during the transition period (Cleverley et al., 2018). They work with youth (family member/caregivers, if appropriate) and members of the clinical team to
+          identify needs post-discharge as well as goals for transfer of care. They have a strong understanding of community programs and resources and are able to work with youth
+          to identify and connect with appropriate services, and continue to provide support and are a point of contact for the youth post-discharge and throughout the referral or
+          access process to adult or other appropriate services. They may also provide psychoeducation and some short-term bridging therapeutic support while the youth is between
+          services.
         </p>
         <ResourcesContentLinks
           resourceClickToId='resources-lists'
@@ -111,12 +113,18 @@ export default function Element4() {
           It is important to confirm the youth&apos;s eligibility with the agency before completing the transition process, often having a pre-existing relationship with the agency
           can help expediate contact and confirmation of eligibility.
         </p>
-        <div className='flex items-start mb-8'>
-          <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5 mt-1'>1</p>
-          <div>
-            <Link className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block' href={''} target='_blank' rel='noopener noreferrer'>
-              Niagara Region Adult and Youth Mental Health Services
-            </Link>
+        <div className='mb-8'>
+          <button onClick={() => ScrollManager.scrollToElement('resources-lists')} className='flex items-center mb-4'>
+            <p className='font-bold text-[18px] leading-[32px] mr-2'>Resources</p>
+            <LogOut size={15} strokeWidth={1} />
+          </button>
+          <div className='flex items-start'>
+            <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5 mt-1'>1</p>
+            <div>
+              <Link className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block' href={''} target='_blank' rel='noopener noreferrer'>
+                Niagara Region Adult and Youth Mental Health Services
+              </Link>
+            </div>
           </div>
         </div>
 
@@ -225,25 +233,31 @@ export default function Element4() {
           management with the goal of achieving quality health care <span className='text-navy-0'>(CPSO, 2021)</span> . This can involve including all care providers in care
           management early to facilitate better communication and handover as well as identifying any missing information that is important to care.
         </p>
-        <div className='flex items-start mb-8'>
-          <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5 mt-1'>1</p>
-          <div>
-            <Link
-              className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
-              href={'https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2740785'}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Association of Primary Care Continuity With Outcomes Following Transition to Adult Care for Adolescents With Severe Mental Illness
-            </Link>
-            <Link
-              href={'https://www.camh.ca/-/media/files/pdfs---public-policy-submissions/primarycarepolicyframework_march2016-pdf.pdf'}
-              className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              CAMH Mental Health and Primary Care Policy Framework{' '}
-            </Link>
+        <div className='mb-8'>
+          <button onClick={() => ScrollManager.scrollToElement('resources-lists')} className='flex items-center mb-4'>
+            <p className='font-bold text-[18px] leading-[32px] mr-2'>Resources</p>
+            <LogOut size={15} strokeWidth={1} />
+          </button>
+          <div className='flex items-start'>
+            <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5 mt-1'>1</p>
+            <div>
+              <Link
+                className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
+                href={'https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2740785'}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Association of Primary Care Continuity With Outcomes Following Transition to Adult Care for Adolescents With Severe Mental Illness
+              </Link>
+              <Link
+                href={'https://www.camh.ca/-/media/files/pdfs---public-policy-submissions/primarycarepolicyframework_march2016-pdf.pdf'}
+                className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                CAMH Mental Health and Primary Care Policy Framework{' '}
+              </Link>
+            </div>
           </div>
         </div>
         <Quote
@@ -332,25 +346,31 @@ export default function Element4() {
           can benefit from connecting with a trained peer support worker who has the skills and shared lived experience to offer emotional support to the youth. Peer support
           workers can offer helpful coping strategies and conduct support meetings to assist youth with challenges they may be facing during their transition process.
         </p>
-        <div className='flex items-start'>
-          <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5 mt-1'>1</p>
-          <div>
-            <Link
-              href={'https://peersupportcanada.ca/wp-content/uploads/2019/06/MHCC_Peer_Support_Guidelines_2016-ENG.pdf'}
-              className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Mental Health Commission of Canada, Guidelines for the Practice and Training of Peer Support{' '}
-            </Link>
-            <Link
-              href={'https://www.cymha.ca/en/projects/youth-peer-support.aspx'}
-              className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Knowledge Institute on Child and Youth Mental Health and Addictions, Peer Support Introduction
-            </Link>
+        <div>
+          <button onClick={() => ScrollManager.scrollToElement('resources-lists')} className='flex items-center mb-4'>
+            <p className='font-bold text-[18px] leading-[32px] mr-2'>Resources</p>
+            <LogOut size={15} strokeWidth={1} />
+          </button>
+          <div className='flex items-start'>
+            <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5 mt-1'>1</p>
+            <div>
+              <Link
+                href={'https://peersupportcanada.ca/wp-content/uploads/2019/06/MHCC_Peer_Support_Guidelines_2016-ENG.pdf'}
+                className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Mental Health Commission of Canada, Guidelines for the Practice and Training of Peer Support{' '}
+              </Link>
+              <Link
+                href={'https://www.cymha.ca/en/projects/youth-peer-support.aspx'}
+                className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Knowledge Institute on Child and Youth Mental Health and Addictions, Peer Support Introduction
+              </Link>
+            </div>
           </div>
         </div>
       </section>

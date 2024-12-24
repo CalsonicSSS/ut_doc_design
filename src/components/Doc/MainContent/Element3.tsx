@@ -3,6 +3,8 @@ import { ResourcesContentLinks } from '../ResourcesBulletContent';
 import Quote from '../Quote';
 import HighlightTextButton from '../HighlightTextButton';
 import Link from 'next/link';
+import { LogOut } from 'lucide-react';
+import { ScrollManager } from '../utils';
 
 export default function Element3() {
   return (
@@ -24,25 +26,32 @@ export default function Element3() {
           services. Regular transition readiness re-assessment (i.e. every 6 months, or every third appointment) can help to assess progress in different areas of need and to work
           with youth to identify their evolving transition and care goals throughout the process.
         </p>
-        <div className='flex items-start mb-8'>
-          <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5'>1</p>
-          <div>
-            <Link
-              className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
-              href={'https://www.etsu.edu/com/pediatrics/traq/'}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              The Transition Readiness Assessment Questionnaire (TRAQ 6.0)
-            </Link>
-            <Link
-              className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
-              href={'https://onlinelibrary.wiley.com/doi/10.1111/cch.13035'}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Validation of the Transition Readiness Assessment Questionnaire (TRAQ) 5.0 for use among youth in mental health services
-            </Link>
+        <div className='mb-8'>
+          <button onClick={() => ScrollManager.scrollToElement('resources-lists')} className='flex items-center mb-4'>
+            <p className='font-bold text-[18px] leading-[32px] mr-2'>Resources</p>
+            <LogOut size={15} strokeWidth={1} />
+          </button>
+          <div className='flex items-start '>
+            {' '}
+            <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5'>1</p>
+            <div>
+              <Link
+                className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
+                href={'https://www.etsu.edu/com/pediatrics/traq/'}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                The Transition Readiness Assessment Questionnaire (TRAQ 6.0)
+              </Link>
+              <Link
+                className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
+                href={'https://onlinelibrary.wiley.com/doi/10.1111/cch.13035'}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Validation of the Transition Readiness Assessment Questionnaire (TRAQ) 5.0 for use among youth in mental health services
+              </Link>
+            </div>
           </div>
         </div>
         <Quote

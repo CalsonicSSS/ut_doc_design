@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 export default function SuggestedCitation() {
@@ -9,6 +10,10 @@ export default function SuggestedCitation() {
       </p>
       <p>For more information, please contact: </p>
       <p>Dr. Kristin Cleverley </p>
+      <div className='flex'>
+        <Image src='/email.svg' alt='email' height={15} width={15} priority />
+        <p className='text-[#00B6EF] ms-3'>k.cleverley@utoronto.ca</p>
+      </div>
     </section>
   );
 }

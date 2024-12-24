@@ -13,12 +13,12 @@ const Hero = () => {
             <h1 className='main-title'>Core Components Guidebook</h1>
           </div>
           <p className='font-roboto text-base lg:text-lg mb-8 lg:mb-[56px] text-base-1'>Supporting youth mental health transitions in care</p>
-          <div className='flex flex-col sm:flex-row gap-4 justify-center lg:justify-start'>
+          <div className='flex flex-col sm:flex-row gap-6 justify-center lg:justify-start'>
             {/* Replace button with Link component */}
-            <Link href='/doc' className='button-fill w-full sm:w-auto'>
+            <Link href='/doc#about-this-resource' className='button-fill sm:w-auto'>
               Go to Doc
             </Link>
-            <button className='button-outline w-full sm:w-auto'>PDF Preview</button>
+            <button className='button-outline sm:w-auto'>PDF Preview</button>
           </div>
         </div>
         <div className='mt-10 xl:m-0'>
