@@ -5,17 +5,21 @@ import HighlightTextButton from '../HighlightTextButton';
 import Link from 'next/link';
 import { ScrollManager } from '../utils';
 import { LogOut } from 'lucide-react';
+import Reference from '@/components/Reference';
 
 export default function Element4() {
   return (
-    <section id='e4' data-section className='py-14 doc-content-text border-b-[1px]'>
+    <section id='e4' data-section className='py-14 doc-content-text border-b-[1px] lg:px-0 px-5'>
       <h1 className='doc-content-title'>Element 4 Transition Planning</h1>
       <section id='e4.1' data-section className='py-10 border-b-[1px]'>
         <h1 className='doc-content-sub-title mb-8'>
           {' 4.1 Identify the most responsible person to coordinate the transition process, act as the main contact, and ensure continuity in the youth’s care.'}
         </h1>
-        <HighlightTextButton clickToId='gt-M'>Most responsible person</HighlightTextButton>
-        <HighlightTextButton clickToId='gt-C'>Continuity of care</HighlightTextButton>
+        <div className='flex'>
+          <HighlightTextButton title='Most responsible person' desc='' clickToId='gt-M' />
+          <HighlightTextButton clickToId='gt-C' title='Continuity of care' desc='' />
+        </div>
+
         <p className='mt-8 mb-6'>
           A designated &apos;most responsible clinician&apos; who is the primary contact person throughout the transition, ensures{' '}
           <span className='font-bold'>continuity of care</span> , and acts as the coordinator of the transition in care. This person may or may not be the same individual as the
@@ -26,11 +30,11 @@ export default function Element4() {
         </p>
         <p className='mb-8'>
           A transition navigator is a registered health professional who has expertise in transition coordination and case management who provides short term support (often 1-6
-          months) during the transition period (Cleverley et al., 2018). They work with youth (family member/caregivers, if appropriate) and members of the clinical team to
-          identify needs post-discharge as well as goals for transfer of care. They have a strong understanding of community programs and resources and are able to work with youth
-          to identify and connect with appropriate services, and continue to provide support and are a point of contact for the youth post-discharge and throughout the referral or
-          access process to adult or other appropriate services. They may also provide psychoeducation and some short-term bridging therapeutic support while the youth is between
-          services.
+          months) during the transition period <Reference refName='(Cleverley et al., 2018)' clickToId='ref-Cleverley' />. They work with youth (family member/caregivers, if
+          appropriate) and members of the clinical team to identify needs post-discharge as well as goals for transfer of care. They have a strong understanding of community
+          programs and resources and are able to work with youth to identify and connect with appropriate services, and continue to provide support and are a point of contact for
+          the youth post-discharge and throughout the referral or access process to adult or other appropriate services. They may also provide psychoeducation and some short-term
+          bridging therapeutic support while the youth is between services.
         </p>
         <ResourcesContentLinks
           resourceClickToId='resources-lists'
@@ -56,8 +60,6 @@ export default function Element4() {
           ]}
         />
         <Quote
-          mt={14}
-          position='justify-center'
           title='NOTES FROM A NAVIGATOR'
           quote='I think the transition role is so crucial to the work that we do here. And collectively, as a multidisciplinary team, it is very essential to making sure that youth are connected after, after they leave '
         />
@@ -83,8 +85,6 @@ export default function Element4() {
           <span className='font-bold'>transition plan</span> document resources in Component 3.3.
         </p>
         <Quote
-          mt={14}
-          position='justify-center'
           title='NOTES FROM A NAVIGATOR'
           quote='[This] would be collaborative process, and the transition plan would be created with the young person, with their families and with the Multi-Disciplinary team, so we all know what to expect upon discharge.'
         />
@@ -94,11 +94,11 @@ export default function Element4() {
           4.3 Collaborate with youth (and family members/caregivers, if invited by youth) to identify adult services that are an appropriate fit, and confirm the adult mental
           health service eligibility criteria.
         </h1>
-        <HighlightTextButton clickToId='gt-E'>Eligibility criteria</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-E' title='Eligibility criteria' desc='' />
         <p className='mt-8 mb-6'>
           Work with the young person to identify adult services based on program alignment with clinical needs, what they prioritize the youth prioritizes for service needs, and
           what their treatment goals are. Engaging young people in the transition process can help ensure that their needs and preferences are considered, and can increase levels
-          of trust between providers and youth <span className='text-navy-0'>(O&apos;Hara et al., 2020)</span>.
+          of trust between providers and youth <Reference refName="(O'Hara et al., 2020)" clickToId='ref-Hara' />.
         </p>
         <p className='mb-6'>
           <span className='font-bold'>Transition navigator partners have shared some key elements to identifying adult services: </span>
@@ -129,8 +129,6 @@ export default function Element4() {
         </div>
 
         <Quote
-          mt={14}
-          position='justify-center'
           title='NOTES FROM A NAVIGATOR'
           quote={
             <span>
@@ -148,7 +146,7 @@ export default function Element4() {
         <h1 className='doc-content-sub-title mb-8'>
           4.4 Identify the most responsible person to coordinate the transition process, act as the main contact, and ensure continuity in the youth&apos;s care.
         </h1>
-        <HighlightTextButton clickToId='gt-O'>Optimal timing of transfer</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-O' title='Optimal timing of transfer' desc='' />
         <p className='mt-8 mb-6'>
           It is important to connect with youth well in advance to identify and prepare for a transfer in care. Optimal timing means the individuals clinical needs are taken into
           account, in particular if may be that transitioning to a specialized service (i.e. early intervention in psychosis service) at a time earlier or later than age 18.
@@ -186,9 +184,7 @@ export default function Element4() {
           transitions without access to resources, a crisis plan can be helpful to determine where they can access services
         </p>
         <Quote
-          mt={14}
           author='Youth'
-          position='justify-center'
           quote="But I actually found that [the navigation program] was really helpful in making sure that I felt comfortable in being able to speak to other care - regarding my other teams…And then when it came to discussing my treatments elsewhere regarding my mental health, it was helpful to have them kinda give me the understanding of how care looks like when you're no longer a child, because the care you receive in peds is very different from the care you're going to receive throughout [adulthood]. "
         />
       </section>
@@ -197,8 +193,11 @@ export default function Element4() {
           4.6 At least 6-months prior to transfer of care child and adolescent mental health services clinician initiate transition planning with the adult mental health services
           provider, which may include joint working meetings or a period of parallel care; include youth (and their family members/caregivers, if appropriate) in meetings.
         </h1>
-        <HighlightTextButton clickToId='gt-P'>Parallel care</HighlightTextButton>
-        <HighlightTextButton clickToId='gt-J'>Joint working meetings</HighlightTextButton>
+        <div className='flex'>
+          <HighlightTextButton clickToId='gt-P' title='Parallel care' desc='' />
+          <HighlightTextButton clickToId='gt-J' title='Joint working meetings' desc='' />
+        </div>
+
         <p className='mt-8 mb-6'>
           A period of joint or parallel care can ease the <span className='font-bold'>transition process</span> for service providers and the youth and their family members. The
           success of the individual&apos;s transition planning process may be dependent on the infrastructure created as part of the organizational policy on transitions. Well
@@ -214,8 +213,6 @@ export default function Element4() {
           program length. Standards for this initiation point should be set in the organization&apos;s policy - refer to Components 2.1 and 2.2 for more information on this topic.
         </p>
         <Quote
-          mt={14}
-          position='justify-center'
           title='NOTES FROM A NAVIGATOR'
           quote="Well, really, it's scheduling that first appointment or encounter with the person at the receiving agency…I have an appointment with the client after that, ask them how it went…If they're unsure or they're kind of on the fence about it, sometimes it's about clarifying what that agency is going to provide them with... Sometimes, a warm handover happens over a few weeks or a couple appointments "
         />
@@ -225,13 +222,14 @@ export default function Element4() {
           4.7 With youth&apos;s consent, communicate processes with primary care provider (i.e. family physician, nurse practitioner, or pharmacist) to ensure they have consistent
           up-to-date medication and treatment information.
         </h1>
-        <HighlightTextButton clickToId='gt-P'>Primary care provider</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-P' title='Primary care provider' desc='' />
         <p className='mt-8 mb-6'>
           Youth facing mental health challenges are often treated within a primary care setting. Active engagement of a primary care provider is closely linked to improved health
-          outcomes as youth transition in adult mental health services <span className='text-navy-0'>(Toulany et al., 2022)</span>. This continued involvement in care contributes
-          to positive long-term health outcomes for youth <span className='text-navy-0'>(Toulany et al., 2019)</span> . Continuity of care refers to the ongoing, coordinated care
-          management with the goal of achieving quality health care <span className='text-navy-0'>(CPSO, 2021)</span> . This can involve including all care providers in care
-          management early to facilitate better communication and handover as well as identifying any missing information that is important to care.
+          outcomes as youth transition in adult mental health services <Reference refName='(Toulany et al., 2022)' clickToId='ref-Toulany-2022' />. This continued involvement in
+          care contributes to positive long-term health outcomes for youth <Reference refName='(Toulany et al., 2019)' clickToId='ref-Toulany-2019' />. Continuity of care refers to
+          the ongoing, coordinated care management with the goal of achieving quality health care <Reference clickToId='ref-CPSO' refName='(CPSO, 2021)' />. This can involve
+          including all care providers in care management early to facilitate better communication and handover as well as identifying any missing information that is important to
+          care.
         </p>
         <div className='mb-8'>
           <button onClick={() => ScrollManager.scrollToElement('resources-lists')} className='flex items-center mb-4'>
@@ -261,9 +259,7 @@ export default function Element4() {
           </div>
         </div>
         <Quote
-          mt={14}
           author='Clinician'
-          position='justify-center'
           quote='I recommend engaging pharmacists in the process when it comes to up-to-date medication information. Ensuring a process is in place for continuous up to date medication reconciliation for outpatients will go a long way towards making this process relatively painless.'
         />
       </section>
@@ -272,11 +268,11 @@ export default function Element4() {
           4.8 Provide youth (and their family members/caregivers, if appropriate) with up-to-date contact information for developmentally appropriate self-care management
           resources, community supports, and community mental health resources.
         </h1>
-        <div className='grid grid-cols-3 gap-4'>
-          <HighlightTextButton clickToId='gt-D'>Developmentally appropriate care</HighlightTextButton>
-          <HighlightTextButton clickToId='gt-S'>Self-management</HighlightTextButton>
-          <HighlightTextButton clickToId='gt-S'>Self-care</HighlightTextButton>
-          <HighlightTextButton clickToId='gt-C'>Community mental health/community supports</HighlightTextButton>
+        <div className='grid grid-cols-2 auto-rows-auto gap-4 w-full'>
+          <HighlightTextButton clickToId='gt-D' title='Developmentally appropriate care' desc='' />
+          <HighlightTextButton clickToId='gt-S' title='Self-management' desc='' />
+          <HighlightTextButton clickToId='gt-C' title='Community mental health/community supports' desc='' />
+          <HighlightTextButton clickToId='gt-S' title='Self-care' desc='' />
         </div>
 
         <p className='mt-8 mb-6'>
@@ -287,12 +283,12 @@ export default function Element4() {
         </p>
         <p className='mb-8'>
           Due to the complex and varying biopsychosocial issues, shifting symptom patterns and presentations, and comorbid diagnoses seen in youth populations, transition pathways
-          may look different from person to person <span className='text-navy-0'>(McGorry et al., 2014)</span>. Not every young person will need to transition to adult-oriented
-          mental health services, or may not require a high intensity transition intervention. Examples can include ensuring that young people have access to youth-oriented
-          integrated primary mental health care, establishing “soft entry” by minimizing stigma and other barriers to accessing services, and organizing digital support where
-          possible <span className='text-navy-0'>(McGorry et al., 2022)</span>. Providing youth with ways to access to developmentally appropriate community and health services
-          will ensure they have resources available in the event that youth do not transition to adult mental health services, withdraw from adult mental health services, or only
-          desire episodic contact with adult mental health services.
+          may look different from person to person <Reference refName='(McGorry et al., 2014)' clickToId='ref-McGorry-2014' />. Not every young person will need to transition to
+          adult-oriented mental health services, or may not require a high intensity transition intervention. Examples can include ensuring that young people have access to
+          youth-oriented integrated primary mental health care, establishing “soft entry” by minimizing stigma and other barriers to accessing services, and organizing digital
+          support where possible <Reference refName='(McGorry et al., 2022)' clickToId='ref-McGorry-2022' />. Providing youth with ways to access to developmentally appropriate
+          community and health services will ensure they have resources available in the event that youth do not transition to adult mental health services, withdraw from adult
+          mental health services, or only desire episodic contact with adult mental health services.
         </p>
         <ResourcesContentLinks
           resourceClickToId='resources-lists'
@@ -326,21 +322,17 @@ export default function Element4() {
           ]}
         />
         <Quote
-          mt={14}
           title='NOTES FROM A NAVIGATOR'
-          position='justify-center'
           quote="..An individual came in short-term, and really just had challenges surrounding mental health, where psychiatrists feel like a general physician would be able to just provide on-going, that medical piece… then with that we might make recommendations that they access their GP…Really it just depends on the diagnosis and the needs that we're looking at, what would be the community mental health that would be best suited for them "
         />
         <Quote
-          mt={14}
           author='Youth'
-          position='justify-center'
           quote='Giving youth the right information and resources would really help them really understand what is available if they do decide against continuing their treatment. They may change their mind and want to transition later on and then they will have the info they need to do so.'
         />
       </section>
       <section id='e4.9' data-section className='pt-10'>
         <h1 className='doc-content-sub-title mb-8'>4.9 If desired by youth, facilitate connections to peer support during the transition process.</h1>
-        <HighlightTextButton clickToId='gt-P'>Peer support</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-P' title='Peer support' desc='' />
         <p className='mt-8 mb-6'>
           The transition experience can often be a point of fear or anxiety for youth due to the uncertainty of the process and not knowing what to expect. During this time, youth
           can benefit from connecting with a trained peer support worker who has the skills and shared lived experience to offer emotional support to the youth. Peer support

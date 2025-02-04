@@ -3,7 +3,7 @@ import LinkList from '../LinkList';
 
 export default function ResourcesLists() {
   return (
-    <section id='resources-lists' data-section className='py-14 doc-content-text border-b-[1px]'>
+    <section id='resources-lists' data-section className='py-14 doc-content-text border-b-[1px] lg:px-0 px-5'>
       <h1 className='doc-content-title'>Resource List</h1>
       <h1 className='doc-content-sub-title mt-10 mb-8'>Element 1</h1>
       <LinkList

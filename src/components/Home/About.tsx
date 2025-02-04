@@ -8,7 +8,7 @@ export default function About(): ReactNode {
       <div className='w-full bg-[#EFF7FC] min-h-[426px] px-4 sm:px-8 lg:px-[80px] py-12 lg:py-0 flex justify-center items-center'>
         <div className='w-full lg:w-[900px]'>
           <p className='section-title text-center'>About</p>
-          <p className='main-title text-center sm:text-4xl lg:text-5xl'>Purpose of this Resource</p>
+          <p className='main-title text-center sm:text-3xl lg:text-5xl'>Purpose of this Resource</p>
           <p className='mt-6 lg:mt-11 base-text-content text-center text-size-base lg:text-lg'>
             The purpose of the Unite Core Components Guidebook is to support the uptake and implementation of the core components of successful mental health transitions in youth
             mental health care settings.

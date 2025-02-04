@@ -5,12 +5,12 @@ import { Search, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isBannerVisible, setIsBannerVisible] = useState(true);
 
   return (
     <div className='w-full mb-5'>
-      {/* Crisis banner - maintaining exactly the same for desktop */}
+      {/* Crisis banner */}
       {isBannerVisible && (
         <div className='w-full bg-navy-3 text-white py-4 relative'>
           <p className='font-karla font-bold text-sm text-center px-4 md:px-32 sm:pr-20'>
@@ -37,11 +37,11 @@ const Header = () => {
             <nav className='hidden lg:flex items-center gap-6 ms-20'>
               {[
                 { href: '/', label: 'Home' },
-                { href: '/projects', label: 'Projects' },
-                { href: '/team', label: 'Team' },
-                { href: '/resources', label: 'Resources' },
-                { href: '/in-the-media', label: 'In the Media' },
-                { href: '/contact-us', label: 'Contact Us' },
+                { href: '/', label: 'Projects' },
+                { href: '/', label: 'Team' },
+                { href: '/', label: 'Resources' },
+                { href: '/', label: 'In the Media' },
+                { href: '/', label: 'Contact Us' },
               ].map((link) => (
                 <Link key={link.label} href={link.href} className='font-open-sans text-base text-nav-item hover:text-navy-1'>
                   {link.label}
@@ -53,7 +53,7 @@ const Header = () => {
           {/* Right side controls */}
           <div className='flex items-center gap-4'>
             {/* Mobile menu button - only visible on mobile */}
-            <button className='lg:hidden p-2' onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <button className='lg:hidden p-2' onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
               <Menu className='w-6 h-6 text-nav-item' />
             </button>
 
@@ -65,18 +65,18 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation Menu - slides in from top when menu is opened */}
-        {isMenuOpen && (
+        {isMobileMenuOpen && (
           <div className='lg:hidden absolute z-50 w-full bg-white border-b shadow-lg'>
             <nav className='flex flex-col py-2'>
               {[
                 { href: '/', label: 'Home' },
-                { href: '/projects', label: 'Projects' },
-                { href: '/team', label: 'Team' },
-                { href: '/resources', label: 'Resources' },
-                { href: '/in-the-media', label: 'In the Media' },
-                { href: '/contact-us', label: 'Contact Us' },
+                { href: '/', label: 'Projects' },
+                { href: '/', label: 'Team' },
+                { href: '/', label: 'Resources' },
+                { href: '/', label: 'In the Media' },
+                { href: '/', label: 'Contact Us' },
               ].map((link) => (
-                <Link key={link.label} href={link.href} className='font-open-sans text-base text-nav-item hover:bg-gray-50 px-8 py-3' onClick={() => setIsMenuOpen(false)}>
+                <Link key={link.label} href={link.href} className='font-open-sans text-base text-nav-item hover:bg-gray-50 px-8 py-3' onClick={() => setIsMobileMenuOpen(false)}>
                   {link.label}
                 </Link>
               ))}

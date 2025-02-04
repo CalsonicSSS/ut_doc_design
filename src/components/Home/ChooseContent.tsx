@@ -11,25 +11,18 @@ export default function ChooseContent(): ReactNode {
       href: '/doc#e1',
     },
     {
-      number: '02',
-      title: 'Transition tracking and monitoring',
-      description: 'Establish a protocol for tracking and monitoring transition steps.',
-      width: '224px',
-      href: '/doc#e2',
-    },
-    {
-      number: '03',
-      title: 'Transition readiness',
-      description: "Identify youth's transition-related needs and goals then co-create a transition plan with youth.",
-      width: '250px',
-      href: '/doc#e3',
-    },
-    {
       number: '04',
       title: 'Transition planning',
       description: 'Implement the transition plan, including identifying and collaborating with the adult MH services.',
       width: '230px',
       href: '/doc#e4',
+    },
+    {
+      number: '02',
+      title: 'Transition tracking and monitoring',
+      description: 'Establish a protocol for tracking and monitoring transition steps.',
+      width: '224px',
+      href: '/doc#e2',
     },
     {
       number: '05',
@@ -38,6 +31,14 @@ export default function ChooseContent(): ReactNode {
       width: '230px',
       href: '/doc#e5',
     },
+    {
+      number: '03',
+      title: 'Transition readiness',
+      description: "Identify youth's transition-related needs and goals then co-create a transition plan with youth.",
+      width: '250px',
+      href: '/doc#e3',
+    },
+
     {
       number: '06',
       title: 'Transfer completion',
@@ -50,7 +51,7 @@ export default function ChooseContent(): ReactNode {
   return (
     <div className='font-open-sans pb-16 sm:pb-20 lg:pb-32 pt-12 sm:pt-16 lg:pt-20 bg-[#F8FCFE]'>
       {/* Flex container that changes to column on mobile */}
-      <div className='flex flex-col lg:flex-row px-4 sm:px-8 lg:px-0'>
+      <div className='flex flex-col lg:flex-row'>
         {/* Title section */}
         <div className='lg:ps-[14%] mb-8 lg:mb-5 text-center lg:text-left'>
           <p className='section-title font-open-sans'>Content</p>
@@ -60,7 +61,7 @@ export default function ChooseContent(): ReactNode {
         </div>
 
         {/* Content grid that becomes single column on mobile */}
-        <div className='lg:mt-10 lg:ms-32 w-full lg:w-auto'>
+        <div className='lg:mt-10 lg:ms-32 w-full lg:w-auto flex justify-center'>
           {/* Grid container for all items */}
           <div className='grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-x-8 lg:gap-x-32'>
             {contentItems.map((item, index) => (

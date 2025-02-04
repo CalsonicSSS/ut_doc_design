@@ -122,7 +122,13 @@ export default function DocumentationSidebar({ setIsMobileMenuOpen }: { setIsMob
           }}
         >
           {item.subItems && <span className='mr-2'>{expandedSections.includes(item.id) ? <ChevronDown size={16} /> : <ChevronRight size={16} />}</span>}
-          {item.parentId && <div className='absolute left-10 w-[7px] h-[7px] rounded-full bg-[#A6A6A6]' />}
+          {item.parentId && (
+            <div
+              className={`absolute left-10 w-[5px] h-[5px] rounded-full
+            ${activeNavItem === item.id || activeParents.includes(item.id) ? 'bg-[#63B1E5]' : 'bg-[#A6A6A6]'}
+            `}
+            />
+          )}
           {item.label}
         </button>
 

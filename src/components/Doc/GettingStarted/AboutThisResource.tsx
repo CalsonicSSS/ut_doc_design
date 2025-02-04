@@ -3,7 +3,7 @@ import DotList from '../DotList';
 
 export default function AboutThisResource() {
   return (
-    <section id='about-this-resource' data-section className='py-14 doc-content-text border-b-[1px]'>
+    <section id='about-this-resource' data-section className='py-14 doc-content-text border-b-[1px] lg:px-0 px-5'>
       <h1 className='doc-content-title'>About this Resource</h1>
       <section id='purpose-of-this-resource' data-section className='py-10'>
         <h1 className='doc-content-sub-title mb-8'>Purpose of this Resource</h1>
@@ -54,7 +54,7 @@ export default function AboutThisResource() {
         <DotList
           contentList={[
             'Cleverley K et al. (2023) Understanding the scope and impact of the youth mental health transition navigator role:',
-            <span key={1}>perspectives of navigators and clinicians. [manuscript in preparation].</span>,
+            'perspectives of navigators and clinicians. [manuscript in preparation].',
           ]}
           ms={[0, 12]}
         />

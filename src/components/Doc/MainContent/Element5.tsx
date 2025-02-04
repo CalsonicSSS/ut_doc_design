@@ -5,13 +5,15 @@ import HighlightTextButton from '../HighlightTextButton';
 
 export default function Element5() {
   return (
-    <section id='e5' data-section className='py-14 doc-content-text border-b-[1px]'>
+    <section id='e5' data-section className='py-14 doc-content-text border-b-[1px] lg:px-0 px-5'>
       <h1 className='doc-content-title'>Element 5 Transfer of Care</h1>
       <section id='e5.1' data-section className='py-10 border-b-[1px]'>
         <h1 className='doc-content-sub-title mb-8'>5.1 A specific meeting or case conference should be held witheveryone involved in the transition to handover care.</h1>
 
-        <HighlightTextButton clickToId='gt-C'>Case Conference</HighlightTextButton>
-        <HighlightTextButton clickToId='gt-W'>Warm Handover</HighlightTextButton>
+        <div className='flex'>
+          <HighlightTextButton clickToId='gt-C' title='Case Conference' desc='' />
+          <HighlightTextButton clickToId='gt-W' title='Warm Handover' desc='' />
+        </div>
 
         <p className='mb-6 mt-8'>
           The purpose of the meeting should be to develop a shared understanding of the young person&apos;s care up to this point, and their continuing care needs. The meeting can
@@ -39,9 +41,7 @@ export default function Element5() {
           ]}
         />
         <Quote
-          mt={14}
           author='Youth'
-          position='justify-center'
           quote='For me, it was probably getting all of my care team together, and speaking to me instead of just kind of talking amongst themselves, or actually it was the opposite - what was really helpful was getting all of them into a single room and discussing things in front of me.'
         />
       </section>
@@ -50,9 +50,12 @@ export default function Element5() {
           5.2 In collaboration with youth, complete all documents in transfer package (e.g. referral letter, individualized transition plan, clinical records). With youth&apos;s
           consent send to adult mental health services and/or primary care provider, and confirm receipt.{' '}
         </h1>
-        <HighlightTextButton clickToId='gt-R'>Referral Letter</HighlightTextButton>
-        <HighlightTextButton clickToId='gt-T'>Transition Plan</HighlightTextButton>
-        <HighlightTextButton clickToId='gt-C'>Clinical Records</HighlightTextButton>
+        <div className='flex'>
+          <HighlightTextButton clickToId='gt-R' title='Referral Letter' desc='' />
+          <HighlightTextButton clickToId='gt-T' title='Transition Plan' desc='' />
+          <HighlightTextButton clickToId='gt-C' title='Clinical Records' desc='' />
+        </div>
+
         <p className='mt-8 mb-6'>
           The transfer package should include general information about the young person and their treatment history, as well as any documentation specific to the receiving agency.
           A complete transfer package should support seamless transitions in care and limit the amount of follow up required post-care transition. A complete transfer package can
@@ -96,9 +99,7 @@ export default function Element5() {
           ]}
         />
         <Quote
-          mt={14}
           author='Youth'
-          position='justify-center'
           quote="And then on the back [of a transfer document] there's just some general kind of mental health information, if they've ever had depression or anxiety or if they've ever had a suicide attempt or if they're on medications... But I would say the most important information is kind of reasons for referral, who's referring and then contact information and what the client is consenting to in terms of that contact. "
         />
       </section>

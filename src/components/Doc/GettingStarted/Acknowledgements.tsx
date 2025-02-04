@@ -3,7 +3,7 @@ import DotList from '../DotList';
 
 export default function Acknowledgements() {
   return (
-    <section id='acknowledgements' data-section className='py-14 doc-content-text border-b-[1px]'>
+    <section id='acknowledgements' data-section className='py-14 doc-content-text border-b-[1px] lg:px-0 px-5'>
       <h1 className='doc-content-title mb-8'>Acknowledgements</h1>
       <p className='font-bold'>The following people contributed to the development of this resource:</p>
       <DotList
@@ -37,7 +37,7 @@ export default function Acknowledgements() {
       <p>Period of Funding: 2023-2024.</p>
       <DotList
         contentList={[
-          'Cleverley K (NPI), Barbic S (Co-PI), Iyer S (Co-PI), Henderson J (Co-PI), Bagnell A, Dimitropoulos G, Goyette M, Mushquash C, Toulany A, Hay K, Hutt-MacLeod D, Mathias S, Tee K. Transitions in Practice: Implementing National Youth Mental Health Transition Standards Across Canada (TIPS). Funding Agency: CIHR Catalyst Grant. ',
+          'Cleverley K (NPI), Barbic S (Co-PI), Iyer S (Co-PI), Henderson J (Co-PI), Bagnell A, Dimitropoulos G, Goyette M, Mushquash C, Toulany A, Hay K, Hutt-MacLeod D, Mathias S, Tee K. Transitions in Practice: Implementing National Youth Mental Health Transition Standards Across Canada (TIPS). Funding Agency: CIHR Catalyst Grant.',
         ]}
         ms={[6]}
       />
@@ -45,7 +45,7 @@ export default function Acknowledgements() {
       <p>Funding: 2022-2023.</p>
       <DotList
         contentList={[
-          'Cleverley K (NPI), Bartha C (Co-PI), Davies J (Co-PI), Barbic S, Dimitropoulos G, Henderson J, McCann E. The UNITE Toolkit: A guide to implementing the core components of successful transitions from child and adolescent mental health services. CIHR Planning and Dissemination Grant. ',
+          'Cleverley K (NPI), Bartha C (Co-PI), Davies J (Co-PI), Barbic S, Dimitropoulos G, Henderson J, McCann E. The UNITE Toolkit: A guide to implementing the core components of successful transitions from child and adolescent mental health services. CIHR Planning and Dissemination Grant.',
         ]}
         ms={[6]}
       />

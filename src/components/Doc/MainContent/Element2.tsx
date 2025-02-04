@@ -5,14 +5,17 @@ import Quote from '../Quote';
 
 export default function Element2() {
   return (
-    <section id='e2' data-section className='py-14 doc-content-text border-b-[1px]'>
+    <section id='e2' data-section className='py-14 doc-content-text border-b-[1px] lg:px-0 px-5'>
       <h1 className='doc-content-title'>Element 2 Transition Tracking and Monitoring</h1>
       <section id='e2.1' data-section className='py-10 border-b-[1px]'>
         <h1 className='doc-content-sub-title mb-8'>
           2.1 Establish organization-specific criteria and process for identifying youth who will be transitioning out of child and adolescent mental health services.
         </h1>
-        <HighlightTextButton clickToId='gt-I'>Integrated care pathway</HighlightTextButton>
-        <HighlightTextButton clickToId='gt-T'>Transition process</HighlightTextButton>
+        <div className='flex'>
+          <HighlightTextButton title='Integrated care pathway' clickToId='gt-I' desc='' />
+          <HighlightTextButton title='Transition process' clickToId='gt-T' desc='' />
+        </div>
+
         <p className='mt-8 mb-6'>
           When preparing youth to transition out of child and adolescent mental <span className='font-bold'>health services</span> , there are several factors that need to be
           considered. For many organizations, this transition out of child mental health services is an age-dependent criteria, for example, when a child turns eighteen years old.
@@ -51,8 +54,6 @@ export default function Element2() {
         />
 
         <Quote
-          mt={14}
-          position='justify-center'
           title='NOTES FROM A NAVIGATOR'
           quote="My role as a navigator is to connect with families and individuals, patients, who are aging out of [site A], so who are in that transition period…I connect with the family, connect with the youth, to support them in terms of making sure that they're prepared, or they have the tools that they need to have a successful transition when they leave. "
         />
@@ -99,14 +100,10 @@ export default function Element2() {
         />
         <Quote
           author='Youth'
-          mt={14}
-          position='justify-end'
           quote='This holds youth and support staff responsible for the transition and also logs any errors or miss-steps that could happen during the transition. It could help you all figure out at what points the transition is smooth and when it is not.'
         />
         <Quote
           author='Clinician'
-          mt={14}
-          position='justify-end'
           quote='In my experience any one clinician transitions few youth in a one year time frame so not likely to remember all tasks necessary to maximize the potential for success. '
         />
       </section>

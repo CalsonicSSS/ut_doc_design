@@ -5,10 +5,11 @@ import HighlightTextButton from '../HighlightTextButton';
 import Link from 'next/link';
 import { LogOut } from 'lucide-react';
 import { ScrollManager } from '../utils';
+import Reference from '@/components/Reference';
 
 export default function Element3() {
   return (
-    <section id='e3' data-section className='py-14 doc-content-text border-b-[1px]'>
+    <section id='e3' data-section className='py-14 doc-content-text border-b-[1px] lg:px-0 px-5'>
       <h1 className='doc-content-title'>Element 3 Organizational Transition Policy </h1>
       <section id='e3.1' data-section className='py-10 border-b-[1px]'>
         <h1 className='doc-content-sub-title mb-8'>
@@ -55,8 +56,6 @@ export default function Element3() {
           </div>
         </div>
         <Quote
-          mt={14}
-          position='justify-center'
           title='NOTES FROM A NAVIGATOR'
           quote="In that [readiness] assessment, I'm looking for information about [the youth]… is the parent supported...It could also be about school... We also assess for sexuality, for suicidality, to see if they have a crisis plan in place. Also talk about medication…From that assessment, I have a pretty good idea of this family's gonna need a weekly call…or the youth feels that they're confident enough to handle some of the transition pieces on their own. "
         />
@@ -65,27 +64,27 @@ export default function Element3() {
         <h1 className='doc-content-sub-title mb-8'>
           3.2 Provide youth (and their family members/caregivers, if appropriate) information about what to expect from adult mental health services.
         </h1>
-        <HighlightTextButton clickToId='gt-F'>Family members/caregivers</HighlightTextButton>
+        <HighlightTextButton title='Family members/caregivers' clickToId='gt-F' desc=''></HighlightTextButton>
         <p className='mt-8 mb-6'>
           Youth transitioning from child to adult mental health services are in a crucial period of life where they are experiencing many developmental milestones as well as new
-          life experiences <span className='text-navy-0'>(Borah et al., 2021)</span> . The combination of these changes may further complicate healthcare transitions.
+          life experiences <Reference refName='(Borah et al., 2021)' clickToId='ref-Borah' />. The combination of these changes may further complicate healthcare transitions.
         </p>
         <p className='mb-6'>
           Youth identified several different factors that make transitions difficult including: a shifting awareness of the meaning of transition as well as the appropriate age for
           transition, a lack of transition readiness, limited involvement in the transition process, confusion over roles and responsibilities in the{' '}
           <span className='font-bold'>transition process</span> and concerns over transition gaps leading to poor mental health outcomes{' '}
-          <span className='text-navy-0'>(Cleverley et al., 2020)</span>.
+          <Reference refName='(Cleverley et al., 2020)' clickToId='ref-Cleverley' />.
         </p>
         <p className='mb-8'>
           One of the most significant changes include system differences between <span className='font-bold'>child and adolescent mental health services</span> and{' '}
           <span className='font-bold'>adult mental health services.</span> Youth have identified a decreased support in adult mental health services and lack of information sharing
           between child and adult health services as major differences. Child and adolescent mental health services are often described as nurturing and prioritize a family unit
-          while adult mental health services consider youth as autonomous adults and often have limited family involvement <span className='text-navy-0'>(Borah et al., 2021)</span>{' '}
-          . This distinct difference between the two services can lead to a sharp change in type and level of care and increases the risk of care disengagement{' '}
-          <span className='text-navy-0'>(Borah et al., 2021).</span> Youth have reported feeling underprepared for the transition process, specifically not having enough
-          information about their options <span className='text-navy-0'>(Cleverley et al, 2020)</span> . As such, youth have identified having the opportunity to be partners in the
-          planning process and ensuring information about the process be clearly communicated as a priority of transitions in care{' '}
-          <span className='text-navy-0'>(Cleverley et al, 2020)</span>
+          while adult mental health services consider youth as autonomous adults and often have limited family involvement{' '}
+          <Reference refName='(Borah et al., 2021)' clickToId='ref-Borah' />. This distinct difference between the two services can lead to a sharp change in type and level of care
+          and increases the risk of care disengagement <Reference refName='(Borah et al., 2021)' clickToId='ref-Borah' />. Youth have reported feeling underprepared for the
+          transition process, specifically not having enough information about their options <Reference refName='(Cleverley et al., 2020)' clickToId='ref-Cleverley' />. As such,
+          youth have identified having the opportunity to be partners in the planning process and ensuring information about the process be clearly communicated as a priority of
+          transitions in care <Reference refName='(Cleverley et al., 2020)' clickToId='ref-Cleverley' />.
         </p>
         <ResourcesContentLinks
           resourceClickToId='resources-lists'
@@ -111,7 +110,7 @@ export default function Element3() {
           3.3 Develop individualized transition plan in collaboration with youth (and their family members/caregivers, if appropriate) a minimum of 6-months before planned
           transition, or as early as possible.{' '}
         </h1>
-        <HighlightTextButton clickToId='gt-T'>Transition plan</HighlightTextButton>
+        <HighlightTextButton title='Transition plan' desc='' clickToId='gt-T' />
         <p className='mt-8 mb-6'>
           The transition plan, which is a living document that outlines the plan of care throughout the <span className='font-bold'>transition process</span> , should be co-created
           with youth and their identified care team. This document includes goals for transition and planned interventions which will be informed by ongoing transition{' '}
@@ -146,8 +145,6 @@ export default function Element3() {
           ]}
         />
         <Quote
-          mt={14}
-          position='justify-center'
           title='NOTES FROM A NAVIGATOR'
           quote="As they become adults, and they have to navigate on their own, I do believe that that's where our role really makes a big difference in terms of meeting the youth where they are at, and talking to them and finding out what their needs are…And working collaboratively with them on creating a transition plan and then with the transition plan, we then work strategically to check everything off the list."
         />

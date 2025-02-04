@@ -3,16 +3,25 @@ import HighlightTextButton from '../HighlightTextButton';
 import DotList from '../DotList';
 import Quote from '../Quote';
 import { ResourcesContentLinks } from '../ResourcesBulletContent';
+import Reference from '@/components/Reference';
 
 export default function Element1() {
   return (
-    <section id='e1' data-section className='py-14 doc-content-text border-b-[1px]'>
+    <section id='e1' data-section className='py-14 doc-content-text border-b-[1px] lg:px-0 px-5'>
       <h1 className='doc-content-title'>Element 1 Organizational Transition Policy </h1>
       <section id='e1.1' data-section className='py-10 border-b-[1px]'>
         <h1 className='doc-content-sub-title mb-8'>1.1 Develop an integrated care pathway that describes the steps that make up the transition process.</h1>
         <div className='flex my-8'>
-          <HighlightTextButton clickToId={'gt-I'}>Integrated care pathway</HighlightTextButton>
-          <HighlightTextButton clickToId={'gt-T'}>Transition process</HighlightTextButton>
+          <HighlightTextButton
+            clickToId={'gt-icp'}
+            title='Integrated care pathway'
+            desc='The transition process is a series of action steps that are followed to complete the care transition.'
+          />
+          <HighlightTextButton
+            clickToId={'gt-tp'}
+            title='Transition process'
+            desc='The transition process is a series of action steps that are followed to complete the care transition.'
+          />
         </div>
         <p className='mb-6'>
           Integrated care pathways are an important aspect of ensuring <span className='font-bold'>continuity of care</span> for youth navigating a transition in their mental
@@ -61,7 +70,7 @@ export default function Element1() {
           1.2 Develop an organization-specific transition policy with youth (with input from family members/caregivers) that describes the organization&apos;s approach to mental
           health care transitions, and make it publicly available.
         </h1>
-        <HighlightTextButton clickToId='gt-F'>Family members/caregivers</HighlightTextButton>
+        <HighlightTextButton clickToId='gt-F' title='Family members/caregivers' desc=''></HighlightTextButton>
         <p className='mt-8 mb-6'>
           An organization-specific transition policy serves to outline all major decisions and actions, and all activities that take place during the{' '}
           <span className='font-bold'>transition process </span> including roles and responsibilities of all individuals involved in the transition. A policy is set by the
@@ -70,10 +79,10 @@ export default function Element1() {
         <p className='mb-8'>
           Making transition policies publicly available facilitates patient empowerment by addressing the barriers that patients may face when accessing care. Patients often have
           little to no ability to influence the systems in which they access care for their own needs. Typically, services are designed, altered, and negotiated by funders and care
-          providers, as opposed to those who access care, or their advocates <span className='text-navy-0 underline'>(Lau, 2019).</span> Having organizational care policies
-          publicly available allows patients and/or their supporters to access this tool to support their overall health literacy, navigation of the system in which they are
-          accessing care, and gain additional knowledge or understanding about their condition and any interventions they may receive{' '}
-          <span className='text-navy-0 underline'>(Lau, 2019).</span> This will also allow for informed, empowered decision making within care processes.
+          providers, as opposed to those who access care, or their advocates <Reference refName='(Lau, 2019)' clickToId='ref-LF' />. Having organizational care policies publicly
+          available allows patients and/or their supporters to access this tool to support their overall health literacy, navigation of the system in which they are accessing care,
+          and gain additional knowledge or understanding about their condition and any interventions they may receive <Reference refName='(Lau, 2019)' clickToId='ref-LF' />. This
+          will also allow for informed, empowered decision making within care processes.
         </p>
         <ResourcesContentLinks
           resourceClickToId={'resources-lists'}
@@ -99,8 +108,6 @@ export default function Element1() {
           ]}
         />
         <Quote
-          mt={14}
-          position='justify-center'
           author='Clinician'
           quote='[A transition policy] should be built centrally with input from family members/caregivers and shared with service providers to guide principles of transition care and to ensure standardizing of processes.
 '
@@ -112,8 +119,8 @@ export default function Element1() {
           mental health services, that outlines standards for communication and information sharing.
         </h1>
         <div className='flex my-8'>
-          <HighlightTextButton clickToId='gt-Y'>Youth- centered protocol</HighlightTextButton>
-          <HighlightTextButton clickToId='gt-D'>Developmentally appropriate protocol</HighlightTextButton>
+          <HighlightTextButton clickToId='gt-Y' title='Youth- centered protocol' desc='' />
+          <HighlightTextButton clickToId='gt-D' title='Developmentally appropriate protocol' desc='' />
         </div>
         <p className='mb-6'>
           A <span className='font-bold'>transition protocol</span> is individualized to the needs of specific programs, intervention, or patients. It is a written plan that
@@ -123,7 +130,7 @@ export default function Element1() {
           A youth-centred and developmentally appropriate protocol ensures that collaborative approaches best address the youth of needs during mental health care transitions. A
           developmentally appropriate approach places focus on development as opposed to chronological age and emphasizes the dynamic nature of adolescence and young adulthood and
           the associated developmental processes, as defining characteristics of care services accessed by these populations{' '}
-          <span className='text-navy-0 underline'>(Farre et al., 2015).</span>
+          <Reference refName='(Farre et al., 2015)' clickToId='ref-Farre' />.
         </p>
         <p className='mb-8'>
           Protocols developed in collaboration with partners across care systems, can better address barriers to <span className='font-bold'>continuity of care</span> by explicitly
@@ -138,7 +145,7 @@ export default function Element1() {
               links: [
                 {
                   linkText: 'KFL&A, Youth Transitioning Protocol',
-                  link: '',
+                  link: 'https://www.improvingsystems.ca/projects/youth-transition-protocol-in-kfla',
                 },
               ],
             },
@@ -161,10 +168,10 @@ export default function Element1() {
         <p className='mb-6'>
           Whole-team approaches are more successful in ensuring the adaptation and ongoing support for new policies in health care. Providing proactive, accessible, and integrated
           education about youth mental health care transitions can create important opportunities for professional and organizational development{' '}
-          <span className='text-navy-0'>(Nilsen et al., 2020).</span> Creating a plan to support staff learning and engagement with transition resources ensures every staff member
-          understands their role in the transition process as well as the organization&apos;s approach to care transitions{' '}
-          <span className='text-navy-0'>(Nilsen et al., 2020).</span> Furthermore, a lack of training and education for care providers has been identified as a major barrier of
-          successful youth-to-adult care transition <span className='text-navy-0'>(McDonagh, 2006).</span>
+          <Reference refName='(Nilsen et al., 2020)' clickToId='ref-Nilsen' />. Creating a plan to support staff learning and engagement with transition resources ensures every
+          staff member understands their role in the transition process as well as the organization&apos;s approach to care transitions{' '}
+          <Reference refName='(Nilsen et al., 2020)' clickToId='RefeNilsen' />. Furthermore, a lack of training and education for care providers has been identified as a major
+          barrier of successful youth-to-adult care transition <Reference refName='(McDonagh, 2006)' clickToId='ref-McDonagh' />.
         </p>
         <p className='mb-8'>
           Skills development and training opportunities in youth mental health transitions should be based on the needs of your organization and staff. In cases where staff have an
@@ -219,7 +226,7 @@ export default function Element1() {
           1.5 Determine clear responsibilities for all roles within the organization involved in the transition of care, to be further informed by the needs of each youth.
         </h1>
         <p className='mb-8'>
-          Role clarity is an essential component of positive interprofessional collaboration <span className='text-navy-0 underline'>(IPEC, 2016; McLaneyet al., 2022)</span> and a
+          Role clarity is an essential component of positive interprofessional collaboration <Reference refName='(IPEC, 2016; McLaneyet al., 2022)' clickToId='ref-IPEC' /> and a
           clear organizational framework to indicate who has ownership of different aspects of the transition can support teams in successfully planning transition care. At an
           organizational level,determine who is responsible for supporting transitions, including developing a transitions policy,developing capacity and training in care team
           members, and/or development of integrated care pathways for the organization&apos;s transitions. You might consider what “typical” involvement should look like for:
@@ -264,7 +271,7 @@ export default function Element1() {
               links: [
                 {
                   linkText: 'The Family Caregiver Activation in Transitions Tool (FCAT)',
-                  link: '',
+                  link: 'https://media.uhfnyc.org/filer_public/95/55/9555ccca-ea5c-4f7b-a524-5356ca0b0924/6_eric_coleman__family_caregiver_activation_in_transitions_fcat_tool.pdf',
                 },
               ],
             },
@@ -291,8 +298,6 @@ export default function Element1() {
         />
 
         <Quote
-          mt={14}
-          position='justify-end'
           author='Clinician'
           quote="Speaking from experience, a roadmap and game book as a parent would have been incredibly valuable... I needed to adjust and adapt as my daughter progressed through the recovery lifecycle of her condition. I also needed to learn new skills in order to effectively communicate, respond to 'crisis' situations and problem solve. It would have been valuable to learn this right from the start"
         />
@@ -327,11 +332,11 @@ export default function Element1() {
               links: [
                 {
                   linkText: 'The Public and Patient Engagement Evaluation Tool (PPEET) Participant Questionnaire',
-                  link: '',
+                  link: 'https://ppe.mcmaster.ca/resources/public-and-patient-engagement-evaluation-tool/',
                 },
                 {
                   linkText: 'The Core Components of Effective Youth Transitions (CCEYT)',
-                  link: '',
+                  link: 'https://pubmed.ncbi.nlm.nih.gov/34089382/',
                 },
               ],
             },
@@ -340,7 +345,7 @@ export default function Element1() {
       </section>
       <section id='e1.7' data-section className='pt-10'>
         <h1 className='doc-content-sub-title mb-8'>{'1.7 Establish a plan to evaluate the organization’s transition protocol.'}</h1>
-        <HighlightTextButton clickToId='gt-T'>Transition protocol</HighlightTextButton>
+        <HighlightTextButton title='Transition protocol' clickToId='gt-T' desc=''></HighlightTextButton>
         <p className='mb-6 mt-8'>
           It is important to identify key indicators for evaluation early in the process of implementing your organization&apos;s transition protocol (see workbook evaluation
           section for a discussion of different indicator types). This will allow you to understand how your transition protocol is impacting or improving transitions in your
@@ -379,11 +384,11 @@ export default function Element1() {
               links: [
                 {
                   linkText: 'Core Components of Effective Youth Transitions (CCEYT)',
-                  link: '',
+                  link: 'https://pubmed.ncbi.nlm.nih.gov/34089382/',
                 },
                 {
                   linkText: 'Navigation Satisfaction Tool (NAVAVSAT)',
-                  link: '',
+                  link: 'https://pubmed.ncbi.nlm.nih.gov/29147951/',
                 },
               ],
             },

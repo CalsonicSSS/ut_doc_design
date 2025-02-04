@@ -12,7 +12,7 @@ const Hero = () => {
             <p className='section-title'>THE UNITE TOOLKIT</p>
             <h1 className='main-title'>Core Components Guidebook</h1>
           </div>
-          <p className='font-roboto text-base lg:text-lg mb-8 lg:mb-[56px] text-base-1'>Supporting youth mental health transitions in care</p>
+          <p className='font-roboto text-base lg:text-lg mb-8 lg:mb-14'>Supporting youth mental health transitions in care</p>
           <div className='flex flex-col sm:flex-row gap-6 justify-center lg:justify-start'>
             {/* Replace button with Link component */}
             <Link href='/doc#about-this-resource' className='button-fill sm:w-auto'>

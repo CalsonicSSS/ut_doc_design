@@ -6,7 +6,7 @@ export default function DotList({ contentList, ms }: { contentList: (string | Re
     <ul className='ps-3'>
       {contentList.map((content, index) => (
         <li key={`dot-list-item-${index}`} className={`flex items-start my-1 ms-${ms[index]}`}>
-          <Dot key={`dot-${index}`} /> {content}
+          <Dot dotKey={`dot-${index}`} /> {content}
         </li>
       ))}
     </ul>

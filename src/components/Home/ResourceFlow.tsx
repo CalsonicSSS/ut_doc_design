@@ -38,9 +38,9 @@ export default function ResourceFlow(): ReactNode {
       </div>
 
       {/* Second section */}
-      <div className='flex flex-col lg:flex-row justify-between mt-14 lg:mt-28'>
+      <div className='flex flex-col lg:flex-row justify-between mt-28'>
         {/* Left content */}
-        <div className='lg:pt-24 lg:ps-[14%] w-full lg:w-auto'>
+        <div className='lg:pt-24 lg:ps-[180px] lg:pr-[80px] w-full lg:w-auto'>
           <p className='base-text-content text-base lg:text-lg mb-8 lg:mb-0 lg:w-[618px] lg:h-[116px] text-center lg:text-left sm:px-4 lg:px-0'>
             In many of the components, we describe and link to external resources. These resources provide further learning opportunities and implementation support in alignment
             with that core component. Resources can include:

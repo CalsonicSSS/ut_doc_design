@@ -53,7 +53,6 @@ export default function DocumentationPage() {
         ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}  `}
       >
         <div className='mb-6'>
-          {' '}
           <Link className='doc-sidebar-nav-section text-lg lg:ms-24' href={'/'}>
             Home
           </Link>
@@ -63,7 +62,7 @@ export default function DocumentationPage() {
       </div>
 
       {/* Main Content */}
-      <main className='w-full overflow-y-auto lg:ms-28 px-4 lg:px-0 py-14 h-screen'>
+      <main className='w-full overflow-y-auto lg:ps-28 h-screen'>
         <div className='max-w-[800px] border-t-2'>
           <Introduction />
           <Acknowledgements />

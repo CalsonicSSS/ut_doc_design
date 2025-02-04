@@ -30,7 +30,7 @@ export function ResourcesContentLinks({ titlesAndLinks, resourceClickToId }: { t
                 href={`${each.link}`}
                 target='_blank'
                 rel='noopener noreferrer'
-                className='block tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5]'
+                className={`block tracking-[0.13px] font-medium leading-[32px] ${each.link && 'underline'} text-[#63B1E5]`}
               >
                 {each.linkText}
               </Link>
