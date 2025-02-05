@@ -6,7 +6,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/comp
 
 export default function HighlightTextButton({ title, clickToId, desc }: { title: string; clickToId?: string; desc: string }) {
   return (
-    <TooltipProvider>
+    <TooltipProvider delayDuration={300}>
       <Tooltip>
         <TooltipTrigger className='flex justify-start '>
           <button className='text-sm font-semibold text-[#FFAE00] leading-[16px] px-4 py-2 rounded-2xl bg-[#FFF8EE] mr-5'>{title}</button>
