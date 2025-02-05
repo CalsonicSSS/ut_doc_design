@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react';
-import { ArrowRight } from 'lucide-react';
 
 export default function About(): ReactNode {
   return (
