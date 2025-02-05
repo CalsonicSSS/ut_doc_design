@@ -15,7 +15,7 @@ export default function Element1() {
           <HighlightTextButton
             clickToId={'gt-icp'}
             title='Integrated care pathway'
-            desc='The transition process is a series of action steps that are followed to complete the care transition.'
+            desc='Integrated care pathways are structured; multipurpose care plans which outline the steps involved in the care of patients with a specific clinical problem.'
           />
           <HighlightTextButton
             clickToId={'gt-tp'}
@@ -70,7 +70,11 @@ export default function Element1() {
           1.2 Develop an organization-specific transition policy with youth (with input from family members/caregivers) that describes the organization&apos;s approach to mental
           health care transitions, and make it publicly available.
         </h1>
-        <HighlightTextButton clickToId='gt-F' title='Family members/caregivers' desc=''></HighlightTextButton>
+        <HighlightTextButton
+          clickToId='gt-F'
+          title='Family members/caregivers'
+          desc='Family members/caregivers comprises anyone that the youth identifies they want to be involved in their care. Family members/caregivers for youth could include biological and chosen family members, caregivers and guardians, partners, siblings, and/or adult allies.'
+        ></HighlightTextButton>
         <p className='mt-8 mb-6'>
           An organization-specific transition policy serves to outline all major decisions and actions, and all activities that take place during the{' '}
           <span className='font-bold'>transition process </span> including roles and responsibilities of all individuals involved in the transition. A policy is set by the
@@ -119,8 +123,12 @@ export default function Element1() {
           mental health services, that outlines standards for communication and information sharing.
         </h1>
         <div className='flex my-8'>
-          <HighlightTextButton clickToId='gt-Y' title='Youth- centered protocol' desc='' />
-          <HighlightTextButton clickToId='gt-D' title='Developmentally appropriate protocol' desc='' />
+          <HighlightTextButton clickToId='gt-Y' title='Youth- centered protocol' desc='A protocol that is youth-centred is one that meets the needs of the youth involved.' />
+          <HighlightTextButton
+            clickToId='gt-D'
+            title='Developmentally appropriate protocol'
+            desc='A developmentally appropriate protocol is sensitive to the needs of youth and their particular life circumstances and life goals.'
+          />
         </div>
         <p className='mb-6'>
           A <span className='font-bold'>transition protocol</span> is individualized to the needs of specific programs, intervention, or patients. It is a written plan that
@@ -345,7 +353,11 @@ export default function Element1() {
       </section>
       <section id='e1.7' data-section className='pt-10'>
         <h1 className='doc-content-sub-title mb-8'>{'1.7 Establish a plan to evaluate the organization’s transition protocol.'}</h1>
-        <HighlightTextButton title='Transition protocol' clickToId='gt-T' desc=''></HighlightTextButton>
+        <HighlightTextButton
+          title='Transition protocol'
+          clickToId='gt-T'
+          desc='A document established by the hosting organization that outlines all the steps to follow when working with transitions.'
+        ></HighlightTextButton>
         <p className='mb-6 mt-8'>
           It is important to identify key indicators for evaluation early in the process of implementing your organization&apos;s transition protocol (see workbook evaluation
           section for a discussion of different indicator types). This will allow you to understand how your transition protocol is impacting or improving transitions in your

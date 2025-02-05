@@ -64,7 +64,11 @@ export default function Element3() {
         <h1 className='doc-content-sub-title mb-8'>
           3.2 Provide youth (and their family members/caregivers, if appropriate) information about what to expect from adult mental health services.
         </h1>
-        <HighlightTextButton title='Family members/caregivers' clickToId='gt-F' desc=''></HighlightTextButton>
+        <HighlightTextButton
+          title='Family members/caregivers'
+          clickToId='gt-F'
+          desc='Family members/caregivers comprises anyone that the youth identifies they want to be involved in their care. Family members/caregivers for youth could include biological and chosen family members, caregivers and guardians, partners, siblings, and/or adult allies.'
+        ></HighlightTextButton>
         <p className='mt-8 mb-6'>
           Youth transitioning from child to adult mental health services are in a crucial period of life where they are experiencing many developmental milestones as well as new
           life experiences <Reference refName='(Borah et al., 2021)' clickToId='ref-Borah' />. The combination of these changes may further complicate healthcare transitions.
@@ -110,7 +114,11 @@ export default function Element3() {
           3.3 Develop individualized transition plan in collaboration with youth (and their family members/caregivers, if appropriate) a minimum of 6-months before planned
           transition, or as early as possible.{' '}
         </h1>
-        <HighlightTextButton title='Transition plan' desc='' clickToId='gt-T' />
+        <HighlightTextButton
+          title='Transition plan'
+          desc='A living document which outlines the goals of transition, individual care needs, and interventions throughout the transition process.'
+          clickToId='gt-T'
+        />
         <p className='mt-8 mb-6'>
           The transition plan, which is a living document that outlines the plan of care throughout the <span className='font-bold'>transition process</span> , should be co-created
           with youth and their identified care team. This document includes goals for transition and planned interventions which will be informed by ongoing transition{' '}

@@ -12,8 +12,16 @@ export default function Element2() {
           2.1 Establish organization-specific criteria and process for identifying youth who will be transitioning out of child and adolescent mental health services.
         </h1>
         <div className='flex'>
-          <HighlightTextButton title='Integrated care pathway' clickToId='gt-I' desc='' />
-          <HighlightTextButton title='Transition process' clickToId='gt-T' desc='' />
+          <HighlightTextButton
+            title='Integrated care pathway'
+            clickToId='gt-I'
+            desc='Integrated care pathways are structured; multipurpose care plans which outline the steps involved in the care of patients with a specific clinical problem.'
+          />
+          <HighlightTextButton
+            title='Transition process'
+            clickToId='gt-T'
+            desc='The transition process is a series of action steps that are followed to complete the care transition.'
+          />
         </div>
 
         <p className='mt-8 mb-6'>

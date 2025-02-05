@@ -11,8 +11,16 @@ export default function Element5() {
         <h1 className='doc-content-sub-title mb-8'>5.1 A specific meeting or case conference should be held witheveryone involved in the transition to handover care.</h1>
 
         <div className='flex'>
-          <HighlightTextButton clickToId='gt-C' title='Case Conference' desc='' />
-          <HighlightTextButton clickToId='gt-W' title='Warm Handover' desc='' />
+          <HighlightTextButton
+            clickToId='gt-C'
+            title='Case Conference'
+            desc='A meeting between care providers within and between organizations to ensure coordination and integration of care .'
+          />
+          <HighlightTextButton
+            clickToId='gt-W'
+            title='Warm Handover'
+            desc='A conversation between a care provider and patient to identify and introduce transfer of care to another provider or organization.'
+          />
         </div>
 
         <p className='mb-6 mt-8'>
@@ -51,9 +59,21 @@ export default function Element5() {
           consent send to adult mental health services and/or primary care provider, and confirm receipt.{' '}
         </h1>
         <div className='flex'>
-          <HighlightTextButton clickToId='gt-R' title='Referral Letter' desc='' />
-          <HighlightTextButton clickToId='gt-T' title='Transition Plan' desc='' />
-          <HighlightTextButton clickToId='gt-C' title='Clinical Records' desc='' />
+          <HighlightTextButton
+            clickToId='gt-R'
+            title='Referral Letter'
+            desc='A referral letter is provided by the youth’s health team and overviews basic client information, presenting problems, a brief personal and treatment history including diagnoses, and any additional next steps or follow up items following referral.'
+          />
+          <HighlightTextButton
+            clickToId='gt-T'
+            title='Transition Plan'
+            desc='A living document which outlines the goals of transition, individual care needs, and interventions throughout the transition process.'
+          />
+          <HighlightTextButton
+            clickToId='gt-C'
+            title='Clinical Records'
+            desc='Clinical records include any communication or records relating to the diagnosis, evaluation, or treatment of the young person during their care.'
+          />
         </div>
 
         <p className='mt-8 mb-6'>

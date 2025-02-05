@@ -26,9 +26,9 @@ export default function ResourceFlow(): ReactNode {
               {/* List items remain the same structure but with responsive text */}
               {['Definitions of keywords', 'Linked citations', 'References to sections of the Implementation Workbook', 'Quotes or notes from expert knowledge users'].map(
                 (item, index) => (
-                  <li key={index} className='flex items-center mb-2'>
-                    <div className='rounded-full w-[15px] h-[15px] bg-[#FFDBA8] flex-shrink-0' />
-                    <p className='font-bold ms-4 base-text-content text-base lg:text-lg'>{item}</p>
+                  <li key={index} className='flex items-center mb-3'>
+                    <div className='rounded-full w-[15px] h-[15px] bg-[#FFDBA8]' />
+                    <p className='ms-4 base-text-content text-base lg:text-lg'>{item}</p>
                   </li>
                 )
               )}

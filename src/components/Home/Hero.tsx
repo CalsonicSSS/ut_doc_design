@@ -16,9 +16,9 @@ const Hero = () => {
           <div className='flex flex-col sm:flex-row gap-6 justify-center lg:justify-start'>
             {/* Replace button with Link component */}
             <Link href='/doc#about-this-resource' className='button-fill sm:w-auto'>
-              Go to Doc
+              Go to Web version
             </Link>
-            <button className='button-outline sm:w-auto'>PDF Preview</button>
+            <button className='button-outline sm:w-auto'>Download PDF</button>
           </div>
         </div>
         <div className='mt-10 xl:m-0'>

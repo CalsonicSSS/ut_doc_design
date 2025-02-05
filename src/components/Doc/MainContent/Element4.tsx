@@ -16,8 +16,16 @@ export default function Element4() {
           {' 4.1 Identify the most responsible person to coordinate the transition process, act as the main contact, and ensure continuity in the youth’s care.'}
         </h1>
         <div className='flex'>
-          <HighlightTextButton title='Most responsible person' desc='' clickToId='gt-M' />
-          <HighlightTextButton clickToId='gt-C' title='Continuity of care' desc='' />
+          <HighlightTextButton
+            title='Most responsible person'
+            desc='The primary contact person who acts as the coordinator of the transition process and ensures continuity of care. This person can vary and may or may not be the same individual as the traditional “most responsible provider”.'
+            clickToId='gt-M'
+          />
+          <HighlightTextButton
+            clickToId='gt-C'
+            title='Continuity of care'
+            desc='The process of ensuring ongoing, coordinated care management with the goal of achieving quality health care.'
+          />
         </div>
 
         <p className='mt-8 mb-6'>
@@ -94,7 +102,11 @@ export default function Element4() {
           4.3 Collaborate with youth (and family members/caregivers, if invited by youth) to identify adult services that are an appropriate fit, and confirm the adult mental
           health service eligibility criteria.
         </h1>
-        <HighlightTextButton clickToId='gt-E' title='Eligibility criteria' desc='' />
+        <HighlightTextButton
+          clickToId='gt-E'
+          title='Eligibility criteria'
+          desc='These are a list of requirements for program-entry which may include age, diagnosis, and area of residence.'
+        />
         <p className='mt-8 mb-6'>
           Work with the young person to identify adult services based on program alignment with clinical needs, what they prioritize the youth prioritizes for service needs, and
           what their treatment goals are. Engaging young people in the transition process can help ensure that their needs and preferences are considered, and can increase levels
@@ -146,7 +158,11 @@ export default function Element4() {
         <h1 className='doc-content-sub-title mb-8'>
           4.4 Identify the most responsible person to coordinate the transition process, act as the main contact, and ensure continuity in the youth&apos;s care.
         </h1>
-        <HighlightTextButton clickToId='gt-O' title='Optimal timing of transfer' desc='' />
+        <HighlightTextButton
+          clickToId='gt-O'
+          title='Optimal timing of transfer'
+          desc='Optimal timing of transfer refers for the best possible time for the youth to transfer to adult services, based on the youth’s needs and access to other supports/services.'
+        />
         <p className='mt-8 mb-6'>
           It is important to connect with youth well in advance to identify and prepare for a transfer in care. Optimal timing means the individuals clinical needs are taken into
           account, in particular if may be that transitioning to a specialized service (i.e. early intervention in psychosis service) at a time earlier or later than age 18.
@@ -194,8 +210,16 @@ export default function Element4() {
           provider, which may include joint working meetings or a period of parallel care; include youth (and their family members/caregivers, if appropriate) in meetings.
         </h1>
         <div className='flex'>
-          <HighlightTextButton clickToId='gt-P' title='Parallel care' desc='' />
-          <HighlightTextButton clickToId='gt-J' title='Joint working meetings' desc='' />
+          <HighlightTextButton
+            clickToId='gt-P'
+            title='Parallel care'
+            desc='A period of time where a young person may be connected to both youth-oriented and adult-oriented mental health care services.'
+          />
+          <HighlightTextButton
+            clickToId='gt-J'
+            title='Joint working meetings'
+            desc='A meeting (in person or remote) where the youth (their family members/caregivers, if appropriate), child mental health services clinician (or team) and receiving adult mental health services clinician (or team) meet to discuss the youths current treatment plan and transfer of care.'
+          />
         </div>
 
         <p className='mt-8 mb-6'>
@@ -222,7 +246,11 @@ export default function Element4() {
           4.7 With youth&apos;s consent, communicate processes with primary care provider (i.e. family physician, nurse practitioner, or pharmacist) to ensure they have consistent
           up-to-date medication and treatment information.
         </h1>
-        <HighlightTextButton clickToId='gt-P' title='Primary care provider' desc='' />
+        <HighlightTextButton
+          clickToId='gt-P'
+          title='Primary care provider'
+          desc='The principal care provider providing health care services for ongoing health conditions and non-emergency health concerns, which may include physical or mental health.'
+        />
         <p className='mt-8 mb-6'>
           Youth facing mental health challenges are often treated within a primary care setting. Active engagement of a primary care provider is closely linked to improved health
           outcomes as youth transition in adult mental health services <Reference refName='(Toulany et al., 2022)' clickToId='ref-Toulany-2022' />. This continued involvement in
@@ -269,10 +297,26 @@ export default function Element4() {
           resources, community supports, and community mental health resources.
         </h1>
         <div className='grid grid-cols-2 auto-rows-auto gap-4 w-full'>
-          <HighlightTextButton clickToId='gt-D' title='Developmentally appropriate care' desc='' />
-          <HighlightTextButton clickToId='gt-S' title='Self-management' desc='' />
-          <HighlightTextButton clickToId='gt-C' title='Community mental health/community supports' desc='' />
-          <HighlightTextButton clickToId='gt-S' title='Self-care' desc='' />
+          <HighlightTextButton
+            clickToId='gt-D'
+            title='Developmentally appropriate care'
+            desc='Care that is sensitive to the needs of youth and their particular life circumstances and life goals. Eligibility criteria: These are a list of requirements for program-entry which may include age, diagnosis, and area of residence.'
+          />
+          <HighlightTextButton
+            clickToId='gt-S'
+            title='Self-management'
+            desc='The ability to engage in self-management entails empowering youth to feel comfortable taking an active role in recognizing and managing their own mental health concerns, care and well-being, including being involved in the choices made concerning their care.'
+          />
+          <HighlightTextButton
+            clickToId='gt-C'
+            title='Community mental health/community supports'
+            desc='This would include resources in your local context that are accessible to youth living in your organization’s community, such as: phone lines, walk-in services, school-based services, community health centre counselling services, relevant community social services, and others.'
+          />
+          <HighlightTextButton
+            clickToId='gt-S'
+            title='Self-care'
+            desc='Caring for one’s whole self; anything involved with managing the care required for one’s physical, emotional, mental and/or spiritual needs.'
+          />
         </div>
 
         <p className='mt-8 mb-6'>
@@ -332,7 +376,11 @@ export default function Element4() {
       </section>
       <section id='e4.9' data-section className='pt-10'>
         <h1 className='doc-content-sub-title mb-8'>4.9 If desired by youth, facilitate connections to peer support during the transition process.</h1>
-        <HighlightTextButton clickToId='gt-P' title='Peer support' desc='' />
+        <HighlightTextButton
+          clickToId='gt-P'
+          title='Peer support'
+          desc='Peer support is an emotional and practical relationship between the youth and a trained peer support worker who has lived through a similar experience such as mental health illness/addictions.'
+        />
         <p className='mt-8 mb-6'>
           The transition experience can often be a point of fear or anxiety for youth due to the uncertainty of the process and not knowing what to expect. During this time, youth
           can benefit from connecting with a trained peer support worker who has the skills and shared lived experience to offer emotional support to the youth. Peer support
