@@ -1,8 +1,9 @@
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
-import React, { ReactNode } from 'react';
+import React from 'react';
 
-export default function ChooseContent(): ReactNode {
+export default function ChooseContent() {
+  // Sort items by number and split into two columns for desktop view
   const contentItems = [
     {
       number: '01',
@@ -12,18 +13,25 @@ export default function ChooseContent(): ReactNode {
       href: '/doc#e1',
     },
     {
-      number: '04',
-      title: 'Transition planning',
-      description: 'Implement the transition plan, including identifying and collaborating with the adult MH services.',
-      width: '230px',
-      href: '/doc#e4',
-    },
-    {
       number: '02',
       title: 'Transition tracking and monitoring',
       description: 'Establish a protocol for tracking and monitoring transition steps.',
       width: '224px',
       href: '/doc#e2',
+    },
+    {
+      number: '03',
+      title: 'Transition readiness',
+      description: "Identify youth's transition-related needs and goals then co-create a transition plan with youth.",
+      width: '250px',
+      href: '/doc#e3',
+    },
+    {
+      number: '04',
+      title: 'Transition planning',
+      description: 'Implement the transition plan, including identifying and collaborating with the adult MH services.',
+      width: '230px',
+      href: '/doc#e4',
     },
     {
       number: '05',
@@ -33,51 +41,74 @@ export default function ChooseContent(): ReactNode {
       href: '/doc#e5',
     },
     {
-      number: '03',
-      title: 'Transition readiness',
-      description: "Identify youth's transition-related needs and goals then co-create a transition plan with youth.",
-      width: '250px',
-      href: '/doc#e3',
-    },
-
-    {
       number: '06',
       title: 'Transfer completion',
       description: 'Follow up with youth post-transition to ensure they have connected with adult services.',
       width: '230px',
       href: '/doc#e6',
     },
-  ];
+  ].sort((a, b) => parseInt(a.number) - parseInt(b.number));
+
+  // Split items into two arrays for desktop columns
+  const firstColumn = contentItems.slice(0, 3);
+  const secondColumn = contentItems.slice(3);
 
   return (
     <>
       <div className='font-open-sans sm:py-20 lg:py-32 bg-[#F7FCFE]'>
-        {/* Flex container that changes to column on mobile */}
         <div className='flex flex-col lg:flex-row'>
-          {/* Title section */}
-          <div className='lg:ps-[14%] mb-8 text-center lg:text-left'>
+          <div className='lg:ps-[7%] mb-8 text-center lg:text-left'>
             <p className='main-title text-3xl sm:text-4xl lg:text-5xl'>
               The Six <br className='hidden lg:block' /> Core elements of <br className='hidden lg:block' /> healthcare transitions
             </p>
           </div>
 
-          {/* Content grid that becomes single column on mobile */}
-          <div className='lg:mt-10 lg:ms-32 w-full lg:w-auto flex justify-center'>
-            {/* Grid container for all items */}
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-x-8 lg:gap-x-32'>
+          <div className='lg:mt-8 lg:ms-[8%] w-full lg:w-auto flex justify-center'>
+            {/* Mobile view - single column */}
+            <div className='md:hidden'>
               {contentItems.map((item, index) => (
-                <Link href={item.href} key={index} className='flex items-center group'>
+                <Link href={item.href} key={index} className='flex items-center group mb-8'>
                   <p className='text-[#C9CBC7] text-4xl sm:text-6xl lg:text-special font-bold mr-3 sm:mr-5 group-hover:text-[#43CDC1] leading-none mt-1'>{item.number}</p>
                   <div>
                     <p className='font-bold text-sm text-[#454545] mb-2 text-start'>{item.title}</p>
-                    <p className='text-xs text-[#454545] font-light text-start w-full sm:w-[224px] lg:w-[230px]'>{item.description}</p>
+                    <p className='text-xs text-[#454545] font-light text-start w-full sm:w-[224px]'>{item.description}</p>
                   </div>
                 </Link>
               ))}
             </div>
+
+            {/* Desktop view - two columns */}
+            <div className='hidden md:flex gap-x-8 lg:gap-x-32'>
+              {/* First Column */}
+              <div className='flex flex-col gap-y-8'>
+                {firstColumn.map((item, index) => (
+                  <Link href={item.href} key={index} className='flex items-center group'>
+                    <p className='text-[#C9CBC7] text-4xl sm:text-6xl lg:text-special font-bold mr-3 sm:mr-5 group-hover:text-[#43CDC1] leading-none mt-1'>{item.number}</p>
+                    <div>
+                      <p className='font-bold text-sm text-[#454545] mb-2 text-start'>{item.title}</p>
+                      <p className='text-xs text-[#454545] font-light text-start w-full sm:w-[224px] lg:w-[230px]'>{item.description}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+
+              {/* Second Column */}
+              <div className='flex flex-col gap-y-8'>
+                {secondColumn.map((item, index) => (
+                  <Link href={item.href} key={index} className='flex items-center group'>
+                    <p className='text-[#C9CBC7] text-4xl sm:text-6xl lg:text-special font-bold mr-3 sm:mr-5 group-hover:text-[#43CDC1] leading-none mt-1'>{item.number}</p>
+                    <div>
+                      <p className='font-bold text-sm text-[#454545] mb-2 text-start'>{item.title}</p>
+                      <p className='text-xs text-[#454545] font-light text-start w-full sm:w-[224px] lg:w-[230px]'>{item.description}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
       <div className='w-full flex justify-center items-center bg-white bg-opacity-43 px-4 sm:px-8 lg:px-0 lg:py-40 py-24'>
         <div className='w-full lg:w-[1217px] border-dashed border-2 border-[#8E98A8] rounded-3xl flex flex-col lg:flex-row justify-between items-center p-6 lg:px-[80px] lg:h-[157px]'>
           <p className='w-full lg:w-[635px] base-text-content text-size-base lg:text-xl text-center lg:text-left mb-6 lg:mb-0'>
