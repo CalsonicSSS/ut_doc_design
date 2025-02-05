@@ -22,21 +22,21 @@ export default function ChooseContent() {
     {
       number: '03',
       title: 'Transition readiness',
-      description: "Identify youth's transition-related needs and goals then co-create a transition plan with youth.",
+      description: 'Identify youth’s transition-related needs and goals then co-create a transition plan with youth.',
       width: '250px',
       href: '/doc#e3',
     },
     {
       number: '04',
       title: 'Transition planning',
-      description: 'Implement the transition plan, including identifying and collaborating with the adult MH services.',
+      description: 'Implement the transition plan, including identifying and collaborating with the adult services.',
       width: '230px',
       href: '/doc#e4',
     },
     {
       number: '05',
       title: 'Transfer of care',
-      description: 'Prepare a transfer package and hold a transfer meeting between child and adult MH services.',
+      description: 'Prepare a transfer package and hold a transfer meeting between child and adult services.',
       width: '230px',
       href: '/doc#e5',
     },
@@ -67,8 +67,8 @@ export default function ChooseContent() {
             {/* Mobile view - single column */}
             <div className='md:hidden'>
               {contentItems.map((item, index) => (
-                <Link href={item.href} key={index} className='flex items-center group mb-8'>
-                  <p className='text-[#C9CBC7] text-4xl sm:text-6xl lg:text-special font-bold mr-3 sm:mr-5 group-hover:text-[#43CDC1] leading-none mt-1'>{item.number}</p>
+                <Link href={item.href} key={index} className='flex items-start group mb-8'>
+                  <p className='text-[#C9CBC7] text-4xl sm:text-6xl lg:text-special font-bold mr-3 sm:mr-5 group-hover:text-[#43CDC1] leading-none'>{item.number}</p>
                   <div>
                     <p className='font-bold text-sm text-[#454545] mb-2 text-start'>{item.title}</p>
                     <p className='text-xs text-[#454545] font-light text-start w-full sm:w-[224px]'>{item.description}</p>
@@ -83,7 +83,7 @@ export default function ChooseContent() {
               <div className='flex flex-col gap-y-8'>
                 {firstColumn.map((item, index) => (
                   <Link href={item.href} key={index} className='flex items-center group'>
-                    <p className='text-[#C9CBC7] text-4xl sm:text-6xl lg:text-special font-bold mr-3 sm:mr-5 group-hover:text-[#43CDC1] leading-none mt-1'>{item.number}</p>
+                    <p className='text-[#C9CBC7] text-4xl sm:text-6xl lg:text-special font-bold mr-3 sm:mr-5 group-hover:text-[#43CDC1] leading-none'>{item.number}</p>
                     <div>
                       <p className='font-bold text-sm text-[#454545] mb-2 text-start'>{item.title}</p>
                       <p className='text-xs text-[#454545] font-light text-start w-full sm:w-[224px] lg:w-[230px]'>{item.description}</p>
@@ -96,7 +96,7 @@ export default function ChooseContent() {
               <div className='flex flex-col gap-y-8'>
                 {secondColumn.map((item, index) => (
                   <Link href={item.href} key={index} className='flex items-center group'>
-                    <p className='text-[#C9CBC7] text-4xl sm:text-6xl lg:text-special font-bold mr-3 sm:mr-5 group-hover:text-[#43CDC1] leading-none mt-1'>{item.number}</p>
+                    <p className='text-[#C9CBC7] text-4xl sm:text-6xl lg:text-special font-bold mr-3 sm:mr-5 group-hover:text-[#43CDC1] leading-none'>{item.number}</p>
                     <div>
                       <p className='font-bold text-sm text-[#454545] mb-2 text-start'>{item.title}</p>
                       <p className='text-xs text-[#454545] font-light text-start w-full sm:w-[224px] lg:w-[230px]'>{item.description}</p>
