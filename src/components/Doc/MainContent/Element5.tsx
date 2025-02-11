@@ -2,6 +2,7 @@ import React from 'react';
 import { ResourcesContentLinks } from '../ResourcesBulletContent';
 import Quote from '../Quote';
 import HighlightTextButton from '../HighlightTextButton';
+import HighlightText from '../HighlightText';
 
 export default function Element5() {
   return (
@@ -14,32 +15,32 @@ export default function Element5() {
           <HighlightTextButton
             clickToId='gt-C'
             title='Case Conference'
-            desc='A meeting between care providers within and between organizations to ensure coordination and integration of care .'
+            tooltipDesc='A meeting between care providers within and between organizations to ensure coordination and integration of care.'
           />
           <HighlightTextButton
             clickToId='gt-W'
             title='Warm Handover'
-            desc='A conversation between a care provider and patient to identify and introduce transfer of care to another provider or organization.'
+            tooltipDesc='A conversation between a care provider and patient to identify and introduce transfer of care to another provider or organization.'
           />
         </div>
 
         <p className='mb-6 mt-8'>
           The purpose of the meeting should be to develop a shared understanding of the young person&apos;s care up to this point, and their continuing care needs. The meeting can
           be used to identify the roles of everyone involved in the handover of care, based on the previously established care plan. The handover meetings may include everyone
-          previously identified as being part of the care transition (i.e. youth, <span className='font-bold'>child and adolescent mental health services</span> and{' '}
-          <span className='font-bold'>adult mental health services</span> clinician, <span className='font-bold'>transition navigators</span> , and{' '}
-          <span className='font-bold'>family members/caregivers</span> if appropriate) is often organized and led by the{' '}
-          <span className='font-bold'>most responsible provider</span> at that point in time. It is important to ensure youth understand the purpose and goals of the meeting,and
-          that they can choose how they would like to be involved. For more information about who should be involved in this meeting, reference the discussion in component 4.1 and
-          4.2.
+          previously identified as being part of the care transition (i.e. youth, <HighlightText content='child and adolescent mental health services' clickToId='gt-C' /> and{' '}
+          <HighlightText content='adult mental health services' clickToId='gt-A' /> clinician, <HighlightText content='transition navigators' clickToId='gt-T' />, and{' '}
+          <HighlightText content='family members/caregivers' clickToId='gt-F' /> if appropriate) is often organized and led by the{' '}
+          <HighlightText content='most responsible provider' clickToId='gt-M' /> at that point in time. It is important to ensure youth understand the purpose and goals of the
+          meeting,and that they can choose how they would like to be involved. For more information about who should be involved in this meeting, reference the discussion in
+          component 4.1 and 4.2.
         </p>
         <p className='mb-8'>“Parallel Care” and “Joint Working Meetings” may also be relevant for this component. Please seeComponent 4.6 for definitions.</p>
         <ResourcesContentLinks
           resourceClickToId='resources-lists'
-          titlesAndLinks={[
+          contents={[
             {
               title: 'To learn how to ensure an effective warm handover',
-              links: [
+              linkObjs: [
                 {
                   linkText: 'Alberta Health Services, Warm Handoffs',
                   link: 'https://www.albertahealthservices.ca/assets/info/amh/if-amh-ecc-warm-handoffs.pdf',
@@ -60,19 +61,18 @@ export default function Element5() {
         </h1>
         <div className='flex'>
           <HighlightTextButton
-            clickToId='gt-R'
             title='Referral Letter'
-            desc='A referral letter is provided by the youth’s health team and overviews basic client information, presenting problems, a brief personal and treatment history including diagnoses, and any additional next steps or follow up items following referral.'
+            tooltipDesc='A referral letter is provided by the youth’s health team and overviews basic client information, presenting problems, a brief personal and treatment history including diagnoses, and any additional next steps or follow up items following referral.'
           />
           <HighlightTextButton
             clickToId='gt-T'
-            title='Transition Plan'
-            desc='A living document which outlines the goals of transition, individual care needs, and interventions throughout the transition process.'
+            title='Transition plan'
+            tooltipDesc='A living document which outlines the goals of transition, individual care needs, and interventions throughout the transition process.'
           />
           <HighlightTextButton
             clickToId='gt-C'
-            title='Clinical Records'
-            desc='Clinical records include any communication or records relating to the diagnosis, evaluation, or treatment of the young person during their care.'
+            title='Clinical records'
+            tooltipDesc='Clinical records include any communication or records relating to the diagnosis, evaluation, or treatment of the young person during their care.'
           />
         </div>
 
@@ -88,10 +88,10 @@ export default function Element5() {
 
         <ResourcesContentLinks
           resourceClickToId='resources-lists'
-          titlesAndLinks={[
+          contents={[
             {
               title: 'Policy and procedures for transfer of care',
-              links: [
+              linkObjs: [
                 {
                   linkText: 'Nova Scotia Health, Information Transfer at Care Transitions Policy',
                   link: 'https://policy.nshealth.ca/Site_Published/NSHA/document_render.aspx?documentRender.IdType=6&documentRender.GenericField=&documentRender.Id=98152',
@@ -100,7 +100,7 @@ export default function Element5() {
             },
             {
               title: 'For a guideline on care transitions and communicating the information',
-              links: [
+              linkObjs: [
                 {
                   linkText: 'Women’s College Hospital, INFORMATION TRANSFER AT CARE TRANSITIONS',
                   link: 'https://www.womenscollegehospital.ca/accreditation-q-tip-information-transfer-at-care-transitions/',
@@ -109,7 +109,7 @@ export default function Element5() {
             },
             {
               title: 'Information to be included in the transition',
-              links: [
+              linkObjs: [
                 {
                   linkText: 'RNAO My Transitional Care Plan©',
                   link: 'https://rnao.ca/bpg/guidelines/transitions-in-care',

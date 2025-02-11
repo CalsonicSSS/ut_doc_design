@@ -1,11 +1,12 @@
 import React from 'react';
 import DotList from '../DotList';
+import Link from 'next/link';
 
 export default function AboutThisResource() {
   return (
     <section id='about-this-resource' data-section className='py-14 doc-content-text border-b-[1px] lg:px-0 px-5'>
       <h1 className='doc-content-title'>About this Resource</h1>
-      <section id='purpose-of-this-resource' data-section className='py-10'>
+      <section id='purpose-of-this-resource' data-section className='pt-10'>
         <h1 className='doc-content-sub-title mb-8'>Purpose of this Resource</h1>
         <p className='mb-6'>
           The purpose of the Unite Core Components Guidebook is to support the uptake and implementation of the core components of successful mental health transitions in youth
@@ -21,7 +22,7 @@ export default function AboutThisResource() {
         </p>
       </section>
 
-      <section id='using-this-resource' data-section className='py-10'>
+      <section id='using-this-resource' data-section className='pt-10'>
         <h1 className='doc-content-sub-title mb-8'>Using this Resource</h1>
         <p>
           Core components are divided into six categories, or “elements”, intended to support thinking of the transition process from beginning to end. Each core component includes
@@ -47,13 +48,14 @@ export default function AboutThisResource() {
           clinicians, youth, and family members and caregivers from across Canada.
         </p>
         <p className='mb-6'>
-          Quotes and “Notes from a Navigator” in this guidebook are sourced from research studies conducted by our research team, including a pan-Canadian Delphi study that
-          developed core components and the Navigator Evaluation Advancing Transitions (NEAT) Study.
+          Quotes and “Notes from a Navigator” in this guidebook are sourced from research studies conducted by our research team, including a{' '}
+          <span className='underline'>pan-Canadian Delphi study that developed core components</span> and{' '}
+          <span className='underline'>the Navigator Evaluation Advancing Transitions (NEAT) Study</span>.
         </p>
         <p className='font-bold'>All “Notes from a Navigator” quotes are attributed to a manuscript in preparation and should not be copied/reproduced:</p>
         <DotList
           contentList={[
-            'Cleverley K et al. (2023) Understanding the scope and impact of the youth mental health transition navigator role:',
+            'Cleverley K et al. (2025) Understanding the scope and impact of the youth mental health transition navigator role:',
             'perspectives of navigators and clinicians. [manuscript in preparation].',
           ]}
           ms={[0, 12]}
@@ -64,7 +66,12 @@ export default function AboutThisResource() {
           contentList={[
             "Cleverley K, McCann E, O'Brien D, Davies J, Bennett K, Brennenstuhl S, Courey L, Henderson J, Jeffs L, Miller J, Pignatiello T, Rong J, Rowland E, Stevens K, & Szatmari P. (2021).",
             'Prioritizing core components of successful transitions from child to adult mental health care:',
-            'A national Delphi survey with youth, caregivers, and health professionals. European Child & Adolescent Psychiatry. https://doi.org/10.1007/s00787-021-01806-6',
+            <div>
+              A national Delphi survey with youth, caregivers, and health professionals. European Child & Adolescent Psychiatry.{' '}
+              <Link className='text-navy-0 underline inline' target='_blank' rel='noopener noreferrer' href={'https://link.springer.com/article/10.1007/s00787-021-01806-6'}>
+                https://doi.org/10.1007/s00787-021-01806-6
+              </Link>
+            </div>,
           ]}
           ms={[0, 0, 12]}
         />

@@ -2,6 +2,8 @@ import React from 'react';
 import HighlightTextButton from '../HighlightTextButton';
 import { ResourcesContentLinks } from '../ResourcesBulletContent';
 import Quote from '../Quote';
+import HighlightText from '../HighlightText';
+import { ScrollManager } from '../utils';
 
 export default function Element2() {
   return (
@@ -15,33 +17,41 @@ export default function Element2() {
           <HighlightTextButton
             title='Integrated care pathway'
             clickToId='gt-I'
-            desc='Integrated care pathways are structured; multipurpose care plans which outline the steps involved in the care of patients with a specific clinical problem.'
+            tooltipDesc='Integrated care pathways are structured; multipurpose care plans which outline the steps involved in the care of patients with a specific clinical problem.'
           />
           <HighlightTextButton
             title='Transition process'
             clickToId='gt-T'
-            desc='The transition process is a series of action steps that are followed to complete the care transition.'
+            tooltipDesc='The transition process is a series of action steps that are followed to complete the care transition.'
           />
         </div>
 
         <p className='mt-8 mb-6'>
-          When preparing youth to transition out of child and adolescent mental <span className='font-bold'>health services</span> , there are several factors that need to be
-          considered. For many organizations, this transition out of child mental health services is an age-dependent criteria, for example, when a child turns eighteen years old.
-          Other organizations may specify additional criteria for transitions, such as completing a set number of sessions before transitioning and/or receiving a specific
+          When preparing youth to transition out of <HighlightText content='child and adolescent mental health services' clickToId='gt-C' /> , there are several factors that need
+          to be considered. For many organizations, this transition out of child mental health services is an age-dependent criteria, for example, when a child turns eighteen years
+          old. Other organizations may specify additional criteria for transitions, such as completing a set number of sessions before transitioning and/or receiving a specific
           psychiatric diagnosis (i.e. psychosis).
         </p>
         <p className='mb-8'>
           Where possible, the transition identification process should begin at least six months prior to the planned transition or earlier. It should include the transition
-          navigator (when available), <span className='font-bold'>primary care provider, family/caregiver (if appropriate),</span> youth, and any other significant care provider. A
-          transition plan should also be established during the initiation of the transition process. See Component 3.3 formore information on developing{' '}
-          <span className='font-bold'>a transition plan</span>
+          navigator (when available), <HighlightText content='primary care provider, family/caregiver' clickToId='gt-P' /> (if appropriate), youth, and any other significant care
+          provider. A transition plan should also be established during the initiation of the transition process. See{' '}
+          <span
+            className='underline text-navy-0 hover: cursor-pointer'
+            onClick={() => {
+              ScrollManager.scrollToElement('e3.3');
+            }}
+          >
+            Component 3.3
+          </span>{' '}
+          for more information on developing a <HighlightText content='transition plan' clickToId='gt-T' />
         </p>
         <ResourcesContentLinks
           resourceClickToId='resources-lists'
-          titlesAndLinks={[
+          contents={[
             {
               title: 'To learn more about holistic transitions and avoiding unforseen circumstances',
-              links: [
+              linkObjs: [
                 {
                   linkText: 'Complex Care for Kids Ontario Youth Transition to Adult Care Toolkit- Caregiver and Youth Checklist & Transition Resource ',
                   link: 'https://www.pcmch.on.ca/wp-content/uploads/2022/05/CCKO-Youth-Transition-Caregiver_Youth-Checklist_-Final_Feb222022-Fillable.pdf',
@@ -50,7 +60,7 @@ export default function Element2() {
             },
             {
               title: 'To learn more about integrated care pathways:',
-              links: [
+              linkObjs: [
                 {
                   linkText:
                     'The Ministries of Community & Social Services and Children and Youth Services, Provincial Transition Planning Framework for Young People With Developmental Disabilities',
@@ -72,12 +82,12 @@ export default function Element2() {
         </h1>
         <p className='mb-6'>
           A transition flow sheet or logbook should be established and consistently updated to track all important steps completed to facilitate the youth’s transition, such as
-          confirming the timing of transfer,conducting a <span className='font-bold'>readiness assessment</span> , or identifying stakeholders involved in the youth’s{' '}
-          <span className='font-bold'>transition process</span>. A transition flow sheet or logbook supports transition navigators (or the most responsible clinician) track and
-          monitor the ongoing transition process of the youth. These logbooks can support clinical decision-making, such as determining the next steps in the youth’s transition
-          journey. Tracking also enables transition navigators to observe youth retention within the program. Data collected within the flow sheet or logbook can also be used to:
-          1) track a youth’s progress through the transition plan,including when and who discussed each component with youth; and 2) evaluate transition outcomes, at both the
-          individual (i.e. change in transition readiness) and program-level (i.e. total number of youth supported within the program annually.).
+          confirming the timing of transfer,conducting a <HighlightText content='readiness assessment' clickToId='gt-R' />, or identifying stakeholders involved in the youth’s{' '}
+          <HighlightText content='transition process' clickToId='gt-T' />. A transition flow sheet or logbook supports transition navigators (or the most responsible clinician)
+          track and monitor the ongoing transition process of the youth. These logbooks can support clinical decision-making, such as determining the next steps in the youth’s
+          transition journey. Tracking also enables transition navigators to observe youth retention within the program. Data collected within the flow sheet or logbook can also be
+          used to: 1) track a youth’s progress through the transition plan,including when and who discussed each component with youth; and 2) evaluate transition outcomes, at both
+          the individual (i.e. change in transition readiness) and program-level (i.e. total number of youth supported within the program annually.).
         </p>
         <p className='mb-8'>
           Transition flow sheets or logbooks can be developed and managed on shared drives (i.e., OneDrive)and/or on electronic platforms (i.e., REDCap) so they can be easily
@@ -85,10 +95,10 @@ export default function Element2() {
         </p>
         <ResourcesContentLinks
           resourceClickToId='resources-lists'
-          titlesAndLinks={[
+          contents={[
             {
               title: 'For a database to track transition stages',
-              links: [
+              linkObjs: [
                 {
                   linkText: 'NEAT Study Clinical Tracking Database',
                   link: '',
@@ -97,7 +107,7 @@ export default function Element2() {
             },
             {
               title: 'For an overview of the transition process',
-              links: [
+              linkObjs: [
                 {
                   linkText: 'GotTransition, Sample Individual Transition Flow Sheet',
                   link: 'https://gottransition.org/6ce/?leaving-flow-sheet',

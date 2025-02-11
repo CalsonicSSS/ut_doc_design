@@ -5,7 +5,8 @@ import HighlightTextButton from '../HighlightTextButton';
 import Link from 'next/link';
 import { LogOut } from 'lucide-react';
 import { ScrollManager } from '../utils';
-import Reference from '@/components/Reference';
+import AuthorReference from '@/components/AuthorReference';
+import HighlightText from '../HighlightText';
 
 export default function Element3() {
   return (
@@ -64,38 +65,37 @@ export default function Element3() {
         <h1 className='doc-content-sub-title mb-8'>
           3.2 Provide youth (and their family members/caregivers, if appropriate) information about what to expect from adult mental health services.
         </h1>
-        <HighlightTextButton
-          title='Family members/caregivers'
-          clickToId='gt-F'
-          desc='Family members/caregivers comprises anyone that the youth identifies they want to be involved in their care. Family members/caregivers for youth could include biological and chosen family members, caregivers and guardians, partners, siblings, and/or adult allies.'
-        ></HighlightTextButton>
+
         <p className='mt-8 mb-6'>
           Youth transitioning from child to adult mental health services are in a crucial period of life where they are experiencing many developmental milestones as well as new
-          life experiences <Reference refName='(Borah et al., 2021)' clickToId='ref-Borah' />. The combination of these changes may further complicate healthcare transitions.
+          life experiences <AuthorReference refName='(Borah et al., 2021)' href='https://www.tandfonline.com/doi/full/10.1080/15332985.2021.1894629' />. The combination of these
+          changes may further complicate healthcare transitions.
         </p>
         <p className='mb-6'>
           Youth identified several different factors that make transitions difficult including: a shifting awareness of the meaning of transition as well as the appropriate age for
           transition, a lack of transition readiness, limited involvement in the transition process, confusion over roles and responsibilities in the{' '}
-          <span className='font-bold'>transition process</span> and concerns over transition gaps leading to poor mental health outcomes{' '}
-          <Reference refName='(Cleverley et al., 2020)' clickToId='ref-Cleverley' />.
+          <HighlightText content='transition process' clickToId='gt-T' /> and concerns over transition gaps leading to poor mental health outcomes{' '}
+          <AuthorReference refName='(Cleverley et al., 2020)' href='https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-020-02516-0' />.
         </p>
         <p className='mb-8'>
-          One of the most significant changes include system differences between <span className='font-bold'>child and adolescent mental health services</span> and{' '}
-          <span className='font-bold'>adult mental health services.</span> Youth have identified a decreased support in adult mental health services and lack of information sharing
-          between child and adult health services as major differences. Child and adolescent mental health services are often described as nurturing and prioritize a family unit
-          while adult mental health services consider youth as autonomous adults and often have limited family involvement{' '}
-          <Reference refName='(Borah et al., 2021)' clickToId='ref-Borah' />. This distinct difference between the two services can lead to a sharp change in type and level of care
-          and increases the risk of care disengagement <Reference refName='(Borah et al., 2021)' clickToId='ref-Borah' />. Youth have reported feeling underprepared for the
-          transition process, specifically not having enough information about their options <Reference refName='(Cleverley et al., 2020)' clickToId='ref-Cleverley' />. As such,
-          youth have identified having the opportunity to be partners in the planning process and ensuring information about the process be clearly communicated as a priority of
-          transitions in care <Reference refName='(Cleverley et al., 2020)' clickToId='ref-Cleverley' />.
+          One of the most significant changes include system differences between <HighlightText content='child and adolescent mental health services' clickToId='gt-C' />
+          and <HighlightText content='adult mental health services' clickToId='gt-A' />. Youth have identified a decreased support in adult mental health services and lack of
+          information sharing between child and adult health services as major differences. Child and adolescent mental health services are often described as nurturing and
+          prioritize a family unit while adult mental health services consider youth as autonomous adults and often have limited family involvement{' '}
+          <AuthorReference refName='(Borah et al., 2021)' href='https://www.tandfonline.com/doi/full/10.1080/15332985.2021.1894629' />. This distinct difference between the two
+          services can lead to a sharp change in type and level of care and increases the risk of care disengagement{' '}
+          <AuthorReference refName='(Borah et al., 2021)' href='https://www.tandfonline.com/doi/full/10.1080/15332985.2021.1894629' />. Youth have reported feeling underprepared
+          for the transition process, specifically not having enough information about their options{' '}
+          <AuthorReference refName='(Cleverley et al., 2020)' href='https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-020-02516-0' />. As such, youth have identified
+          having the opportunity to be partners in the planning process and ensuring information about the process be clearly communicated as a priority of transitions in care{' '}
+          <AuthorReference refName='(Cleverley et al., 2020)' href='https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-020-02516-0' />.
         </p>
         <ResourcesContentLinks
           resourceClickToId='resources-lists'
-          titlesAndLinks={[
+          contents={[
             {
               title: 'For more information on adult mental health systems',
-              links: [
+              linkObjs: [
                 {
                   linkText: 'CMHA, Transitioning from Youth to Adult Mental Health Services',
                   link: 'https://ontario.cmha.ca/documents/transitioning-from-youth-to-adult-mental-health-services/',
@@ -116,13 +116,13 @@ export default function Element3() {
         </h1>
         <HighlightTextButton
           title='Transition plan'
-          desc='A living document which outlines the goals of transition, individual care needs, and interventions throughout the transition process.'
+          tooltipDesc='A living document which outlines the goals of transition, individual care needs, and interventions throughout the transition process.'
           clickToId='gt-T'
         />
         <p className='mt-8 mb-6'>
-          The transition plan, which is a living document that outlines the plan of care throughout the <span className='font-bold'>transition process</span> , should be co-created
-          with youth and their identified care team. This document includes goals for transition and planned interventions which will be informed by ongoing transition{' '}
-          <span className='font-bold'>readiness assessment</span> and youth priorities for transition care.
+          The transition plan, which is a living document that outlines the plan of care throughout the <HighlightText content='transition process' clickToId='gt-T' />, should be
+          co-created with youth and their identified care team. This document includes goals for transition and planned interventions which will be informed by ongoing transition{' '}
+          <HighlightText content='readiness assessment' /> and youth priorities for transition care.
         </p>
         <p className='mb-8'>
           This plan should be continuously updated throughout the pre-transition and transition period and should include documented progress through identified tasks. The care
@@ -131,10 +131,10 @@ export default function Element3() {
         </p>
         <ResourcesContentLinks
           resourceClickToId='resources-lists'
-          titlesAndLinks={[
+          contents={[
             {
               title: 'To learn more about transition template:',
-              links: [
+              linkObjs: [
                 {
                   linkText: 'Got Transition, Transition Care Plan Template',
                   link: 'https://www.gottransition.org/6ce/?leaving-plan-care',
@@ -143,7 +143,7 @@ export default function Element3() {
             },
             {
               title: 'To learn more about service transition plan:',
-              links: [
+              linkObjs: [
                 {
                   linkText: 'Mindyourmind, Service Transition Plan',
                   link: 'https://mindyourmind.ca/games-tools/personal-growth/service-transition-plan/',

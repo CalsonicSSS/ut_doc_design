@@ -12,19 +12,22 @@ export default function Acknowledgements() {
             Kristin Cleverley <span className='text-[#7FD5D1]'>1,2</span>
           </p>,
           <p key={2}>
-            Julia Davies <span className='text-[#7FD5D1]'>1</span>
+            Julia Davies <span className='text-[#7FD5D1]'>1.2</span>
           </p>,
           <p key={3}>
-            Emma McCann1 Celeste Agard <span className='text-[#7FD5D1]'>1</span>
+            Emma McCann <span className='text-[#7FD5D1]'>1</span>
           </p>,
           <p key={4}>
-            Savina Edward <span className='text-[#7FD5D1]'>1</span>
-          </p>,
-          <p key={5}>
-            Shabeeha Firthouse <span className='text-[#7FD5D1]'>1</span>
+            Celeste Agard <span className='text-[#7FD5D1]'>1</span>
           </p>,
           <p key={6}>
-            Soha Salman <span className='text-[#7FD5D1]'>1</span>
+            Savina Edward <span className='text-[#7FD5D1]'>1</span>
+          </p>,
+          <p key={7}>
+            Shabeeha Firthouse <span className='text-[#7FD5D1]'>1</span>
+          </p>,
+          <p key={8}>
+            Soha Salman <span className='text-[#7FD5D1]'>2</span>
           </p>,
         ]}
         ms={[0, 0, 0, 0, 0, 0]}
