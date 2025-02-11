@@ -122,7 +122,7 @@ export default function Element3() {
         <p className='mt-8 mb-6'>
           The transition plan, which is a living document that outlines the plan of care throughout the <HighlightText content='transition process' clickToId='gt-T' />, should be
           co-created with youth and their identified care team. This document includes goals for transition and planned interventions which will be informed by ongoing transition{' '}
-          <HighlightText content='readiness assessment' /> and youth priorities for transition care.
+          <HighlightText content='readiness assessment' clickToId='gt-R' /> and youth priorities for transition care.
         </p>
         <p className='mb-8'>
           This plan should be continuously updated throughout the pre-transition and transition period and should include documented progress through identified tasks. The care

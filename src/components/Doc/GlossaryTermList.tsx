@@ -13,7 +13,7 @@ export default function GlossaryTermList({ termList }: { termList: TermContent[]
     <>
       {termList.map((term: TermContent, index: number) => (
         <div key={index} className={`${index + 1 !== termList.length && 'mb-4'}`}>
-          <Link href={term.href ? term.href : ''} className={`text-navy-0 underline block`} id={term.id} data-section>
+          <Link href={term.href ? term.href : ''} className={`text-navy-0 block`} id={term.id} data-section>
             {term.title}
           </Link>
           <p>{term.text}</p>

@@ -79,6 +79,18 @@ export default function Appendices() {
             },
           ]}
         />
+        <h1 className='doc-content-sub-title mt-10 mb-8' id='gt-E'>
+          E
+        </h1>
+        <GlossaryTermList
+          termList={[
+            {
+              id: 'gt-ec',
+              title: 'Eligibility criteria:',
+              text: 'These are a list of requirements for program-entry which may include age, diagnosis, and area of residence.',
+            },
+          ]}
+        />
         <h1 className='doc-content-sub-title mt-10 mb-8' id='gt-F'>
           F
         </h1>
@@ -100,6 +112,18 @@ export default function Appendices() {
               id: 'gt-icp',
               title: 'Integrated care pathway: ',
               text: 'Integrated care pathways are structured; multipurpose care plans which outline the steps involved in the care of patients with a specific clinical problem.',
+            },
+          ]}
+        />
+        <h1 className='doc-content-sub-title mt-10 mb-8' id='gt-J'>
+          J
+        </h1>
+        <GlossaryTermList
+          termList={[
+            {
+              id: 'gt-jwm',
+              title: 'Joint working meetings:',
+              text: 'A meeting (in person or remote) where the youth (their family members/caregivers, if appropriate), child mental health services clinician (or team) and receiving adult mental health services clinician (or team) meet to discuss the youths current treatment plan and transfer of care.',
             },
           ]}
         />
@@ -146,6 +170,23 @@ export default function Appendices() {
               id: 'gt-pcp',
               title: 'Primary care provider: ',
               text: 'The principal care provider providing health care services for ongoing health conditions and non-emergency health concerns, which may include physical or mental health.',
+            },
+          ]}
+        />
+        <h1 className='doc-content-sub-title mt-10 mb-8' id='gt-R'>
+          R
+        </h1>
+        <GlossaryTermList
+          termList={[
+            {
+              id: 'gt-ra',
+              title: 'Readiness assessment:',
+              text: 'If youth are prepared to begin the transition process into adult mental health services.',
+            },
+            {
+              id: 'gt-rl',
+              title: 'Referral letter:',
+              text: 'A referral letter is provided by the youth’s health team and overviews basic client information, presenting problems, a brief personal and treatment history including diagnoses, and any additional next steps or follow up items following referral.',
             },
           ]}
         />

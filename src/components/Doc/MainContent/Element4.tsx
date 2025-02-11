@@ -199,7 +199,8 @@ export default function Element4() {
         <p className='mb-6'>
           1. Transition goals and prioritized actions
           <br />
-          2. <HighlightText content='Readiness assessment' />: A process of determining if youth are prepared to begin the transition process into adult mental health services.
+          2. <HighlightText content='Readiness assessment' clickToId='gt-R' />: A process of determining if youth are prepared to begin the transition process into adult mental
+          health services.
           <br />
           3. <HighlightText content='Clinical Summary' clickToId='gt-C' />: A summation of pertinent patient information that can be used to convey the condition and journey of a
           patient, including relevant diagnoses or problems, treatments, medication history and important contact information.
