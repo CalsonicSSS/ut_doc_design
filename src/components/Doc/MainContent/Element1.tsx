@@ -110,7 +110,7 @@ export default function Element1() {
               title: 'For examples of transition policies',
               linkObjs: [
                 {
-                  linkText: 'GotTransition, Sample TRansition and Care Policies/Guides',
+                  linkText: 'GotTransition, Sample Transition and Care Policies/Guides',
                   link: 'https://www.gottransition.org/6ce/?leaving-ImplGuide-policy-examples',
                 },
               ],
@@ -255,7 +255,8 @@ export default function Element1() {
         </h1>
         <p className='mb-8'>
           Role clarity is an essential component of positive interprofessional collaboration (
-          <AuthorReference refName='IPEC, 2016; ' href='https://ipec.memberclicks.net/assets/2016-Update.pdf' />{' '}
+          <AuthorReference refName='IPEC, 2016' href='https://ipec.memberclicks.net/assets/2016-Update.pdf' />
+          {'; '}
           <AuthorReference refName='McLaneyet al., 2022' href='https://journals.sagepub.com/doi/10.1177/08404704211063584' />) and a clear organizational framework to indicate who
           has ownership of different aspects of the transition can support teams in successfully planning transition care. At an organizational level,determine who is responsible
           for supporting transitions, including developing a transitions policy,developing capacity and training in care team members, and/or development of{' '}

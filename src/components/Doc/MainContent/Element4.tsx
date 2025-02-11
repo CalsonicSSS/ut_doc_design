@@ -93,9 +93,8 @@ export default function Element4() {
           This is also an opportunity to identify current gaps in care or support which may require additional attention ahead of the transition.
         </p>
         <p className='mb-8'>
-          The specific roles and responsibilities of each team member should be captured and regularly updated in the transition plan. For more information, refer to the{' '}
-          <HighlightText content='transition plan ' clickToId='gt-T' />
-          document resources in{' '}
+          The specific roles and responsibilities of each team member should be captured and regularly updated in the <HighlightText content='transition plan' clickToId='gt-T' />.
+          For more information, refer to the transition plan document resources in{' '}
           <span className='underline hover: cursor-pointer text-navy-0' onClick={() => ScrollManager.scrollToElement('e3.3')}>
             Component 3.3
           </span>{' '}
@@ -111,6 +110,7 @@ export default function Element4() {
           health service eligibility criteria.
         </h1>
         <HighlightTextButton
+          clickToId='gt-E'
           title='Eligibility criteria'
           tooltipDesc='These are a list of requirements for program-entry which may include age, diagnosis, and area of residence.'
         />
@@ -230,6 +230,7 @@ export default function Element4() {
             tooltipDesc='A period of time where a young person may be connected to both youth-oriented and adult-oriented mental health care services.'
           />
           <HighlightTextButton
+            clickToId='gt-J'
             title='Joint working meetings'
             tooltipDesc='A meeting (in person or remote) where the youth (their family members/caregivers, if appropriate), child mental health services clinician (or team) and receiving adult mental health services clinician (or team) meet to discuss the youths current treatment plan and transfer of care.'
           />

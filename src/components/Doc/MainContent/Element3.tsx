@@ -78,8 +78,8 @@ export default function Element3() {
           <AuthorReference refName='(Cleverley et al., 2020)' href='https://bmcpsychiatry.biomedcentral.com/articles/10.1186/s12888-020-02516-0' />.
         </p>
         <p className='mb-8'>
-          One of the most significant changes include system differences between <HighlightText content='child and adolescent mental health services' clickToId='gt-C' />
-          and <HighlightText content='adult mental health services' clickToId='gt-A' />. Youth have identified a decreased support in adult mental health services and lack of
+          One of the most significant changes include system differences between <HighlightText content='child and adolescent mental health services' clickToId='gt-C' /> and{' '}
+          <HighlightText content='adult mental health services' clickToId='gt-A' />. Youth have identified a decreased support in adult mental health services and lack of
           information sharing between child and adult health services as major differences. Child and adolescent mental health services are often described as nurturing and
           prioritize a family unit while adult mental health services consider youth as autonomous adults and often have limited family involvement{' '}
           <AuthorReference refName='(Borah et al., 2021)' href='https://www.tandfonline.com/doi/full/10.1080/15332985.2021.1894629' />. This distinct difference between the two

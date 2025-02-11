@@ -61,6 +61,7 @@ export default function Element5() {
         </h1>
         <div className='flex'>
           <HighlightTextButton
+            clickToId='gt-R'
             title='Referral Letter'
             tooltipDesc='A referral letter is provided by the youth’s health team and overviews basic client information, presenting problems, a brief personal and treatment history including diagnoses, and any additional next steps or follow up items following referral.'
           />

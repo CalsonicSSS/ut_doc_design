@@ -8,11 +8,34 @@ export default function ResourcesLists() {
       <h1 className='doc-content-sub-title mt-10 mb-8'>Element 1</h1>
       <LinkList
         linkContents={[
-          { href: '#element-1', text: "1.1 Nice, transitions from children's to adults 'services pathway" },
+          { href: '#element-1', text: "1.1 NICE, transitions from children's to adults 'services pathway" },
           { href: '#element-2', text: '1.1 Key attributes of integrated community-based youth service hubs for mental health: a scoping review' },
           { href: '#element-3', text: '1.1 Knowledge Institute on Child and Youth Mental Health and Addictions Care Pathways' },
-          { href: '#element-4', text: '1.2 GotTransition, Sample TRansition and Care Policies/Guides' },
+          { href: '#element-4', text: '1.2 GotTransition, Sample Transition and Care Policies/Guides' },
           { href: '#element-5', text: '1.2 Alberta Health Services: Care Transitions Policy' },
+          { href: '#element-6', text: '1.3 KFL&A, Youth Transitioning Protocol' },
+          {
+            href: '#element-7',
+            text: '1.3 Youth Mental Health Transition Protocol Agreement between Ministry for Children and Family Development and Ministry of Health and Health Authorities',
+          },
+          { href: '#element-8', text: '1.4 Registered Nurses Association of Ontario (RNAO), Transitions in Care and Services Clinical Best Practice Guideline' },
+          { href: '#element-9', text: '1.4 Florida Health and Transition Services' },
+          { href: '#element-10', text: '1.4 New York State Institute for Health Transition Training, Transition Skills Resources' },
+          { href: '#element-11', text: '1.4 Florida Keys Area Health Education Center Inc., Health Care Transition Training Program,' },
+          { href: '#element-12', text: '1.4 Florida Health and Transition Services, Florida Youth 2 Adult Transition (FLY2AT) Course' },
+          { href: '#element-13', text: '1.5 The Family Caregiver Activation in Transitions Tool (FCAT)' },
+          { href: '#element-14', text: '1.5 Alberta Health Services, Enhancing Concurrent Capability Toolkit Transitions in Care Quick Reference Sheet' },
+          {
+            href: '#element-15',
+            text: '1.5 Facilitating Effective Transitions from Hospital to Community for Children and Adolescent Mental Health Services: Overview of the Transition Support Worker Role and Function',
+          },
+          { href: '#element-16', text: '1.6 Knowledge Institute, Youth Engagement Standards' },
+          { href: '#element-17', text: '1.6 The Public and Patient Engagement Evaluation Tool (PPEET) Participant Questionnaire' },
+          { href: '#element-18', text: '1.6 The Core Components of Effective Youth Transitions (CCEYT)' },
+          { href: '#element-19', text: '1.7 Health Quality Ontario Measurement Guide' },
+          { href: '#element-20', text: '1.7 NEAT study protocol' },
+          { href: '#element-21', text: '1.7 Core Components of Effective Youth Transitions (CCEYT)' },
+          { href: '#element-22', text: '1.7 Navigation Satisfaction Tool (NAVSAT)' },
         ]}
       />
       <h1 className='doc-content-sub-title mt-10 mb-8'>Element 2</h1>
