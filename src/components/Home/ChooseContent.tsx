@@ -59,7 +59,7 @@ export default function ChooseContent() {
         <div className='flex flex-col lg:flex-row'>
           <div className='lg:ps-[7%] mb-8 text-center lg:text-left'>
             <p className='main-title text-3xl sm:text-4xl lg:text-5xl'>
-              The six <br className='hidden lg:block' /> core elements of <br className='hidden lg:block' /> healthcare <br className='hidden lg:block' /> transitions
+              The Six <br className='hidden lg:block' /> Core Elements of <br className='hidden lg:block' /> Healthcare <br className='hidden lg:block' /> Transitions
             </p>
           </div>
 
