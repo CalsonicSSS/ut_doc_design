@@ -80,7 +80,7 @@ export default function ResourcesLists() {
             text: '2.1 The Ministries of Community & Social Services and Children and Youth Services, Provincial Transition Planning Framework for Young People With Developmental Disabilities',
           },
           {
-            href: '',
+            href: ' ',
             text: '2.2 NEAT Study Clinical Tracking Database',
           },
           {
