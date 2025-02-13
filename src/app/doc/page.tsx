@@ -63,7 +63,7 @@ export default function DocumentationPage() {
 
       {/* Main Content */}
       <main className='w-full overflow-y-auto lg:ps-28 h-screen'>
-        <div className='max-w-[800px] border-t-2'>
+        <div className='max-w-[800px]'>
           <Introduction />
           <Acknowledgements />
           <SuggestedCitation />
@@ -74,6 +74,8 @@ export default function DocumentationPage() {
           <Element4 />
           <Element5 />
           <Element6 />
+        </div>
+        <div className='max-w-[920px]'>
           <ResourcesLists />
           <Appendices />
         </div>
