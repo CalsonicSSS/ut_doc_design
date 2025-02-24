@@ -2,9 +2,7 @@ import React from 'react';
 import { ResourcesContentLinks } from '../ResourcesBulletContent';
 import Quote from '../Quote';
 import HighlightTextButton from '../HighlightTextButton';
-import Link from 'next/link';
 import { ScrollManager } from '../utils';
-import { LogOut } from 'lucide-react';
 import AuthorReference from '@/components/AuthorReference';
 import HighlightText from '../HighlightText';
 

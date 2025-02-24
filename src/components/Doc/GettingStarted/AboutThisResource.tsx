@@ -65,7 +65,7 @@ export default function AboutThisResource() {
           contentList={[
             <div key={'div-dot-new'}>
               <span>
-                "Cleverley K, McCann E, O'Brien D, Davies J, Bennett K, Brennenstuhl S, Courey L, Henderson J, Jeffs L, Miller J, Pignatiello T, Rong J, Rowland E, Stevens K, &
+                Cleverley K, McCann E, O&quot;Brien D, Davies J, Bennett K, Brennenstuhl S, Courey L, Henderson J, Jeffs L, Miller J, Pignatiello T, Rong J, Rowland E, Stevens K, &
                 Szatmari P. (2021). Prioritizing core components of successful transitions from child to adult mental health care:{' '}
               </span>
               A national Delphi survey with youth, caregivers, and health professionals. European Child & Adolescent Psychiatry.{' '}
