@@ -44,6 +44,7 @@ export default function Element5() {
                 {
                   linkText: 'Alberta Health Services, Warm Handoffs',
                   link: 'https://www.albertahealthservices.ca/assets/info/amh/if-amh-ecc-warm-handoffs.pdf',
+                  tooltip: 'This resource provides a guideline of warm handovers and how to ensure there is an effective handover between transitions.',
                 },
               ],
             },
@@ -96,6 +97,8 @@ export default function Element5() {
                 {
                   linkText: 'Nova Scotia Health, Information Transfer at Care Transitions Policy',
                   link: 'https://policy.nshealth.ca/Site_Published/NSHA/document_render.aspx?documentRender.IdType=6&documentRender.GenericField=&documentRender.Id=98152',
+                  tooltip:
+                    'This policy outlines policy and procedures for information transfer at care transitions. Appendix B specifically outlines a checklist for essential information that should be included during transfer.',
                 },
               ],
             },
@@ -105,6 +108,7 @@ export default function Element5() {
                 {
                   linkText: 'Women’s College Hospital, INFORMATION TRANSFER AT CARE TRANSITIONS',
                   link: 'https://www.womenscollegehospital.ca/accreditation-q-tip-information-transfer-at-care-transitions/',
+                  tooltip: 'This resource offers a Quick Tip guideline on important information for care transitions as well as how to effectively communicate this information.',
                 },
               ],
             },
@@ -114,6 +118,8 @@ export default function Element5() {
                 {
                   linkText: 'RNAO My Transitional Care Plan©',
                   link: 'https://rnao.ca/bpg/guidelines/transitions-in-care',
+                  tooltip:
+                    'As part of Transitions in Care and Services Resource, the Registered Nurses Association of Ontario provides an example transition plan with essential information that should be included during transitions.',
                 },
               ],
             },

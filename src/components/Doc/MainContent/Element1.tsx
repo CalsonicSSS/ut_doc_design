@@ -46,7 +46,7 @@ export default function Element1() {
               linkObjs: [
                 {
                   linkText: "NICE, transitions from children's to adults 'services pathway",
-                  link: 'https://www.nice.org.uk/guidance/health-and-social-care-delivery/service-transition',
+                  link: 'https://www.nice.org.uk/guidance/ng43',
                   tooltip:
                     'The UK’s National Institute for Health and Care Excellence (NICE) provides several relevant guidelines on how to facilitate transitions between children and adult health and social care services in a variety of settings.',
                 },
@@ -112,6 +112,7 @@ export default function Element1() {
                 {
                   linkText: 'GotTransition, Sample Transition and Care Policies/Guides',
                   link: 'https://www.gottransition.org/6ce/?leaving-ImplGuide-policy-examples',
+                  tooltip: 'As part of the GotTransition Implementation Guide, this resource directs to a number of example transition policies for youth physical health care.',
                 },
               ],
             },
@@ -121,6 +122,8 @@ export default function Element1() {
                 {
                   linkText: 'Alberta Health Services, Care Transitions Policy',
                   link: 'https://extranet.ahsnet.ca/teams/policydocuments/1/clp-amh-ahs-care-transitions-amh-13.pdf ',
+                  tooltip:
+                    'This example policy overviews the province’s approach to mental health transitions in care, including scope, principles, and key definitions. Note that this example is not specific to child-toadult care transitions.',
                 },
               ],
             },
@@ -168,6 +171,8 @@ export default function Element1() {
                 {
                   linkText: 'KFL&A, Youth Transitioning Protocol',
                   link: 'https://www.improvingsystems.ca/projects/youth-transition-protocol-in-kfla',
+                  tooltip:
+                    'This transition protocol was developed in 2015 in Southern Ontario as part of a transitions development initiative sponsored by the Centre for Addiction and Mental Health. This protocol outlines agreements between child and adult agencies to facilitate transition planning and success between these settings.',
                 },
               ],
             },
@@ -177,6 +182,8 @@ export default function Element1() {
                 {
                   linkText: 'Youth Mental Health Transition Protocol Agreement between Ministry for Children and Family Development and Ministry of Health and Health Authorities',
                   link: 'https://www2.gov.bc.ca/assets/gov/health/managing-your-health/mental-health-substance-use/child-teen-mental-health/y2a_protocol.pdf',
+                  tooltip:
+                    'This agreement between the BC Ministry for Children and Family Development and the Ministry of Health, through the Health Authorities, is intended to support positive mental health service experiences and improve mental health outcomes of youth and their families during care transitions by promoting coordinated, continuous, and responsive service planning and support.',
                 },
               ],
             },
@@ -230,6 +237,8 @@ export default function Element1() {
                 {
                   linkText: 'New York State Institute for Health Transition Training, Transition Skills Resources',
                   link: 'https://healthytransitionsny.org/skills/',
+                  tooltip:
+                    'These websites contain educational tools including videos, modules, checklists, lesson plans and guidebooks for youth, caregivers, service coordinators and care providers to help foster skills necessary to facilitate effective youth-to-adult healthcare transitions.',
                 },
               ],
             },
@@ -243,6 +252,8 @@ export default function Element1() {
                 {
                   linkText: 'Florida Health and Transition Services, Florida Youth 2 Adult Transition (FLY2AT) Course',
                   link: 'https://www.floridahats.org/fly2at-course-for-professionals/',
+                  tooltip:
+                    'These online training programs provide physicians, social workers, mental health professionals and nurses with information and strategies to help youth prepare for and complete the transition from child to adult healthcare systems. They are both comprised of multiple online modules.',
                 },
               ],
             },
@@ -304,6 +315,8 @@ export default function Element1() {
                 {
                   linkText: 'The Family Caregiver Activation in Transitions Tool (FCAT)',
                   link: 'https://media.uhfnyc.org/filer_public/95/55/9555ccca-ea5c-4f7b-a524-5356ca0b0924/6_eric_coleman__family_caregiver_activation_in_transitions_fcat_tool.pdf',
+                  tooltip:
+                    'This rating tool helps assess family/caregivers involvement in care decisions and fosters better interactions with healthcare providers. The tool can be administered by the healthcare provider or self-administered by the family at any point during the care transition.',
                 },
               ],
             },
@@ -313,6 +326,8 @@ export default function Element1() {
                 {
                   linkText: 'Alberta Health Services, Enhancing Concurrent Capability Toolkit Transitions in Care Quick Reference Sheet',
                   link: 'https://www.albertahealthservices.ca/assets/info/amh/if-amh-ecc-what-are-the-roles-in-transitions-of-care.pdf',
+                  tooltip:
+                    'This one-page resource overviews the roles of those involved in a transition of care, including detailed task lists for the sending and receiving providers',
                 },
               ],
             },
@@ -323,6 +338,8 @@ export default function Element1() {
                   linkText:
                     'Facilitating Effective Transitions from Hospital to Community for Children and Adolescent Mental Health Services: Overview of the Transition Support Worker Role and Function',
                   link: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6254258/',
+                  tooltip:
+                    'This one-page resource overviews the roles of those involved in a transition of care, including detailed task lists for the sending and receiving providers',
                 },
               ],
             },
@@ -356,6 +373,8 @@ export default function Element1() {
                 {
                   linkText: 'Knowledge Institute, Youth Engagement Standards',
                   link: 'https://www.cymha.ca/Modules/ResourceHub/?id=64172b4d-af0d-432a-8d66-880ba2292486',
+                  tooltip:
+                    'The Youth Engagement Standards are best practice standards to support quality mental health services for children and youth. These nine standards provide guidelines to implementing, evaluating and improving the delivery of services with a focus on empowering youth as partners in mental health care.',
                 },
               ],
             },
@@ -365,10 +384,14 @@ export default function Element1() {
                 {
                   linkText: 'The Public and Patient Engagement Evaluation Tool (PPEET) Participant Questionnaire',
                   link: 'https://ppe.mcmaster.ca/resources/public-and-patient-engagement-evaluation-tool/',
+                  tooltip:
+                    'This open-access self-report measure is used to obtain participant perspectives and allows researchers to obtain feedback and reflect on their experiences in patient engagement initiatives (e.g., consultations, focus groups). It consists of Likert scale questions and open-ended questions evaluating the processes, outcomes, and impact of engagement activities from the perspectives of participants.',
                 },
                 {
                   linkText: 'The Core Components of Effective Youth Transitions (CCEYT)',
                   link: 'https://pubmed.ncbi.nlm.nih.gov/34089382/',
+                  tooltip:
+                    'The CCEYT is a 27-item, self-report checklist of core components and of effective youth transitions identified through a literature review. These components were validated through a National Delphi Consensus study. Youth, parent/caregiver, and service provider versions are available.',
                 },
               ],
             },
@@ -408,10 +431,14 @@ export default function Element1() {
                 {
                   linkText: 'Health Quality Ontario Measurement Guide',
                   link: 'https://www.hqontario.ca/Portals/0/documents/evidence/quality-standards/measurement-guide-en.pdf',
+                  tooltip:
+                    'This measurement guide is designed to improve, monitor and evaluate the implementation of Ontario’s Health Quality Standards by healthcare professionals at a provincial and local level.',
                 },
                 {
                   linkText: 'NEAT study protocol',
                   link: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8245465/',
+                  tooltip:
+                    'This is an example of a research project with engagement from patients, caregivers, and clinicians to evaluate the effectiveness of a transition navigator program, which includes a description of measures that can be used to evaluate an organization’s transition program and protocol.',
                 },
               ],
             },
@@ -421,10 +448,14 @@ export default function Element1() {
                 {
                   linkText: 'Core Components of Effective Youth Transitions (CCEYT)',
                   link: 'https://pubmed.ncbi.nlm.nih.gov/34089382/',
+                  tooltip:
+                    'The CCEYT is a 27-item, self-report checklist of core components and of effective youth transitions identified through a literature review. These components were validated through a National Delphi Consensus study. Youth, parent/caregiver, and service provider versions are available.',
                 },
                 {
                   linkText: 'Navigation Satisfaction Tool (NAVSAT)',
                   link: 'https://pubmed.ncbi.nlm.nih.gov/29147951/',
+                  tooltip:
+                    'This scale can be used in your setting to get youth or caregivers’ perspectives on their satisfaction with their transition experience or your transition program/protocol/pathway.',
                 },
               ],
             },

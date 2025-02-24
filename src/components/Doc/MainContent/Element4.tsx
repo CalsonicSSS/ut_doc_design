@@ -55,14 +55,20 @@ export default function Element4() {
                   linkText:
                     'Facilitating Effective Transitions from Hospital to Community for Children and Adolescent Mental Health Services: Overview of the Transition Support Worker Role and Function',
                   link: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6254258/',
+                  tooltip:
+                    'This academic paper introduces the transition support worker role to aid youth in navigating the transition process. The paper explores the role and qualifications of the navigator.',
                 },
                 {
                   linkText: 'The Sunnybrook Family Navigation  Project',
                   link: 'https://sunnybrook.ca/content/?page=family-navigation-project-what-we-do',
+                  tooltip:
+                    'This program helps youth experiencing mental health concerns access resources and service providers to help them meet their needs. Youth and families are partnered with a clinically trained Family Navigator that can help them identify specific needs, options to treatment and support as well as create an individualized plan of care.',
                 },
                 {
                   linkText: 'Michael Garron Transitional Youth Program',
                   link: 'https://www.tehn.ca/programs-services/mental-health-addiction/transitional-youth-program',
+                  tooltip:
+                    'This program helps youth experiencing mental health concerns access resources and service providers to help them meet their needs. Youth and families are partnered with a clinically trained Family Navigator that can help them identify specific needs, options to treatment and support as well as create an individualized plan of care',
                 },
               ],
             },
@@ -132,27 +138,21 @@ export default function Element4() {
           It is important to confirm the youth&apos;s eligibility with the agency before completing the transition process, often having a pre-existing relationship with the agency
           can help expediate contact and confirmation of eligibility.
         </p>
-        <div className='mb-8'>
-          <button onClick={() => ScrollManager.scrollToElement('resources-lists')} className='flex items-center mb-4'>
-            <p className='font-bold text-[18px] leading-[32px] mr-2'>Resources</p>
-            <LogOut size={15} strokeWidth={1} />
-          </button>
-          <div className='flex items-start'>
-            <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5 mt-1'>1</p>
-            <div>
-              <Link
-                className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
-                href={
-                  'https://www.niagararegion.ca/health/professionals/mental/mental-health-service.aspx#:~:text=Eligibility%20criteria&text=Experience%20ongoing%20illness%20that%20impacts,in%20their%20home%20or%20community'
-                }
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                Niagara Region Adult and Youth Mental Health Services
-              </Link>
-            </div>
-          </div>
-        </div>
+        <ResourcesContentLinks
+          resourceClickToId='resources-lists'
+          contents={[
+            {
+              linkObjs: [
+                {
+                  linkText: 'Niagara Region Adult and Youth Mental Health Services',
+                  link: 'https://www.niagararegion.ca/health/professionals/mental/mental-health-service.aspx#:~:text=Eligibility%20criteria&text=Experience%20ongoing%20illness%20that%20impacts,in%20their%20home%20or%20community',
+                  tooltip:
+                    'The Niagara Region Adult and Youth Mental Health Services outlines specific eligibility criteria for the various programs run by the organization. Eligibility criteria for services help guide youth into selecting the most appropriate program to suit their needs.',
+                },
+              ],
+            },
+          ]}
+        />
 
         <Quote
           title='NOTES FROM A NAVIGATOR'
@@ -275,33 +275,27 @@ export default function Element4() {
           ongoing, coordinated care management with the goal of achieving quality health care <AuthorReference refName='(CPSO, 2021)' />. This can involve including all care
           providers in care management early to facilitate better communication and handover as well as identifying any missing information that is important to care.
         </p>
-        <div className='mb-8'>
-          <button onClick={() => ScrollManager.scrollToElement('resources-lists')} className='flex items-center mb-4'>
-            <p className='font-bold text-[18px] leading-[32px] mr-2'>Resources</p>
-            <LogOut size={15} strokeWidth={1} />
-          </button>
-          <div className='flex items-start'>
-            <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5 mt-1'>1</p>
-            <div>
-              <Link
-                className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
-                href={'https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2740785'}
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                Association of Primary Care Continuity With Outcomes Following Transition to Adult Care for Adolescents With Severe Mental Illness
-              </Link>
-              <Link
-                href={'https://www.camh.ca/-/media/files/pdfs---public-policy-submissions/primarycarepolicyframework_march2016-pdf.pdf'}
-                className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                CAMH Mental Health and Primary Care Policy Framework{' '}
-              </Link>
-            </div>
-          </div>
-        </div>
+        <ResourcesContentLinks
+          resourceClickToId='resources-lists'
+          contents={[
+            {
+              linkObjs: [
+                {
+                  linkText: 'Association of Primary Care Continuity With Outcomes Following Transition to Adult Care for Adolescents With Severe Mental Illness',
+                  link: 'https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2740785',
+                  tooltip:
+                    'This academic article explores the role of primary care continuity during the transition from pediatric to adult care services in supporting better outcomes for youth with severe mental illness.',
+                },
+                {
+                  linkText: 'CAMH Mental Health and Primary Care Policy Framework',
+                  link: 'https://www.camh.ca/-/media/files/pdfs---public-policy-submissions/primarycarepolicyframework_march2016-pdf.pdf',
+                  tooltip:
+                    'This document explores the gap in mental health services within a primary care setting and highlights important principles that can improve the integration of mental health care into primary care',
+                },
+              ],
+            },
+          ]}
+        />
         <Quote
           author='Clinician'
           quote='I recommend engaging pharmacists in the process when it comes to up-to-date medication information. Ensuring a process is in place for continuous up to date medication reconciliation for outpatients will go a long way towards making this process relatively painless.'
@@ -435,33 +429,27 @@ export default function Element4() {
           can benefit from connecting with a trained peer support worker who has the skills and shared lived experience to offer emotional support to the youth. Peer support
           workers can offer helpful coping strategies and conduct support meetings to assist youth with challenges they may be facing during their transition process.
         </p>
-        <div>
-          <button onClick={() => ScrollManager.scrollToElement('resources-lists')} className='flex items-center mb-4'>
-            <p className='font-bold text-[18px] leading-[32px] mr-2'>Resources</p>
-            <LogOut size={15} strokeWidth={1} />
-          </button>
-          <div className='flex items-start'>
-            <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5 mt-1'>1</p>
-            <div>
-              <Link
-                href={'https://peersupportcanada.ca/wp-content/uploads/2019/06/MHCC_Peer_Support_Guidelines_2016-ENG.pdf'}
-                className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                Mental Health Commission of Canada, Guidelines for the Practice and Training of Peer Support{' '}
-              </Link>
-              <Link
-                href={'https://www.cymha.ca/en/projects/youth-peer-support.aspx'}
-                className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                Knowledge Institute on Child and Youth Mental Health and Addictions, Peer Support Introduction
-              </Link>
-            </div>
-          </div>
-        </div>
+        <ResourcesContentLinks
+          resourceClickToId='resources-lists'
+          contents={[
+            {
+              linkObjs: [
+                {
+                  linkText: 'Mental Health Commission of Canada, Guidelines for the Practice and Training of Peer Support',
+                  link: 'https://peersupportcanada.ca/wp-content/uploads/2019/06/MHCC_Peer_Support_Guidelines_2016-ENG.pdf',
+                  tooltip:
+                    'The Peer Support Guidelines provide direction on how to facilitate peer support to foster recovery. The guidelines are designed to support mental health and well-being for everyone. This resource includes guidelines for the practice of peer support and guidelines for training of peer support.',
+                },
+                {
+                  linkText: 'Knowledge Institute on Child and Youth Mental Health and Addictions, Peer Support Introduction',
+                  link: 'https://www.cymha.ca/en/projects/youth-peer-support.aspx',
+                  tooltip:
+                    'The Ontario Knowledge Institute on Child and Youth Mental Health and Addictions, introduces youth peer support in a mental health context and outlines the benefits of peer support among youth. It also discusses how to incorporate and develop a peer support program within an organizational context.',
+                },
+              ],
+            },
+          ]}
+        />
       </section>
     </section>
   );

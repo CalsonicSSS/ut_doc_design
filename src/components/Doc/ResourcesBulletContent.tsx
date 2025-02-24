@@ -8,7 +8,7 @@ import Image from 'next/image';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
 type TitleWithLinksAndTooltips = {
-  title: string;
+  title?: string;
   linkObjs: { linkText: string; link: string; tooltip?: string }[];
 };
 
@@ -26,21 +26,16 @@ export function ResourcesContentLinks({ contents, resourceClickToId }: { content
             <p className='lead-[32px] tracking-[0.14px]'>{eachContent.title}</p>
             {eachContent.linkObjs.map((linkObj, index) => (
               <div key={index}>
-                <Link
-                  href={`${linkObj.link}`}
-                  target='_blank'
-                  rel='noopener noreferrer'
-                  className={`tracking-[0.13px] font-medium leading-[32px] ${linkObj.link && 'underline'} text-[#63B1E5]`}
-                >
+                <Link href={`${linkObj.link}`} target='_blank' rel='noopener noreferrer' className={`tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5]`}>
                   {linkObj.linkText}
                 </Link>
                 {linkObj.tooltip && (
                   <TooltipProvider delayDuration={300}>
                     <Tooltip>
                       <TooltipTrigger>
-                        <Image src='/info.svg' alt='info' className='inline ms-1 flex-shrink-0 min-w-[17px] min-h-[17px] w-[17px] h-[17px]' height={17} width={17} />
+                        <Image src='/info.svg' alt='info' className='inline ms-[7px] mb-[3px] flex-shrink-0 min-w-[17px] min-h-[17px] w-[17px] h-[17px]' height={17} width={17} />
                       </TooltipTrigger>
-                      <TooltipContent side='bottom' className='bg-white w-[300px] p-5 hover:cursor-pointer'>
+                      <TooltipContent side='bottom' className='bg-white w-[300px] px-3 py-2 hover:cursor-pointer'>
                         {linkObj.tooltip}
                       </TooltipContent>
                     </Tooltip>

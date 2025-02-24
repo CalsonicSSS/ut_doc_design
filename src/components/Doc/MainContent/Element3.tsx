@@ -28,34 +28,27 @@ export default function Element3() {
           services. Regular transition readiness re-assessment (i.e. every 6 months, or every third appointment) can help to assess progress in different areas of need and to work
           with youth to identify their evolving transition and care goals throughout the process.
         </p>
-        <div className='mb-8'>
-          <button onClick={() => ScrollManager.scrollToElement('resources-lists')} className='flex items-center mb-4'>
-            <p className='font-bold text-[18px] leading-[32px] mr-2'>Resources</p>
-            <LogOut size={15} strokeWidth={1} />
-          </button>
-          <div className='flex items-start '>
-            {' '}
-            <p className='font-bold text-[#FFB652] text-xs px-3 rounded-full bg-[#FFF8EE] mr-5'>1</p>
-            <div>
-              <Link
-                className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
-                href={'https://www.etsu.edu/com/pediatrics/traq/'}
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                The Transition Readiness Assessment Questionnaire (TRAQ 6.0)
-              </Link>
-              <Link
-                className='tracking-[0.13px] font-medium leading-[32px] underline text-[#63B1E5] block'
-                href={'https://onlinelibrary.wiley.com/doi/10.1111/cch.13035'}
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                Validation of the Transition Readiness Assessment Questionnaire (TRAQ) 5.0 for use among youth in mental health services
-              </Link>
-            </div>
-          </div>
-        </div>
+        <ResourcesContentLinks
+          resourceClickToId='resources-lists'
+          contents={[
+            {
+              linkObjs: [
+                {
+                  linkText: 'The Transition Readiness Assessment Questionnaire (TRAQ 6.0)',
+                  link: 'https://www.etsu.edu/com/pediatrics/traq/',
+                  tooltip:
+                    'The TRAQ is an assessment tool that clinicians can use to help assess youths’ readiness to navigate different aspects of the adult health care system and helps identify areas for focused interventions.',
+                },
+                {
+                  linkText: 'Validation of the Transition Readiness Assessment Questionnaire (TRAQ) 5.0 for use among youth in mental health services',
+                  link: 'https://onlinelibrary.wiley.com/doi/10.1111/cch.13035',
+                  tooltip:
+                    'This paper describes a recent study which tested the TRAQ in a sample of youth with mental health care needs to ensure it is an appropriate tool to use for youth with mental health needs.',
+                },
+              ],
+            },
+          ]}
+        />
         <Quote
           title='NOTES FROM A NAVIGATOR'
           quote="In that [readiness] assessment, I'm looking for information about [the youth]… is the parent supported...It could also be about school... We also assess for sexuality, for suicidality, to see if they have a crisis plan in place. Also talk about medication…From that assessment, I have a pretty good idea of this family's gonna need a weekly call…or the youth feels that they're confident enough to handle some of the transition pieces on their own. "
@@ -99,10 +92,13 @@ export default function Element3() {
                 {
                   linkText: 'CMHA, Transitioning from Youth to Adult Mental Health Services',
                   link: 'https://ontario.cmha.ca/documents/transitioning-from-youth-to-adult-mental-health-services/',
+                  tooltip:
+                    'The Canadian Mental Health Association highlights some important steps to consider when transitioning from youth to adult mental health services, including information on what to expect in the adult system as well as some common challenges that occur during transition. ',
                 },
                 {
                   linkText: 'EMPOWER',
                   link: 'https://empower.ca/en/static/ontario-mental-health-navigation-tool',
+                  tooltip: 'EMPOWER Health provides an overview of Ontario’s mental health system and the different points of access for health care and mental health services.',
                 },
               ],
             },
@@ -138,6 +134,8 @@ export default function Element3() {
                 {
                   linkText: 'Got Transition, Transition Care Plan Template',
                   link: 'https://www.gottransition.org/6ce/?leaving-plan-care',
+                  tooltip:
+                    'This sample Transition Care Plan template is intended to be used jointly with youth and their parent/caregiver, if appropriate, to set goals and outline a plan of action that combines health and personal goals.',
                 },
               ],
             },
@@ -147,6 +145,8 @@ export default function Element3() {
                 {
                   linkText: 'Mindyourmind, Service Transition Plan',
                   link: 'https://mindyourmind.ca/games-tools/personal-growth/service-transition-plan/',
+                  tooltip:
+                    'This transition tool is specific to mental health transitions and includes checklists of tasks at different stages in the transition process which can be incorporated into a transition plan and used to identify key tasks, milestones, and responsible persons.',
                 },
               ],
             },

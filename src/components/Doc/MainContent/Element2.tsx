@@ -53,8 +53,10 @@ export default function Element2() {
               title: 'To learn more about holistic transitions and avoiding unforseen circumstances',
               linkObjs: [
                 {
-                  linkText: 'Complex Care for Kids Ontario Youth Transition to Adult Care Toolkit- Caregiver and Youth Checklist & Transition Resource ',
+                  linkText: 'Complex Care for Kids Ontario Youth Transition to Adult Care Toolkit- Caregiver and Youth Checklist & Transition Resource Guide',
                   link: 'https://www.pcmch.on.ca/wp-content/uploads/2022/05/CCKO-Youth-Transition-Caregiver_Youth-Checklist_-Final_Feb222022-Fillable.pdf',
+                  tooltip:
+                    'This resource includes an age-based checklist for youth to help provide a holistic approach in the transition process. This may be a helpful tool for caregivers in terms of avoiding unforeseen circumstances in transition.',
                 },
               ],
             },
@@ -65,6 +67,8 @@ export default function Element2() {
                   linkText:
                     'The Ministries of Community & Social Services and Children and Youth Services, Provincial Transition Planning Framework for Young People With Developmental Disabilities',
                   link: 'https://coordinatedaccess.ca/wp-content/uploads/2015/07/Transition-Planning-Framework-Final-English.pdf',
+                  tooltip:
+                    'This transitional planning tool developed in Ontario is specific for youth with developmental disabilities which breaks down policy directions for successful transition to adult services. On page 14, the document discusses identifying the young person who is transitioning as part of the protocol design elements.',
                 },
               ],
             },
@@ -102,6 +106,8 @@ export default function Element2() {
                 {
                   linkText: 'NEAT Study Clinical Tracking Database',
                   link: '',
+                  tooltip:
+                    'The Clinical Tracking Excel Database was developed in collaboration with transition navigators working across mental health agencies in the Greater Toronto Area (GTA) to track transition interventions implemented and outcomes attained at each appointment with youth and/or others involved in the transition process. Along with clinical appointments, the database can also be used to add and track communication with youth and/or involved in their care.',
                 },
               ],
             },
@@ -111,6 +117,8 @@ export default function Element2() {
                 {
                   linkText: 'GotTransition, Sample Individual Transition Flow Sheet',
                   link: 'https://gottransition.org/6ce/?leaving-flow-sheet',
+                  tooltip:
+                    'This provides an overview of the transition process as the individual youth proceeds along their transition experience. It includes an opportunity for youth to track important steps during the transition as well as indicate the appropriate dates when these were completed.',
                 },
               ],
             },

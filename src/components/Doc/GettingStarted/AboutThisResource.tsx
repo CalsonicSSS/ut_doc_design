@@ -55,18 +55,19 @@ export default function AboutThisResource() {
         <p className='font-bold'>All “Notes from a Navigator” quotes are attributed to a manuscript in preparation and should not be copied/reproduced:</p>
         <DotList
           contentList={[
-            'Cleverley K et al. (2025) Understanding the scope and impact of the youth mental health transition navigator role:',
-            'perspectives of navigators and clinicians. [manuscript in preparation].',
+            'Cleverley K et al. (2025) Understanding the scope and impact of the youth mental health transition navigator role: perspectives of navigators and clinicians. [manuscript in preparation].',
           ]}
-          ms={[0, 12]}
+          ms={[0]}
         />
         <p className='mb-6'>This manuscript will be open access and linked through our website upon publication.</p>
         <p className='font-bold'>Remaining quotes from clinicians, administrators, youth, and caregivers are attributed to the following study:</p>
         <DotList
           contentList={[
-            "Cleverley K, McCann E, O'Brien D, Davies J, Bennett K, Brennenstuhl S, Courey L, Henderson J, Jeffs L, Miller J, Pignatiello T, Rong J, Rowland E, Stevens K, & Szatmari P. (2021).",
-            'Prioritizing core components of successful transitions from child to adult mental health care:',
             <div key={'div-dot-new'}>
+              <span>
+                "Cleverley K, McCann E, O'Brien D, Davies J, Bennett K, Brennenstuhl S, Courey L, Henderson J, Jeffs L, Miller J, Pignatiello T, Rong J, Rowland E, Stevens K, &
+                Szatmari P. (2021). Prioritizing core components of successful transitions from child to adult mental health care:{' '}
+              </span>
               A national Delphi survey with youth, caregivers, and health professionals. European Child & Adolescent Psychiatry.{' '}
               <Link className='text-navy-0 underline inline' target='_blank' rel='noopener noreferrer' href={'https://link.springer.com/article/10.1007/s00787-021-01806-6'}>
                 https://doi.org/10.1007/s00787-021-01806-6
