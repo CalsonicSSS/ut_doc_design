@@ -224,6 +224,8 @@ export default function Element1() {
                 {
                   linkText: 'Registered Nurses Association of Ontario (RNAO), Transitions in Care and Services Clinical Best Practice Guideline',
                   link: 'https://rnao.ca/bpg/guidelines/transitions-in-care',
+                  tooltip:
+                    'This resource provides evidence-based guidelines for nurses, and all members of interprofessional teams across the care continuum, in all domains of practice. It is intended to support safe, smooth and effective care transitions for children, youth and adults, and those who support them.',
                 },
               ],
             },
@@ -339,7 +341,7 @@ export default function Element1() {
                     'Facilitating Effective Transitions from Hospital to Community for Children and Adolescent Mental Health Services: Overview of the Transition Support Worker Role and Function',
                   link: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6254258/',
                   tooltip:
-                    'This one-page resource overviews the roles of those involved in a transition of care, including detailed task lists for the sending and receiving providers',
+                    'This academic paper introduces the transition support worker role to aid youth in navigating the transition process. The paper explores the role and qualifications of the navigator.',
                 },
               ],
             },

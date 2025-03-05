@@ -66,7 +66,7 @@ export default function Element4() {
                   linkText: 'Michael Garron Transitional Youth Program',
                   link: 'https://www.tehn.ca/programs-services/mental-health-addiction/transitional-youth-program',
                   tooltip:
-                    'This program helps youth experiencing mental health concerns access resources and service providers to help them meet their needs. Youth and families are partnered with a clinically trained Family Navigator that can help them identify specific needs, options to treatment and support as well as create an individualized plan of care',
+                    'The program supports young people aged 16-29 who experience barriers in accessing or maintaining mental health care. It also assists those requiring continued support after receiving services at Michael Garron Hospital (MGH). Clients receive short-term therapeutic support and system navigation assistance from a transition navigator for up to three months to help them establish connections with appropriate mental health and substance use services.',
                 },
               ],
             },
@@ -270,8 +270,10 @@ export default function Element4() {
           <AuthorReference refName='(Toulany et al., 2022)' href='https://academic.oup.com/pch/article/27/5/297/6673170' />. This continued involvement in care contributes to
           positive long-term health outcomes for youth{' '}
           <AuthorReference refName='(Toulany et al., 2019)' href='https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2740785' />. Continuity of care refers to the
-          ongoing, coordinated care management with the goal of achieving quality health care <AuthorReference refName='(CPSO, 2021)' />. This can involve including all care
-          providers in care management early to facilitate better communication and handover as well as identifying any missing information that is important to care.
+          ongoing, coordinated care management with the goal of achieving quality health care{' '}
+          <AuthorReference refName='(CPSO, 2021)' href='https://www.cpso.on.ca/getmedia/6e4cf71b-eb41-40cb-96f5-99426a9da3d8/coc-guide-patients-caregivers.pdf' />. This can involve
+          including all care providers in care management early to facilitate better communication and handover as well as identifying any missing information that is important to
+          care.
         </p>
         <ResourcesContentLinks
           resourceClickToId='resources-lists'
