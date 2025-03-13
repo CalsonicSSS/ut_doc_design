@@ -8,9 +8,7 @@ export default function HighlightTextButton({ title, clickToId, tooltipDesc }: {
   return (
     <TooltipProvider delayDuration={300}>
       <Tooltip>
-        <TooltipTrigger className='flex justify-start '>
-          <button className='text-sm font-semibold text-[#FFAE00] leading-[16px] px-4 py-2 rounded-2xl bg-[#FFF8EE] mr-5'>{title}</button>
-        </TooltipTrigger>
+        <TooltipTrigger className='text-sm font-semibold text-[#FFAE00] leading-[16px] px-4 py-2 rounded-2xl bg-[#FFF8EE] mr-5'>{title}</TooltipTrigger>
         <TooltipContent side='bottom' className={`bg-white w-[228px] p-5  ${clickToId ? 'hover: cursor-pointer' : ''}`} onClick={() => {}}>
           {/* <p className='text-[#FFAE00] text-sm font-urbanist font-semibold mb-5'>{title}</p> */}
           <p className='text-[#828282] text-[13px] font-urbanist font-medium leading-[20px]'>{tooltipDesc}</p>

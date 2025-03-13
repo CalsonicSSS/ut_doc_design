@@ -1,4 +1,4 @@
-import MainContentCards from '@/components/Doc/NewStuff/MainContent/MainContentCards';
+import MainContentCards from '@/components/Doc/NewStuff/MainContentCards';
 import React from 'react';
 
 export default function MainContentSection() {

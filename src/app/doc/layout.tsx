@@ -2,7 +2,7 @@
 
 import { ReactNode } from 'react';
 import Footer from '@/components/layout/Footer';
-import DocSidebar from '@/components/layout/DocSidebar';
+import DocSidebar from '@/components/Doc/NewStuff/DocSidebar';
 import DocHeader from '@/components/layout/DocHeader';
 import GlossarySidebar from '@/components/layout/GlossarySidebar';
 import { usePathname } from 'next/navigation';

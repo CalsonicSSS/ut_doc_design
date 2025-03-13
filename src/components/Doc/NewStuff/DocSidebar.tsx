@@ -7,7 +7,7 @@ const sidebarSections = [
   { name: 'Getting Started', path: '/doc/getting-started' },
   { name: 'About this Resource', path: '/doc/about-this-resource' },
   { name: 'Main Contents', path: '/doc/main-contents' },
-  { name: 'Resources Lists', path: '/doc/resources-list' },
+  { name: 'Resources Lists', path: '/doc/resources-lists' },
   {
     name: 'Appendices',
     path: '/doc/glossary',
