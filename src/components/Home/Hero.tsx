@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
         <div className='mt-10 xl:m-0'>
           <Image
-            src={`${assetPathMode === 'PROD' ? '/unite-guidebook' : ''}/hero_image.svg`}
+            src={`${assetPathMode === 'PROD' ? '/unite-toolkit' : ''}/hero_image.svg`}
             alt='Healthcare illustration'
             className='object-contain w-full h-auto'
             height={530}

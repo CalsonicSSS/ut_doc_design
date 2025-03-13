@@ -12,7 +12,7 @@ export default function ResourceFlow(): ReactNode {
         {/* Image scales down on mobile but maintains original size on desktop */}
         <div className='w-full lg:w-auto'>
           <Image
-            src={`${assetPathMode === 'PROD' ? '/unite-guidebook' : ''}/flow_1.svg`}
+            src={`${assetPathMode === 'PROD' ? '/unite-toolkit' : ''}/flow_1.svg`}
             alt='flow_1 illustration'
             className='object-contain w-full h-auto'
             height={682}
@@ -57,7 +57,7 @@ export default function ResourceFlow(): ReactNode {
           {/* Tools image */}
           <div className='w-full flex justify-center lg:justify-start sm:px-4 lg:px-0'>
             <Image
-              src={`${assetPathMode === 'PROD' ? '/unite-guidebook' : ''}/tools.svg`}
+              src={`${assetPathMode === 'PROD' ? '/unite-toolkit' : ''}/tools.svg`}
               alt='tools_illustration'
               className='object-contain mt-8 lg:mt-14'
               height={111}
@@ -77,7 +77,7 @@ export default function ResourceFlow(): ReactNode {
         {/* Right image */}
         <div className='mt-12 lg:mt-0 w-full lg:w-auto flex justify-center lg:justify-end'>
           <Image
-            src={`${assetPathMode === 'PROD' ? '/unite-guidebook' : ''}/flow_2.svg`}
+            src={`${assetPathMode === 'PROD' ? '/unite-toolkit' : ''}/flow_2.svg`}
             alt='flow_2_illustration'
             className='object-contain w-full h-auto'
             height={752}

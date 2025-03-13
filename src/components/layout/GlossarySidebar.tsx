@@ -9,7 +9,7 @@ export default function GlossarySidebar() {
       <div className='fixed right-0 top-1/4 bg-[#195b8b] py-[20PX] px-[17px] flex flex-col items-center justify-center shadow-2xl'>
         {/* Info icon */}
         <Image
-          src={`${assetPathMode === 'PROD' ? '/unite-guidebook' : ''}/glossary_info_icon.svg`}
+          src={`${assetPathMode === 'PROD' ? '/unite-toolkit' : ''}/glossary_info_icon.svg`}
           alt='glossary info icon'
           className='object-contain w-full h-auto mb-3'
           height={25}

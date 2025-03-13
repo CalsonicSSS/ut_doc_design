@@ -24,7 +24,7 @@ export default function DocHeader() {
       <CleverleylabHeader />
       {/* Background image */}
       <div className='absolute inset-0' style={{ position: 'relative', width: '100%', height: '600px' }}>
-        <Image src={`${assetPathMode === 'PROD' ? '/united-guidebook' : ''}/${targetAsset}`} alt='Documentation header asset' style={{ objectFit: 'cover' }} fill />
+        <Image src={`${assetPathMode === 'PROD' ? '/unite-toolkit' : ''}/${targetAsset}`} alt='Documentation header asset' style={{ objectFit: 'cover' }} fill />
       </div>
     </div>
   );

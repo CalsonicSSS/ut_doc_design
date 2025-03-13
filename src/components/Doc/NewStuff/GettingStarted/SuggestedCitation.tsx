@@ -12,7 +12,7 @@ export default function SuggestedCitationContent() {
       <p>For more information, please contact: </p>
       <p>Dr. Kristin Cleverley </p>
       <div className='flex'>
-        <Image src={`${assetPathMode === 'PROD' ? '/unite-guidebook' : ''}/email.svg`} alt='email' height={15} width={15} priority />
+        <Image src={`${assetPathMode === 'PROD' ? '/unite-toolkit' : ''}/email.svg`} alt='email' height={15} width={15} priority />
         <p className='text-[#00B6EF] ms-2'>k.cleverley@utoronto.ca</p>
       </div>
     </section>

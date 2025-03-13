@@ -17,37 +17,37 @@ const elements: ElementData[] = [
     id: 1,
     title: 'Element 1',
     description: 'Organizational Transition Policy',
-    link: '/elements/element-1',
+    link: '/doc/main-contents/element-1',
   },
   {
     id: 2,
     title: 'Element 2',
     description: 'Transition Tracking and Monitoring',
-    link: '/elements/element-2',
+    link: '/doc/main-contents/element-2',
   },
   {
     id: 3,
     title: 'Element 3',
     description: 'Transition Readiness',
-    link: '/elements/element-3',
+    link: '/doc/main-contents/element-3',
   },
   {
     id: 4,
     title: 'Element 4',
     description: 'Transition Planning',
-    link: '/elements/element-4',
+    link: '/doc/main-contents/element-4',
   },
   {
     id: 5,
     title: 'Element 5',
     description: 'Transfer of Care',
-    link: '/elements/element-5',
+    link: '/doc/main-contents/element-5',
   },
   {
     id: 6,
     title: 'Element 6',
     description: 'Transfer Completion',
-    link: '/elements/element-6',
+    link: '/doc/main-contents/element-6',
   },
 ];
 

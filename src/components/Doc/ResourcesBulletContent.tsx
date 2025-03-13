@@ -39,7 +39,7 @@ export function ResourcesContentLinks({ contents, resourceClickToId }: { content
                     <Tooltip>
                       <TooltipTrigger>
                         <Image
-                          src={`${assetPathMode === 'PROD' ? '/unite-guidebook' : ''}/info.svg`}
+                          src={`${assetPathMode === 'PROD' ? '/unite-toolkit' : ''}/info.svg`}
                           alt='info'
                           className='inline ms-[7px] mb-[3px] flex-shrink-0 min-w-[17px] min-h-[17px] w-[17px] h-[17px]'
                           height={17}

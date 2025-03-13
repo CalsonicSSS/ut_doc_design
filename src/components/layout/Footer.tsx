@@ -11,10 +11,10 @@ export default function Footer(): ReactElement {
 
         {/* Images container */}
         <div className='flex items-center gap-6 sm:gap-0'>
-          <Image src={`${assetPathMode === 'PROD' ? '/unite-guidebook' : ''}/social_links.svg`} alt='social_links illustration' className='object-contain' height={32} width={62} />
+          <Image src={`${assetPathMode === 'PROD' ? '/unite-toolkit' : ''}/social_links.svg`} alt='social_links illustration' className='object-contain' height={32} width={62} />
           {/* Spacer - hidden on mobile */}
           <div className='hidden sm:block sm:mr-10 lg:mr-20' />
-          <Image src={`${assetPathMode === 'PROD' ? '/unite-guidebook' : ''}/logo.svg`} alt='logo illustration' className='object-contain' height={73} width={129} />
+          <Image src={`${assetPathMode === 'PROD' ? '/unite-toolkit' : ''}/logo.svg`} alt='logo illustration' className='object-contain' height={73} width={129} />
         </div>
       </div>
 
