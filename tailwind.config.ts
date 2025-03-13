@@ -69,6 +69,7 @@ const config: Config = {
         roboto: ['var(--font-roboto)', 'sans-serif'],
         karla: ['var(--font-karla)', 'sans-serif'],
         urbanist: ['var(--font-urbanist)', 'sans-serif'],
+        lato: ['var(--font-lato)', 'sans-serif'],
       },
       fontSize: {
         xs: '12px',

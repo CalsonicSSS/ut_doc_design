@@ -1,11 +1,10 @@
-// src/components/Hero.tsx
-
+import { assetPathMode } from '@/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <div className='w-full'>
+    <div className='w-full border-t mt-5'>
       <div className='lg:ps-52 flex flex-col lg:flex-row items-center justify-between'>
         <div className='w-full lg:w-auto text-center lg:text-left'>
           <div className='mb-[50px] sm:px-2 md:px-0'>
@@ -22,7 +21,14 @@ const Hero = () => {
           </div>
         </div>
         <div className='mt-10 xl:m-0'>
-          <Image src='/hero_image.svg' alt='Healthcare illustration' className='object-contain w-full h-auto' height={530} width={495} priority />
+          <Image
+            src={`${assetPathMode === 'PROD' ? '/unite-guidebook' : ''}/hero_image.svg`}
+            alt='Healthcare illustration'
+            className='object-contain w-full h-auto'
+            height={530}
+            width={495}
+            priority
+          />
         </div>
       </div>
     </div>

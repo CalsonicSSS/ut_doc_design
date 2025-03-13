@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import Dot from '../Dot';
+import Dot from './Dot';
 
 export default function DotList({ contentList, ms }: { contentList: (string | ReactNode)[]; ms: number[] }) {
   return (

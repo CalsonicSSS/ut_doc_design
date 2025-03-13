@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React, { ReactNode } from 'react';
 import { ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import { assetPathMode } from '@/utils';
 
 export default function ResourceFlow(): ReactNode {
   return (
@@ -10,7 +11,14 @@ export default function ResourceFlow(): ReactNode {
       <div className='flex flex-col lg:flex-row items-center lg:px-0'>
         {/* Image scales down on mobile but maintains original size on desktop */}
         <div className='w-full lg:w-auto'>
-          <Image src='/flow_1.svg' alt='flow_1 illustration' className='object-contain w-full h-auto' height={682} width={599} priority />
+          <Image
+            src={`${assetPathMode === 'PROD' ? '/unite-guidebook' : ''}/flow_1.svg`}
+            alt='flow_1 illustration'
+            className='object-contain w-full h-auto'
+            height={682}
+            width={599}
+            priority
+          />
         </div>
 
         {/* Content section */}
@@ -48,7 +56,13 @@ export default function ResourceFlow(): ReactNode {
 
           {/* Tools image */}
           <div className='w-full flex justify-center lg:justify-start sm:px-4 lg:px-0'>
-            <Image src='/tools.svg' alt='tools_illustration' className='object-contain mt-8 lg:mt-14' height={111} width={618} />
+            <Image
+              src={`${assetPathMode === 'PROD' ? '/unite-guidebook' : ''}/tools.svg`}
+              alt='tools_illustration'
+              className='object-contain mt-8 lg:mt-14'
+              height={111}
+              width={618}
+            />
           </div>
 
           {/* Button container */}
@@ -62,7 +76,13 @@ export default function ResourceFlow(): ReactNode {
 
         {/* Right image */}
         <div className='mt-12 lg:mt-0 w-full lg:w-auto flex justify-center lg:justify-end'>
-          <Image src='/flow_2.svg' alt='flow_2_illustration' className='object-contain w-full h-auto' height={752} width={732} />
+          <Image
+            src={`${assetPathMode === 'PROD' ? '/unite-guidebook' : ''}/flow_2.svg`}
+            alt='flow_2_illustration'
+            className='object-contain w-full h-auto'
+            height={752}
+            width={732}
+          />
         </div>
       </div>
     </div>
