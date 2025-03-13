@@ -15,7 +15,12 @@ type TitleWithLinksAndTooltips = {
 export function ResourcesContentLinks({ contents, resourceClickToId }: { contents: TitleWithLinksAndTooltips[]; resourceClickToId: string }) {
   return (
     <div>
-      <button onClick={() => {}} className='flex items-center mb-4'>
+      <button
+        onClick={() => {
+          console.log(resourceClickToId);
+        }}
+        className='flex items-center mb-4'
+      >
         <p className='font-bold text-[18px] leading-[32px] mr-2'>Resources</p>
         <LogOut size={15} strokeWidth={1} />
       </button>

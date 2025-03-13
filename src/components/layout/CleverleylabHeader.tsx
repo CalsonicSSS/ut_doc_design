@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Search, Menu, X } from 'lucide-react';
+import { Search, Menu } from 'lucide-react';
 import { useState } from 'react';
 
 const CleverleylabHeader = () => {
