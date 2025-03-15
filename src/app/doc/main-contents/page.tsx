@@ -1,10 +1,6 @@
-import MainContentCards from '@/components/Doc/NewStuff/MainContentCards';
+import MainContentCards from '@/components/Doc/MainContentCards';
 import React from 'react';
 
 export default function MainContentSection() {
-  return (
-    <>
-      <MainContentCards />
-    </>
-  );
+  return <MainContentCards />;
 }

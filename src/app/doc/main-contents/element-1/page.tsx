@@ -1,6 +1,5 @@
-import Element1Content from '@/components/Doc/NewStuff/elements/element1/Element1Content';
-import React from 'react';
+import { redirect } from 'next/navigation';
 
 export default function Element1Page() {
-  return <Element1Content />;
+  return redirect('/doc/main-contents/element-1/e1.1');
 }

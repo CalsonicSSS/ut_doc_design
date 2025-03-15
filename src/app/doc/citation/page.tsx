@@ -1,10 +1,6 @@
-import CitationContent from '@/components/Doc/NewStuff/appendices/Citation';
+import CitationContent from '@/components/Doc/appendices/Citation';
 import React from 'react';
 
 export default function CitationSection() {
-  return (
-    <>
-      <CitationContent />
-    </>
-  );
+  return <CitationContent />;
 }

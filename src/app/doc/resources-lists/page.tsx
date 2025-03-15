@@ -1,10 +1,6 @@
-import ResourcesListContent from '@/components/Doc/NewStuff/ResourcesList';
+import ResourcesListContent from '@/components/Doc/ResourcesList';
 import React from 'react';
 
 export default function ResousrcesListSection() {
-  return (
-    <>
-      <ResourcesListContent />
-    </>
-  );
+  return <ResourcesListContent />;
 }

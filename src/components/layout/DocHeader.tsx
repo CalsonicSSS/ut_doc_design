@@ -30,8 +30,17 @@ export default function DocHeader() {
   return (
     <div className='relative overflow-hidden'>
       <CleverleylabHeader />
-      <div className='absolute inset-0' style={{ position: 'relative', width: '100%', height: '500px' }}>
-        <Image src={`${assetPathMode === 'PROD' ? '/unite-toolkit' : ''}/${targetAsset}`} alt='Documentation header asset' style={{ objectFit: 'cover' }} fill />
+
+      {/* Mobile header - only visible on small screens */}
+      <div className='sm:block lg:hidden bg-[#193E72] text-white py-6 px-4'>
+        <h1 className='text-[28px] font-lato font-semibold text-center'>Core Component Guidebook</h1>
+      </div>
+
+      {/* Desktop header image - hidden on small screens */}
+      <div className='sm:hidden lg:block relative' style={{ width: '100%', height: '500px' }}>
+        {targetAsset && (
+          <Image src={`${assetPathMode === 'PROD' ? '/unite-toolkit' : ''}/${targetAsset}`} alt='Documentation header asset' style={{ objectFit: 'cover' }} fill priority />
+        )}
       </div>
     </div>
   );

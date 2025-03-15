@@ -37,6 +37,10 @@
     @apply font-lato text-[#193E72] text-[19px] font-bold leading-[32px];
   }
 
+  .doc-sidebar-item-sm {
+    @apply font-lato text-[#193E72] text-[15px] font-bold leading-[32px];
+  }
+
   .doc-sidebar-sub-item {
     @apply font-lato text-[13px] leading-[16px] font-semibold;
   }
